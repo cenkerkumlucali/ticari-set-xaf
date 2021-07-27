@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="TicariSet.Module.BusinessObjects.Cariler">
+      <OwnMembers>
+        <Member Name="Alacak" DisplayFormat="C2" EditMask="C2" />
+        <Member Name="Bakiye" DisplayFormat="C2" EditMask="C2" />
+        <Member Name="Borc" DisplayFormat="C2" EditMask="C2" />
+      </OwnMembers>
+    </Class>
+    <Class Name="TicariSet.Module.BusinessObjects.Fisler">
+      <OwnMembers>
+        <Member Name="AltToplam" DisplayFormat="C2" EditMask="C2" />
+        <Member Name="GenelToplam" DisplayFormat="C2" EditMask="C2" />
+        <Member Name="IndirimToplam" DisplayFormat="C2" EditMask="C2" />
+        <Member Name="Tarih" DisplayFormat="dd.MM.yyyy HH:mm:ss" />
+        <Member Name="VergiToplam" DisplayFormat="C2" EditMask="C2" />
+      </OwnMembers>
+    </Class>
+    <Class Name="TicariSet.Module.BusinessObjects.KasaHareket">
+      <OwnMembers>
+        <Member Name="Tarih" DisplayFormat="dd.MM.yyyy HH:mm:ss" EditMask="dd.MM.yyyy HH:mm:ss" />
+        <Member Name="Tutar" DisplayFormat="c2" EditMask="c2" />
+      </OwnMembers>
+    </Class>
+    <Class Name="TicariSet.Module.BusinessObjects.Kasalar">
+      <OwnMembers>
+        <Member Name="Bakiye" DisplayFormat="C3" EditMask="C3" />
+        <Member Name="Odeme" DisplayFormat="C3" EditMask="C3" />
+        <Member Name="Tahsilat" DisplayFormat="C3" EditMask="C3" />
+      </OwnMembers>
+    </Class>
+    <Class Name="TicariSet.Module.BusinessObjects.StokHareketler">
+      <OwnMembers>
+        <Member Name="BirimFiyat" DisplayFormat="C3" EditMask="C3" />
+        <Member Name="GenelTutar" DisplayFormat="C3" EditMask="C3" />
+        <Member Name="IndirimOran" DisplayFormat="N2" EditMask="N2" />
+        <Member Name="IndirimTutar" DisplayFormat="C3" EditMask="C3" />
+        <Member Name="Miktar" DisplayFormat="N3" EditMask="N3" />
+        <Member Name="NetTutar" DisplayFormat="C3" EditMask="C3" />
+        <Member Name="Tarih" DisplayFormat="dd.MM.yyyy HH:mm:ss" EditMask="dd.MM.yyyy HH:mm:ss" />
+        <Member Name="Toplam" DisplayFormat="C3" EditMask="C3" />
+        <Member Name="VergiOran" DisplayFormat="N2" EditMask="N2" />
+        <Member Name="VergiTutar" DisplayFormat="C3" EditMask="C3" />
+      </OwnMembers>
+    </Class>
+    <Class Name="TicariSet.Module.BusinessObjects.Stoklar">
+      <OwnMembers>
+        <Member Name="AlisFiyati" DisplayFormat="C3" EditMask="C3" />
+        <Member Name="SatisFiyati" DisplayFormat="C3" EditMask="C3" />
+        <Member Name="VergiOrani" DisplayFormat="N2" EditMask="N2" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Views>
+    <DetailView Id="CariOdeme_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SizeableEditors" Caption="Aciklama" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CariTahsilat_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SizeableEditors" Caption="Aciklama" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="StokHareketler_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="XPObject" Caption="Oid" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

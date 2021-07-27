@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="Stoklar_StokHareket_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Aciklama" Index="6" />
+      </Columns>
+    </ListView>
+    <ListView Id="Fisler_Detay_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Aciklama" Index="12" />
+      </Columns>
+    </ListView>
+    <ListView Id="StokHareketler_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Aciklama" Index="14" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>
