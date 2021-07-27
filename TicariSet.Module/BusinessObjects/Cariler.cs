@@ -122,9 +122,10 @@ namespace TicariSet.Module.BusinessObjects
                 return temp;
             }
         }
-        [ModelDefault("DisplayFormat", "c2")]
-        [ModelDefault("EditFormat", "c2")]
-        public double Bakiye => Alacak - Borc;
+        [VisibleInDetailView(false)]
+        [ModelDefault("DisplayFormat", "c3")]
+        [ModelDefault("EditFormat", "c3")]
+        public double Bakiye => Borc-Alacak;
 
         public bool Indirim
         {   

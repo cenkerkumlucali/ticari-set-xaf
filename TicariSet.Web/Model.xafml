@@ -1,3 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default" Visible="False">
+        <Items>
+          <Item Id="MyDetails" Caption="Profil" Removed="True" />
+          <Item Id="PermissionPolicyRole_ListView" Removed="True" />
+          <Item Id="PermissionPolicyUser_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="Kullanıcılar">
+        <Items>
+          <Item Id="Event_ListView" Caption="Ajanda" />
+          <Item Id="MyDetails" Caption="Profil" ObjectKey="@CurrentUserID" ViewId="PermissionPolicyUser_DetailView" ImageName="BO_MyDetails" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Reports" Caption="Raporlar" />
+      <Item Id="Tanımlar">
+        <Items>
+          <Item Id="PermissionPolicyRole_ListView" ViewId="PermissionPolicyRole_ListView" ObjectKey="" Caption="Kullanıcı Yetki Tanımları" IsNewNode="True" />
+          <Item Id="PermissionPolicyUser_ListView" ViewId="PermissionPolicyUser_ListView" ObjectKey="" Caption="Kullanıcı Tanımları" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="19.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerAspNetModule" Version="19.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="19.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemAspNetModule" Version="19.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="19.1.5.0" IsNewNode="True" />
+  </SchemaModules>
 </Application>

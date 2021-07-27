@@ -26,9 +26,10 @@ namespace TicariSet.Win {
             }
             Tracing.Initialize();
             TicariSetWindowsFormsApplication winApplication = new TicariSetWindowsFormsApplication();
+           
             // Refer to the https://docs.devexpress.com/eXpressAppFramework/112680 help article for more details on how to provide a custom splash form.
             //winApplication.SplashScreen = new DevExpress.ExpressApp.Win.Utils.DXSplashScreen("YourSplashImage.png");
-			SecurityStrategy security = (SecurityStrategy)winApplication.Security;
+            SecurityStrategy security = (SecurityStrategy)winApplication.Security;
             security.RegisterXPOAdapterProviders();
             if(ConfigurationManager.ConnectionStrings["ConnectionString"] != null) {
                 winApplication.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
@@ -50,6 +51,8 @@ namespace TicariSet.Win {
             catch(Exception e) {
                 winApplication.HandleException(e);
             }
+
         }
+       
     }
 }

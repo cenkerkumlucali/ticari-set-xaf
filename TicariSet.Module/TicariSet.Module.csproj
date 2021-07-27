@@ -141,6 +141,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessObjects\AlisFaturasi.cs" />
+    <Compile Include="BusinessObjects\BankaHareket.cs" />
+    <Compile Include="BusinessObjects\BankaHesaplari.cs" />
+    <Compile Include="BusinessObjects\Bankalar.cs" />
+    <Compile Include="BusinessObjects\BankaOdeme.cs" />
+    <Compile Include="BusinessObjects\BankaSubeleri.cs" />
+    <Compile Include="BusinessObjects\BankaTahsilat.cs" />
     <Compile Include="BusinessObjects\Birimler.cs" />
     <Compile Include="BusinessObjects\CariOdeme.cs" />
     <Compile Include="BusinessObjects\CariTahsilat.cs" />
@@ -148,6 +154,9 @@
     <Compile Include="BusinessObjects\Fisler.cs" />
     <Compile Include="BusinessObjects\KasaHareket.cs" />
     <Compile Include="BusinessObjects\Kasalar.cs" />
+    <Compile Include="BusinessObjects\KasaMasrafOdeme.cs" />
+    <Compile Include="BusinessObjects\MasrafGrubu.cs" />
+    <Compile Include="BusinessObjects\Masraflar.cs" />
     <Compile Include="BusinessObjects\SatisFaturasi.cs" />
     <Compile Include="BusinessObjects\StokHareketler.cs" />
     <Compile Include="BusinessObjects\Stoklar.cs" />
@@ -182,7 +191,7 @@
     <EmbeddedResource Include="Controllers\KasaHareketViewController.resx">
       <DependentUpon>KasaHareketViewController.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+    <Content Include="Model.DesignedDiffs.xafml" />
     <EmbeddedResource Include="Module.resx">
       <DependentUpon>Module.cs</DependentUpon>
     </EmbeddedResource>

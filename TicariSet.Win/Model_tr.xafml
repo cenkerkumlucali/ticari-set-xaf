@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems>
+    <Items>
+      <Item Id="Kullanıcılar">
+        <Items>
+          <Item Id="Event_ListView" Caption="Ajanda" />
+        </Items>
+      </Item>
+      <Item Id="Odemeler">
+        <Items>
+          <Item Id="CariOdeme_ListView" Caption="Kasa Cari Odeme" />
+        </Items>
+      </Item>
+      <Item Id="Reports" Caption="Raporlar">
+        <Items>
+          <Item Id="ReportsV2" Caption="Rapor" />
+        </Items>
+      </Item>
+      <Item Id="Tahsilat">
+        <Items>
+          <Item Id="CariTahsilat_ListView" Caption="Kasa Cari Tahsilat" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

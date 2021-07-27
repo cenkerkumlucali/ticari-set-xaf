@@ -29,6 +29,17 @@ namespace TicariSet.Module.BusinessObjects
             Tarih = DateTime.Now;
             base.AfterConstruction();
         }
+
+        public double CariBakiye
+        {
+            get
+            {
+                if (CariID != null)
+                    return CariID.Bakiye;
+                else
+                    return 0;
+            }
+        }
         protected override void OnSaving()
         {
             if (!(Session is NestedUnitOfWork)
@@ -39,7 +50,6 @@ namespace TicariSet.Module.BusinessObjects
                 int deger = DistributedIdGeneratorHelper.Generate(Session.DataLayer, this.GetType().FullName, "CariTahsilatServerPrefix");
                 Kod = string.Format("CT{0:D8}", deger);
             }
-            Aciklama = $"{Kod} nolu {Tarih} tarihli {CariID} hesabından {KasaID} hesabına {Tutar} TL tutarında tahsilat yapılmıştır.";
             base.OnSaving();
         }
 

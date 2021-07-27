@@ -52,7 +52,54 @@
       </OwnMembers>
     </Class>
   </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="Kullanıcılar">
+        <Items>
+          <Item Id="Event_ListView" Caption="Ajanda" />
+        </Items>
+      </Item>
+      <Item Id="Ödemeler">
+        <Items>
+          <Item Id="CariOdeme_ListView" Caption=" Kasa Cari Odeme" />
+        </Items>
+      </Item>
+      <Item Id="Reports" Caption="Raporlar" />
+      <Item Id="Tahsilat">
+        <Items>
+          <Item Id="CariTahsilat_ListView" Caption="Kasa Cari Tahsilat" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
   <Views>
+    <DetailView Id="BankaOdeme_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="BankaHareket" Caption="BankaHareket">
+              <LayoutGroup Id="KasaHareket" Caption="Banka Ödeme" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="Aciklama" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BankaTahsilat_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="KasaHareket" Caption="Banka Tahsilat">
+              <LayoutGroup Id="KasaHareket_col1">
+                <LayoutGroup Id="BankaHareket" Caption="BankaHareket" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="BankaHareket" Caption="BankaHareket" />
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="Aciklama" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
     <DetailView Id="CariOdeme_DetailView">
       <Layout>
         <LayoutGroup Id="Main">
@@ -63,6 +110,30 @@
     <DetailView Id="CariTahsilat_DetailView">
       <Layout>
         <LayoutGroup Id="Main">
+          <LayoutGroup Id="SizeableEditors" Caption="Aciklama" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Kasalar_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="XPObject" Caption="Oid">
+              <LayoutGroup Id="KasaHareketleri_Group" Caption="Kasa Hareketleri" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="Aciklama" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="KasaMasrafOdeme_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="KasaMasrafOdeme" Caption="Masraf Türü">
+              <LayoutGroup Id="KasaHareket" Caption="Kasa Hareket" />
+            </LayoutGroup>
+          </LayoutGroup>
           <LayoutGroup Id="SizeableEditors" Caption="Aciklama" />
         </LayoutGroup>
       </Layout>

@@ -11,20 +11,18 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
-using TicariSet.Module.EnumObjects;
 
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    [CreatableItem(false)]
     //[ImageName("BO_Contact")]
-    //[DefaultProperty("DisplayMemberNameForLookupEditorsOfThisType")]
+    [DefaultProperty("Hesap")]
     //[DefaultListViewOptions(MasterDetailMode.ListViewOnly, false, NewItemRowPosition.None)]
     //[Persistent("DatabaseTableName")]
     // Specify more UI options using a declarative approach (https://documentation.devexpress.com/#eXpressAppFramework/CustomDocument112701).
-    public class KasaHareket : BaseObject
+    public class BankaHesaplari : XPObject
     { // Inherit from a different class to provide a custom primary key, concurrency and deletion behavior, etc. (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument113146.aspx).
-        public KasaHareket(Session session)
+        public BankaHesaplari(Session session)
             : base(session)
         {
         }
@@ -34,13 +32,11 @@ namespace TicariSet.Module.BusinessObjects
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
 
-
         string aciklama;
-        DateTime tarih;
-        double tutar;
-        KasaHareketType hareket;
-        Cariler cariID;
-        Kasalar kasaID;
+        BankaSubeleri subeID;
+        Bankalar bankaID;
+        string iban;
+        string hesap;
         string kod;
 
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
@@ -49,44 +45,35 @@ namespace TicariSet.Module.BusinessObjects
             get => kod;
             set => SetPropertyValue(nameof(Kod), ref kod, value);
         }
-        [Association("Kasalar-KasaHareketleri")]
-        [XafDisplayName("Kasa")]
-        public Kasalar KasaID
+
+        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        public string Hesap
         {
-            get => kasaID;
-            set => SetPropertyValue(nameof(KasaID), ref kasaID, value);
-        }
-        [Association("Cariler-ParasalHareket")]
-        [XafDisplayName("Cari Hesap")]
-        public Cariler CariID
-        {
-            get => cariID;
-            set => SetPropertyValue(nameof(CariID), ref cariID, value);
+            get => hesap;
+            set => SetPropertyValue(nameof(Hesap), ref hesap, value);
         }
 
-
-        public KasaHareketType Hareket
+        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        public string Iban
         {
-            get => hareket;
-            set => SetPropertyValue(nameof(Hareket), ref hareket, value);
+            get => iban;
+            set => SetPropertyValue(nameof(Iban), ref iban, value);
         }
-
-        [ModelDefault("DisplayFormat", "c2")]
-        [ModelDefault("EditFormat", "c2")]
-        public double Tutar
+        [XafDisplayName("Banka")]
+        public Bankalar BankaID
         {
-            get => tutar;
-            set => SetPropertyValue(nameof(Tutar), ref tutar, value);
+            get => bankaID;
+            set => SetPropertyValue(nameof(BankaID), ref bankaID, value);
         }
-        [ModelDefault("DisplayFormat", "dd.MM.yyyy HH:mm:ss")]
-        [ModelDefault("EditFormat", "dd.MM.yyyy HH:mm:ss")]
-        public DateTime Tarih
+        [Association("BankaSubeleri-Hesaplar")]
+        [XafDisplayName("Şube")]
+        public BankaSubeleri SubeID
         {
-            get => tarih;
-            set => SetPropertyValue(nameof(Tarih), ref tarih, value);
+            get => subeID;
+            set => SetPropertyValue(nameof(SubeID), ref subeID, value);
         }
         
-        [Size(SizeAttribute.Unlimited)]
+        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
         public string Aciklama
         {
             get => aciklama;
@@ -99,8 +86,8 @@ namespace TicariSet.Module.BusinessObjects
                   && Session.IsNewObject(this))
                 && string.IsNullOrEmpty(Kod))
             {
-                int deger = DistributedIdGeneratorHelper.Generate(Session.DataLayer, this.GetType().FullName, "KasaHareketServerPrefix");
-                Kod = string.Format("{0:D7}", deger);
+                int deger = DistributedIdGeneratorHelper.Generate(Session.DataLayer, this.GetType().FullName, "BankaHesaplariServerPrefix");
+                Kod = string.Format("BH{0:D7}", deger);
             }
             base.OnSaving();
         }

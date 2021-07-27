@@ -1,7 +1,102 @@
-﻿<Application Logo="ExpressAppLogo">
-	<Options UIType="TabbedMDI" FormStyle="Ribbon" />
-	<NavigationItems NavigationStyle="Accordion" ShowImages="False" DefaultChildItemsDisplayStyle="List"/>
-	<Options ShowTabImage="False">
-		<LayoutManagerOptions EnableLayoutGroupImages="False" />
-	</Options>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Logo="ExpressAppLogo" PreferredLanguage="(User language)">
+  <NavigationItems>
+    <Items>
+      <Item Id="Bankalar" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="BankaHesaplari_ListView" ViewId="BankaHesaplari_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Cari Hesap" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="Cariler_ListView" ViewId="Cariler_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Default" Visible="False">
+        <Items>
+          <Item Id="AlisFaturasi_ListView" Removed="True" />
+          <Item Id="BankaHareket_ListView" Visible="False" />
+          <Item Id="BankaHesaplari_ListView" Removed="True" />
+          <Item Id="Bankalar_ListView" Removed="True" />
+          <Item Id="BankaOdeme_ListView" Removed="True" />
+          <Item Id="BankaSubeleri_ListView" Removed="True" />
+          <Item Id="BankaTahsilat_ListView" Removed="True" />
+          <Item Id="Birimler_ListView" Removed="True" />
+          <Item Id="Cariler_ListView" Removed="True" />
+          <Item Id="CariOdeme_ListView" Removed="True" />
+          <Item Id="CariTahsilat_ListView" Removed="True" />
+          <Item Id="Event_ListView" Removed="True" />
+          <Item Id="Fisler_ListView" Removed="True" />
+          <Item Id="KasaHareket_ListView" Removed="True" />
+          <Item Id="Kasalar_ListView" Removed="True" />
+          <Item Id="KasaMasrafOdeme_ListView" Removed="True" />
+          <Item Id="MasrafGrubu_ListView" Removed="True" />
+          <Item Id="Masraflar_ListView" Removed="True" />
+          <Item Id="SatisFaturasi_ListView" Removed="True" />
+          <Item Id="StokHareketler_ListView" Removed="True" />
+          <Item Id="Stoklar_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="Faturalar" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="AlisFaturasi_ListView" ViewId="AlisFaturasi_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="Fisler_ListView" ViewId="Fisler_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="SatisFaturasi_ListView" ViewId="SatisFaturasi_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Kasalar" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="KasaHareket_ListView" ViewId="KasaHareket_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="Kasalar_ListView" ViewId="Kasalar_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Kullanıcılar" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="Event_ListView" ViewId="Event_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Masraflar" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="MasrafGrubu_ListView" ViewId="MasrafGrubu_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="Masraflar_ListView" ViewId="Masraflar_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Odemeler" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="BankaOdeme_ListView" ViewId="BankaOdeme_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="CariOdeme_ListView" ViewId="CariOdeme_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="KasaMasrafOdeme_ListView" ViewId="KasaMasrafOdeme_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Stoklar" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="StokHareketler_ListView" ViewId="StokHareketler_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="Stoklar_ListView" ViewId="Stoklar_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Tahsilat" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="BankaTahsilat_ListView" ViewId="BankaTahsilat_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="CariTahsilat_ListView" ViewId="CariTahsilat_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Tanimlar" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="Bankalar_ListView" ViewId="Bankalar_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="BankaSubeleri_ListView" ViewId="BankaSubeleri_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="Birimler_ListView" ViewId="Birimler_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options UIType="TabbedMDI" FormStyle="Ribbon" ShowTabImage="False">
+    <LayoutManagerOptions EnableLayoutGroupImages="False" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="19.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="19.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerWindowsFormsModule" Version="19.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="19.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="19.1.5.0" IsNewNode="True" />
+  </SchemaModules>
 </Application>
