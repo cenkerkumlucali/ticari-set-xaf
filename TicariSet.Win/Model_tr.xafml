@@ -24,4 +24,169 @@
       </Item>
     </Items>
   </NavigationItems>
+  <Views>
+    <DetailView Id="AlisFaturasi_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Fisler" Caption="Fatura Bilgileri">
+              <LayoutGroup Id="Fisler_col1" Caption="Fisler_col1" />
+              <LayoutGroup Id="Fisler_col2" Caption="Fisler_col2" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid">
+              <LayoutGroup Id="Detay_Group" Caption="Fatura Detay" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="Aciklama">
+            <LayoutGroup Id="Autoe26b3f39-6ca0-4a8f-98b5-d2e594e3c06a" Caption="" />
+          </LayoutGroup>
+          <LayoutGroup Id="Detay_Group" Caption="Detay">
+            <LayoutGroup Id="Auto286af81f-1074-402f-9bc8-b9e9849a4254" Caption="" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BankaHesaplari_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="BankaHesaplari" Caption="Banka Hesaplari">
+              <LayoutGroup Id="BankaHesaplari_col2" Caption="BankaHesaplari_col2" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid">
+              <LayoutGroup Id="Hareket_Group" Caption="Hareket" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BankaOdeme_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="BankaHareket" Caption="BankaHareket">
+              <LayoutGroup Id="KasaHareket" Caption="Kasa Hareket" />
+            </LayoutGroup>
+            <LayoutGroup Id="KasaHareket">
+              <LayoutGroup Id="KasaHareket_col2" Caption="KasaHareket_col2" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="Aciklama" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BankaTahsilat_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="KasaHareket">
+              <LayoutGroup Id="KasaHareket_col2" Caption="KasaHareket_col2" />
+            </LayoutGroup>
+            <LayoutGroup Id="BankaHareket" Caption="BankaHareket" />
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="Aciklama" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CariOdeme_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SizeableEditors" Caption="Aciklama" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CariTahsilat_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SizeableEditors" Caption="Aciklama" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Fisler_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Fisler" Caption="Fatura Bilgileri">
+              <LayoutGroup Id="Fisler_col1" Caption="Fisler_col1" />
+              <LayoutGroup Id="Fisler_col2" Caption="Fisler_col2" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" />
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="Aciklama">
+            <LayoutGroup Id="Detay_Group" Caption="Fatura Detay" />
+            <LayoutGroup Id="Auto98755dfa-c36a-4f94-aede-29e1e882803d" Caption="">
+              <LayoutGroup Id="Auto8a8f68e0-a7ab-4ce7-9894-f289a87c8d7c" Caption="" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Detay_Group" Caption="Detay">
+            <LayoutGroup Id="Auto76e530e1-9f50-4182-8e2d-86505f3c0acf" Caption="" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Kasalar_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="XPObject" Caption="Oid">
+              <LayoutGroup Id="KasaHareketleri_Group" Caption="Kasa Hareketleri" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="Aciklama" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="KasaMasrafOdeme_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="KasaMasrafOdeme" Caption="Masraf Türü">
+              <LayoutGroup Id="KasaHareket" Caption="Kasa Hareket" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="Aciklama" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="KasaMasrafOdeme_ListView">
+      <Columns>
+        <ColumnInfo Id="Tarih" EditMask="dd.MM.yyyy HH:mm:ss" />
+      </Columns>
+    </ListView>
+    <DetailView Id="SatisFaturasi_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Fisler" Caption="Fatura Bilgileri">
+              <LayoutGroup Id="Fisler_col1" Caption="Fisler_col1" />
+              <LayoutGroup Id="Fisler_col2" Caption="Fisler_col2" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid">
+              <LayoutGroup Id="Detay_Group" Caption="Fatura Detay" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="Aciklama">
+            <LayoutGroup Id="Auto4b8643aa-8a8a-4034-9b68-b82258185c37" Caption="" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="StokHareketler_DetailView">
+      <Items>
+        <PropertyEditor Id="BirimFiyat" EditMask="C2" DisplayFormat="C2" />
+        <PropertyEditor Id="GenelTutar" EditMask="C2" DisplayFormat="C2" />
+        <PropertyEditor Id="IndirimTutar" EditMask="C2" DisplayFormat="C2" />
+        <PropertyEditor Id="NetTutar" EditMask="C2" DisplayFormat="C2" />
+        <PropertyEditor Id="Toplam" EditMask="C2" DisplayFormat="C2" />
+        <PropertyEditor Id="VergiTutar" EditMask="C2" DisplayFormat="C2" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="XPObject" Caption="Oid" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
 </Application>

@@ -72,6 +72,14 @@ namespace TicariSet.Module.BusinessObjects
                 return GetCollection<BankaSubeleri>(nameof(Subeler));
             }
         }
+        [Association("Bankalar-Hesaplar")]
+        public XPCollection<BankaHesaplari> Hesaplar
+        {
+            get
+            {
+                return GetCollection<BankaHesaplari>(nameof(Hesaplar));
+            }
+        }
         protected override void OnSaving()
         {
             if (!(Session is NestedUnitOfWork

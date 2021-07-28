@@ -73,6 +73,21 @@
     </Items>
   </NavigationItems>
   <Views>
+    <DetailView Id="BankaHesaplari_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="BankaHesaplari">
+              <LayoutGroup Id="BankaHesaplari_col1" Caption="BankaHesaplari_col1" />
+              <LayoutGroup Id="BankaHesaplari_col2" Caption="BankaHesaplari_col2">
+                <LayoutGroup Id="Auto2502e489-8d8a-4727-9a06-26a933bc3138" Caption="" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
     <DetailView Id="BankaOdeme_DetailView">
       <Layout>
         <LayoutGroup Id="Main">

@@ -31,7 +31,7 @@ namespace TicariSet.Module.BusinessObjects
         {
             base.AfterConstruction();
             Tarih = DateTime.Now;
-            Hareket = KasaHareketType.Odeme;
+            Hareket = KasaHareketType.BankaOdeme;
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
         protected override void OnSaving()

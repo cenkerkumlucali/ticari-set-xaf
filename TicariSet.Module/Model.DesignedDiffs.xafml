@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application Title="TicariSet" PreferredLanguage="tr">
   <BOModel>
+    <Class Name="TicariSet.Module.BusinessObjects.BankaHesaplari">
+      <OwnMembers>
+        <Member Name="SubeID" DataSourceProperty="BankaID.Subeler" />
+      </OwnMembers>
+    </Class>
     <Class Name="TicariSet.Module.BusinessObjects.Bankalar">
       <OwnMembers>
         <Member Name="Kod" AllowEdit="False" />
@@ -208,9 +213,41 @@
         <ColumnInfo Id="Aciklama" Index="4" Width="323" />
       </Columns>
     </ListView>
+    <DetailView Id="BankaHesaplari_DetailView">
+      <Items>
+        <PropertyEditor Id="Kod" AllowEdit="False" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="BankaHesaplari" RelativeSize="20.331950207468878">
+              <LayoutGroup Id="BankaHesaplari_col1" RelativeSize="50">
+                <LayoutItem Id="Hesap" RelativeSize="50" Index="0" />
+                <LayoutItem Id="Iban" ViewItem="Iban" Index="1" RelativeSize="50" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="Kod" RelativeSize="36.363636363636367" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="BankaHesaplari_col2" RelativeSize="50">
+                <LayoutGroup Id="Auto2502e489-8d8a-4727-9a06-26a933bc3138" ShowCaption="False" Direction="Horizontal" Index="0" RelativeSize="50" IsNewNode="True">
+                  <LayoutItem Id="BankaID" ViewItem="BankaID" Index="0" RelativeSize="50.202429149797574" IsNewNode="True" />
+                  <LayoutItem Id="SubeID" ViewItem="SubeID" Index="1" RelativeSize="49.797570850202426" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="SubeID" RelativeSize="50" Index="0" Removed="True" />
+                <LayoutItem Id="Aciklama" RelativeSize="50" Index="1" />
+                <LayoutItem Id="BankaID" RelativeSize="36.363636363636367" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Direction="Horizontal" RelativeSize="79.668049792531122">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
     <ListView Id="BankaHesaplari_ListView">
       <Columns>
-        <ColumnInfo Id="Hesap" Width="225" />
+        <ColumnInfo Id="Hesap" Width="96" SortIndex="-1" SortOrder="None" />
+        <ColumnInfo Id="Kod" SortIndex="0" SortOrder="Ascending" />
+        <ColumnInfo Id="Iban" Width="148" />
       </Columns>
     </ListView>
     <DetailView Id="BankaOdeme_DetailView">
@@ -691,7 +728,9 @@
     </DetailView>
     <ListView Id="StokHareketler_ListView">
       <Columns>
-        <ColumnInfo Id="BirimFiyat" SortIndex="0" SortOrder="Ascending" Index="3" />
+        <ColumnInfo Id="Tarih" Width="121" />
+        <ColumnInfo Id="Hareket" SortIndex="0" SortOrder="Ascending" />
+        <ColumnInfo Id="BirimFiyat" SortIndex="-1" SortOrder="None" Index="3" />
         <ColumnInfo Id="BirimID" Index="4" />
         <ColumnInfo Id="Miktar" Index="5" />
         <ColumnInfo Id="IndirimTutar" Index="6" />

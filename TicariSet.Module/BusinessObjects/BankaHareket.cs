@@ -35,13 +35,13 @@ namespace TicariSet.Module.BusinessObjects
         BankaHesaplari hesapID;
         Bankalar bankaID;
 
+
         [XafDisplayName("Banka")]
         public Bankalar BankaID
         {
             get => bankaID;
             set => SetPropertyValue(nameof(BankaID), ref bankaID, value);
         }
-
         [XafDisplayName("Hesap Numarası")]
         public BankaHesaplari HesapID
         {

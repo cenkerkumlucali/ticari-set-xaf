@@ -7,6 +7,10 @@ namespace TicariSet.Module.EnumObjects
         [XafDisplayName("Kasa Ödeme")]
         Odeme,
         [XafDisplayName("Kasa Tahsilat")]
-        Tahsilat
+        Tahsilat,
+        [XafDisplayName("Banka Ödeme")]
+        BankaOdeme,
+        [XafDisplayName("Banka Tahsilat")]
+        BankaTahsilat
     }
 }

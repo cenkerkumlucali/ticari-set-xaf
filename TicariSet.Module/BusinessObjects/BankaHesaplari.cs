@@ -60,6 +60,7 @@ namespace TicariSet.Module.BusinessObjects
             set => SetPropertyValue(nameof(Iban), ref iban, value);
         }
         [XafDisplayName("Banka")]
+        [Association("Bankalar-Hesaplar")]
         public Bankalar BankaID
         {
             get => bankaID;
@@ -79,6 +80,7 @@ namespace TicariSet.Module.BusinessObjects
             get => aciklama;
             set => SetPropertyValue(nameof(Aciklama), ref aciklama, value);
         }
+     
         protected override void OnSaving()
         {
             if (!(Session is NestedUnitOfWork
