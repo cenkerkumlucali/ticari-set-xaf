@@ -33,7 +33,7 @@ namespace TicariSet.Win {
         }
         private void TicariSetWindowsFormsApplication_CustomizeLanguagesList(object sender, CustomizeLanguagesListEventArgs e) {
             string userLanguageName = System.Threading.Thread.CurrentThread.CurrentUICulture.Name;
-            if(userLanguageName != "en-US" && e.Languages.IndexOf(userLanguageName) == -1) {
+            if(userLanguageName != "tr-TR" && e.Languages.IndexOf(userLanguageName) == -1) {
                 e.Languages.Add(userLanguageName);
             }
         }

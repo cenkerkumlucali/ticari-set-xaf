@@ -110,7 +110,7 @@
             this.pcApplicationName.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pcApplicationName.Controls.Add(this.labelSubtitle);
             this.pcApplicationName.Controls.Add(this.labelApplicationName);
-			this.pcApplicationName.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pcApplicationName.Dock = System.Windows.Forms.DockStyle.Top;
             this.pcApplicationName.Location = new System.Drawing.Point(1, 1);
             this.pcApplicationName.LookAndFeel.UseDefaultLookAndFeel = false;
             this.pcApplicationName.Name = "pcApplicationName";
@@ -140,6 +140,7 @@
             this.labelApplicationName.Size = new System.Drawing.Size(278, 47);
             this.labelApplicationName.TabIndex = 0;
             this.labelApplicationName.Text = "Application Name";
+            this.labelApplicationName.Click += new System.EventHandler(this.labelApplicationName_Click);
             // 
             // XafSplashScreen
             // 

@@ -39,5 +39,10 @@ namespace TicariSet.Win {
 
         public enum SplashScreenCommand {
         }
+
+        private void labelApplicationName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

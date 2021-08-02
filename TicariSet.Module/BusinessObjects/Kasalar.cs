@@ -78,6 +78,7 @@ namespace TicariSet.Module.BusinessObjects
         [ModelDefault("DisplayFormat", "c2")]
         [ModelDefault("EditFormat", "c2")]
         public double Bakiye => Tahsilat - Odeme;
+
         [Association("Kasalar-KasaHareketleri")]
         public XPCollection<KasaHareket> KasaHareketleri
         {
