@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Linq;
 using DevExpress.ExpressApp;
 using DevExpress.Data.Filtering;
 using DevExpress.Persistent.Base;
 using DevExpress.ExpressApp.Updating;
 using DevExpress.ExpressApp.Security;
-using DevExpress.ExpressApp.SystemModule;
-using DevExpress.ExpressApp.Security.Strategy;
-using DevExpress.Xpo;
-using DevExpress.ExpressApp.Xpo;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.BaseImpl.PermissionPolicy;
 
