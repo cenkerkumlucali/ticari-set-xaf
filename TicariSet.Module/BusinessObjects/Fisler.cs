@@ -10,7 +10,7 @@ using TicariSet.Module.EnumObjects;
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    [DefaultProperty("Kodu")]
+    [DefaultProperty("Kod")]
     [CreatableItem(false)]
     public class Fisler : XPObject
     {
@@ -106,7 +106,7 @@ namespace TicariSet.Module.BusinessObjects
             set => SetPropertyValue(nameof(GenelToplam), ref genelToplam, value);
         }
 
-        [Size(SizeAttribute.Unlimited)]
+        [Size(500)] 
         public string Aciklama
         {
             get => aciklama;
