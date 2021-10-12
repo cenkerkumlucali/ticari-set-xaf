@@ -311,21 +311,21 @@
       </Items>
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="SimpleEditors" RelativeSize="27.016129032258064">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="27.176220806794056">
             <LayoutGroup Id="KasaHareket" Index="0" RelativeSize="100">
-              <LayoutGroup Id="KasaHareket_col1" RelativeSize="50">
-                <LayoutItem Id="Kod" ViewItem="Kod" Index="0" RelativeSize="34.042553191489361" IsNewNode="True" Removed="True" />
-                <LayoutItem Id="BankaID" ViewItem="BankaID" Index="1" RelativeSize="25.531914893617021" IsNewNode="True" />
-                <LayoutGroup Id="BankaHareket" ShowCaption="False" Direction="Vertical" Index="2" RelativeSize="40.425531914893618" IsNewNode="True">
+              <LayoutGroup Id="KasaHareket_col1" RelativeSize="48.878923766816143">
+                <LayoutItem Id="BankaID" ViewItem="BankaID" Index="0" RelativeSize="36.363636363636367" IsNewNode="True" />
+                <LayoutItem Id="Kod" ViewItem="Kod" Index="0" RelativeSize="34.042553191489361" Removed="True" />
+                <LayoutGroup Id="BankaHareket" ShowCaption="False" Direction="Vertical" Index="1" RelativeSize="63.636363636363633" IsNewNode="True">
                   <LayoutItem Id="CariID" ViewItem="CariID" Index="0" RelativeSize="100" IsNewNode="True" />
                 </LayoutGroup>
                 <LayoutItem Id="CariID" ViewItem="CariID" Index="2" RelativeSize="27.272727272727273" Removed="True" />
                 <LayoutItem Id="KasaID" Removed="True" />
               </LayoutGroup>
-              <LayoutGroup Id="KasaHareket_col2" RelativeSize="50">
-                <LayoutItem Id="HesapID" ViewItem="HesapID" Index="0" RelativeSize="34.042553191489361" IsNewNode="True" />
-                <LayoutItem Id="Tutar" RelativeSize="25.531914893617021" Index="1" />
-                <LayoutItem Id="Tarih" RelativeSize="40.425531914893618" Index="2" />
+              <LayoutGroup Id="KasaHareket_col2" RelativeSize="51.121076233183857">
+                <LayoutItem Id="HesapID" ViewItem="HesapID" Index="0" RelativeSize="36.363636363636367" IsNewNode="True" />
+                <LayoutItem Id="Tutar" RelativeSize="27.272727272727273" Index="1" />
+                <LayoutItem Id="Tarih" ViewItem="Tarih" Index="2" RelativeSize="36.363636363636367" IsNewNode="True" Removed="True" />
                 <LayoutItem Id="Hareket" RelativeSize="36.363636363636367" Removed="True" />
               </LayoutGroup>
             </LayoutGroup>
@@ -334,8 +334,8 @@
               <LayoutItem Id="BankaID" RelativeSize="51.612903225806448" Removed="True" />
             </LayoutGroup>
           </LayoutGroup>
-          <LayoutItem Id="Aciklama" ViewItem="Aciklama" Index="1" RelativeSize="4.838709677419355" IsNewNode="True" />
-          <LayoutGroup Id="SizeableEditors" RelativeSize="68.145161290322577" Direction="Horizontal" Index="2">
+          <LayoutItem Id="Aciklama" ViewItem="Aciklama" Index="1" RelativeSize="5.0955414012738851" IsNewNode="True" />
+          <LayoutGroup Id="SizeableEditors" RelativeSize="67.72823779193206" Direction="Horizontal" Index="2">
             <LayoutItem Id="Aciklama" RelativeSize="100" Removed="True" />
           </LayoutGroup>
         </LayoutGroup>
