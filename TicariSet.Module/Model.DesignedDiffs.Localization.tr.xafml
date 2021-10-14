@@ -162,5 +162,12 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
+    <DetailView Id="Stoklar_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SizeableEditors" Caption="Tanim" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
   </Views>
 </Application>

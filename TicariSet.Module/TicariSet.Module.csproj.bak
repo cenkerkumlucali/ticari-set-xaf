@@ -38,92 +38,79 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v20.2">
+    <Reference Include="DevExpress.Data.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.AuditTrail.v20.2">
+    <Reference Include="DevExpress.ExpressApp.AuditTrail.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.CloneObject.v20.2">
+    <Reference Include="DevExpress.ExpressApp.CloneObject.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v20.2">
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Notifications.v20.2">
+    <Reference Include="DevExpress.ExpressApp.Notifications.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Objects.v20.2">
+    <Reference Include="DevExpress.ExpressApp.Objects.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Office.v20.2">
+    <Reference Include="DevExpress.ExpressApp.Office.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.ReportsV2.v20.2">
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Scheduler.v20.2">
+    <Reference Include="DevExpress.ExpressApp.Scheduler.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Security.v20.2">
+    <Reference Include="DevExpress.ExpressApp.Security.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Security.Xpo.v20.2">
+    <Reference Include="DevExpress.ExpressApp.Security.Xpo.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.TreeListEditors.v20.2">
+    <Reference Include="DevExpress.ExpressApp.TreeListEditors.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.v20.2">
+    <Reference Include="DevExpress.ExpressApp.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Validation.v20.2">
+    <Reference Include="DevExpress.ExpressApp.Validation.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v20.2">
+    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Xpo.v20.2">
+    <Reference Include="DevExpress.ExpressApp.Xpo.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Office.v20.2.Core">
+    <Reference Include="DevExpress.Office.v19.1.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Persistent.Base.v20.2">
+    <Reference Include="DevExpress.Persistent.Base.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Persistent.BaseImpl.v20.2">
+    <Reference Include="DevExpress.Persistent.BaseImpl.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Printing.v20.2.Core">
+    <Reference Include="DevExpress.Printing.v19.1.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.RichEdit.v20.2.Core">
+    <Reference Include="DevExpress.RichEdit.v19.1.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Data.Desktop.v20.2">
+    <Reference Include="DevExpress.Utils.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Utils.v20.2">
+    <Reference Include="DevExpress.Xpo.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Xpo.v20.2">
+    <Reference Include="DevExpress.XtraReports.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Charts.v20.2.Core">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="DevExpress.XtraCharts.v20.2">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraReports.v20.2">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="DevExpress.XtraScheduler.v20.2.Core.Desktop">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="DevExpress.XtraScheduler.v20.2.Core">
+    <Reference Include="DevExpress.XtraScheduler.v19.1.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="mscorlib">
@@ -164,10 +151,6 @@
     <Compile Include="BusinessObjects\CariOdeme.cs" />
     <Compile Include="BusinessObjects\CariTahsilat.cs" />
     <Compile Include="BusinessObjects\Cariler.cs" />
-    <Compile Include="BusinessObjects\BirimSetiTanimlari.cs" />
-    <Compile Include="BusinessObjects\ColorConverter.cs" />
-    <Compile Include="BusinessObjects\Ilceler.cs" />
-    <Compile Include="BusinessObjects\RenkTanimlari.cs" />
     <Compile Include="BusinessObjects\Doviz.cs" />
     <Compile Include="BusinessObjects\Fisler.cs" />
     <Compile Include="BusinessObjects\KasaHareket.cs" />
@@ -176,12 +159,9 @@
     <Compile Include="BusinessObjects\MasrafGrubu.cs" />
     <Compile Include="BusinessObjects\Masraflar.cs" />
     <Compile Include="BusinessObjects\SatisFaturasi.cs" />
-    <Compile Include="BusinessObjects\Sehirler.cs" />
     <Compile Include="BusinessObjects\StFiyat.cs" />
-    <Compile Include="BusinessObjects\StKartRenk.cs" />
     <Compile Include="BusinessObjects\StokHareketler.cs" />
     <Compile Include="BusinessObjects\Stoklar.cs" />
-    <Compile Include="BusinessObjects\Ulkeler.cs" />
     <Compile Include="Controllers\FislerViewController.cs">
       <SubType>Component</SubType>
     </Compile>
