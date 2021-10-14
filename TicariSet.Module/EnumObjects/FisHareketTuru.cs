@@ -5,9 +5,9 @@ namespace TicariSet.Module.EnumObjects
     public enum FisHareketType
     {
         
-        [XafDisplayName("Satış Faturası")]
+        [XafDisplayName("Satış")]
         Satis = 0,
-        [XafDisplayName("Alış Faturası")]
+        [XafDisplayName("Alış")]
         Alis = 1
     }
 }
