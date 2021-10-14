@@ -3,17 +3,15 @@ using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
 using System.ComponentModel;
+using DevExpress.Persistent.Validation;
 
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    //[ImageName("BO_Contact")]
+
     [DefaultProperty("Hesap")]
-    //[DefaultListViewOptions(MasterDetailMode.ListViewOnly, false, NewItemRowPosition.None)]
-    //[Persistent("DatabaseTableName")]
-    // Specify more UI options using a declarative approach (https://documentation.devexpress.com/#eXpressAppFramework/CustomDocument112701).
     public class BankaHesaplari : XPObject
-    { // Inherit from a different class to provide a custom primary key, concurrency and deletion behavior, etc. (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument113146.aspx).
+    {
         public BankaHesaplari(Session session)
             : base(session)
         {
@@ -21,7 +19,6 @@ namespace TicariSet.Module.BusinessObjects
         public override void AfterConstruction()
         {
             base.AfterConstruction();
-            // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
 
         string aciklama;
@@ -39,6 +36,7 @@ namespace TicariSet.Module.BusinessObjects
         }
 
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        [RuleRequiredField]
         public string Hesap
         {
             get => hesap;
@@ -46,6 +44,7 @@ namespace TicariSet.Module.BusinessObjects
         }
 
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        [RuleRequiredField]
         public string Iban
         {
             get => iban;
@@ -53,6 +52,7 @@ namespace TicariSet.Module.BusinessObjects
         }
         [XafDisplayName("Banka")]
         [Association("Bankalar-Hesaplar")]
+        [RuleRequiredField]
         public Bankalar BankaID
         {
             get => bankaID;
@@ -60,6 +60,7 @@ namespace TicariSet.Module.BusinessObjects
         }
         [Association("BankaSubeleri-Hesaplar")]
         [XafDisplayName("Şube")]
+        [RuleRequiredField]
         public BankaSubeleri SubeID
         {
             get => subeID;

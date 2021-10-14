@@ -7,13 +7,10 @@ using System.ComponentModel;
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    //[ImageName("BO_Contact")]
     [DefaultProperty("Tanim")]
-    //[DefaultListViewOptions(MasterDetailMode.ListViewOnly, false, NewItemRowPosition.None)]
-    //[Persistent("DatabaseTableName")]
-    // Specify more UI options using a declarative approach (https://documentation.devexpress.com/#eXpressAppFramework/CustomDocument112701).
+ 
     public class Masraflar : XPObject
-    { // Inherit from a different class to provide a custom primary key, concurrency and deletion behavior, etc. (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument113146.aspx).
+    { 
         public Masraflar(Session session)
             : base(session)
         {
@@ -21,7 +18,6 @@ namespace TicariSet.Module.BusinessObjects
         public override void AfterConstruction()
         {
             base.AfterConstruction();
-            // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
 
         MasrafGrubu grupID;
@@ -41,6 +37,7 @@ namespace TicariSet.Module.BusinessObjects
             get => tanim;
             set => SetPropertyValue(nameof(Tanim), ref tanim, value);
         }
+
         [Association("MasrafGrubu-Masraf")]
         [XafDisplayName("Grup")]
         public MasrafGrubu GrupID
@@ -50,13 +47,7 @@ namespace TicariSet.Module.BusinessObjects
         }
 
         [Association("Masraflar-MasrafDetay")]
-        public XPCollection<KasaMasrafOdeme> MasrafDetay
-        {
-            get
-            {
-                return GetCollection<KasaMasrafOdeme>(nameof(MasrafDetay));
-            }
-        }
+        public XPCollection<KasaMasrafOdeme> MasrafDetay => GetCollection<KasaMasrafOdeme>(nameof(MasrafDetay));
 
         protected override void OnSaving()
         {
@@ -68,8 +59,6 @@ namespace TicariSet.Module.BusinessObjects
                 int deger = DistributedIdGeneratorHelper.Generate(Session.DataLayer, this.GetType().FullName, "MasrafServerPrefix");
                 Kod = string.Format("MS{0:D7}", deger);
             }
-
-
             base.OnSaving();
         }
     }

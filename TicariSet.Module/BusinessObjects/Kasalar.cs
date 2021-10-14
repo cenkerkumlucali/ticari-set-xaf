@@ -10,16 +10,13 @@ using TicariSet.Module.EnumObjects;
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    //[ImageName("BO_Contact")]
     [DefaultProperty("Tanim")]
     [ListViewFilter("Tüm Liste", "")]
-    [ListViewFilter("Aktif Kasalar", "[Durum] == true", true)]
-    [ListViewFilter("Pasif Kasalar", "[Durum] == false")]
-    //[DefaultListViewOptions(MasterDetailMode.ListViewOnly, false, NewItemRowPosition.None)]
-    //[Persistent("DatabaseTableName")]
-    // Specify more UI options using a declarative approach (https://documentation.devexpress.com/#eXpressAppFramework/CustomDocument112701).
+    [ListViewFilter("Aktif Kasalar", "[Durum] == false", true)]
+    [ListViewFilter("Pasif Kasalar", "[Durum] == true")]
+    
     public class Kasalar : XPObject
-    { // Inherit from a different class to provide a custom primary key, concurrency and deletion behavior, etc. (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument113146.aspx).
+    { 
         public Kasalar(Session session)
             : base(session)
         {
@@ -27,14 +24,14 @@ namespace TicariSet.Module.BusinessObjects
         public override void AfterConstruction()
         {
             base.AfterConstruction();
-            Durum = true;
-            // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
+            Durum = 0;
         }
 
-        bool durum;
+        DurumType durum;
         string aciklama;
         string tanim;
         string kod;
+
         [VisibleInDetailView(false)]
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
         public string Kod
@@ -57,7 +54,7 @@ namespace TicariSet.Module.BusinessObjects
             set => SetPropertyValue(nameof(Aciklama), ref aciklama, value);
         }
 
-        public bool Durum
+        public DurumType Durum
         {
             get => durum;
             set => SetPropertyValue(nameof(Durum), ref durum, value);
@@ -65,21 +62,18 @@ namespace TicariSet.Module.BusinessObjects
         [ModelDefault("DisplayFormat", "c2")]
         [ModelDefault("EditFormat", "c2")]
         public double Tahsilat => KasaHareketleri.Where(c => c.Hareket == KasaHareketType.Tahsilat).Sum(c => c.Tutar);
+       
         [ModelDefault("DisplayFormat", "c2")]
         [ModelDefault("EditFormat", "c2")]
         public double Odeme => KasaHareketleri.Where(c => c.Hareket == KasaHareketType.Odeme).Sum(c => c.Tutar);
+       
         [ModelDefault("DisplayFormat", "c2")]
         [ModelDefault("EditFormat", "c2")]
         public double Bakiye => Tahsilat - Odeme;
 
         [Association("Kasalar-KasaHareketleri")]
-        public XPCollection<KasaHareket> KasaHareketleri
-        {
-            get
-            {
-                return GetCollection<KasaHareket>(nameof(KasaHareketleri));
-            }
-        }
+        public XPCollection<KasaHareket> KasaHareketleri => GetCollection<KasaHareket>(nameof(KasaHareketleri));
+
         protected override void OnSaving()
         {
             if (!(Session is NestedUnitOfWork

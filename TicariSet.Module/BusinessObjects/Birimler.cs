@@ -4,14 +4,15 @@ using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
 using System.ComponentModel;
 using DevExpress.ExpressApp.SystemModule;
+using TicariSet.Module.EnumObjects;
 
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
     [DefaultProperty("Tanim")]
     [ListViewFilter("Tüm Liste", "")]
-    [ListViewFilter("Aktif Birimler", "[Durum] == true", true)]
-    [ListViewFilter("Pasif Birimler", "[Durum] == false")]
+    [ListViewFilter("Aktif Birimler", "[Durum] == false", true)]
+    [ListViewFilter("Pasif Birimler", "[Durum] == true")]
 
     public class Birimler : XPObject
     {
@@ -23,13 +24,13 @@ namespace TicariSet.Module.BusinessObjects
         {
 
             base.AfterConstruction();
-            Durum = true;
+            Durum = DurumType.Aktif;
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
 
 
         bool varsayilan;
-        bool durum;
+        DurumType durum;
         string tanim;
         string kod;
 
@@ -48,7 +49,7 @@ namespace TicariSet.Module.BusinessObjects
             set => SetPropertyValue(nameof(Tanim), ref tanim, value);
         }
 
-        public bool Durum
+        public DurumType Durum
         {
             get => durum;
             set => SetPropertyValue(nameof(Durum), ref durum, value);
@@ -61,14 +62,6 @@ namespace TicariSet.Module.BusinessObjects
         }
         protected override void OnSaving()
         {
-            if (!(Session is NestedUnitOfWork
-                  && (Session.DataLayer != null)
-                  && Session.IsNewObject(this))
-                && string.IsNullOrEmpty(Kod))
-            {
-                int deger = DistributedIdGeneratorHelper.Generate(Session.DataLayer, this.GetType().FullName, "BirimlerServerPrefix");
-                Kod = string.Format("{0:D7}", deger);
-            }
 
             if (Varsayilan)
             {

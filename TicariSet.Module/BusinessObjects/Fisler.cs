@@ -4,7 +4,9 @@ using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
 using System;
 using System.ComponentModel;
+using DevExpress.ExpressApp.Core;
 using DevExpress.ExpressApp.Model;
+using DevExpress.Persistent.Validation;
 using TicariSet.Module.EnumObjects;
 
 namespace TicariSet.Module.BusinessObjects
@@ -21,7 +23,7 @@ namespace TicariSet.Module.BusinessObjects
         public override void AfterConstruction()
         {
             base.AfterConstruction();
-            
+            Tarih = DateTime.Now;
         }
 
         FisHareketType turu;
@@ -35,7 +37,6 @@ namespace TicariSet.Module.BusinessObjects
         DateTime tarih;
         string kod;
 
-
         [VisibleInDetailView(false)]
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
         public string Kod
@@ -45,6 +46,7 @@ namespace TicariSet.Module.BusinessObjects
         }
         [ModelDefault("DisplayFormat", "dd.MM.yyyy HH:mm:ss")]
         [ModelDefault("EditFormat", "dd.MM.yyyy HH:mm:ss")]
+        [RuleRequiredField]
         public DateTime Tarih
         {
             get => tarih;
@@ -52,6 +54,7 @@ namespace TicariSet.Module.BusinessObjects
         }
         [XafDisplayName("Cari Hesap")]
         [Association("Cariler-AlisSatisIslem")]
+        [RuleRequiredField]
         public Cariler CariID
         {
             get => cariID;
@@ -132,6 +135,7 @@ namespace TicariSet.Module.BusinessObjects
         {
             double? eskiAltToplam = altToplam;
             double temp = 0;
+
             foreach (StokHareketler item in Detay)
             {
                 temp += item.Toplam;

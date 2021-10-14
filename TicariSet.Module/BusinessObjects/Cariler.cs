@@ -3,18 +3,22 @@ using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
 using System.ComponentModel;
 using System.Linq;
+using DevExpress.ExpressApp.ConditionalAppearance;
+using DevExpress.ExpressApp.DC;
 using DevExpress.ExpressApp.Model;
 using DevExpress.ExpressApp.SystemModule;
+using DevExpress.Persistent.Validation;
 using TicariSet.Module.EnumObjects;
 
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
     [ListViewFilter("Tüm Liste", "")]
-    [ListViewFilter("Aktif Hesaplar", "[Durum] == true", true)]
-    [ListViewFilter("Pasif Hesaplar", "[Durum] == false")]
+    [ListViewFilter("Aktif Hesaplar", "[Durum] == false", true)]
+    [ListViewFilter("Pasif Hesaplar", "[Durum] == true")]
     [DefaultProperty("Tanim")]
-    
+    [Appearance("CariIndirim",Criteria = "Indirim!=true",TargetItems = "IndirimOran",Enabled = false)]
+    //[RuleCriteria("", DefaultContexts.Save, "Durum != 1","Durum pasif olamaz", SkipNullOrEmptyValues = false)]
     public class Cariler : BaseObject
     { 
         public Cariler(Session session)
@@ -23,18 +27,18 @@ namespace TicariSet.Module.BusinessObjects
         }
         public override void AfterConstruction()
         {
-            Durum = true;
+            Durum = 0;
             base.AfterConstruction();
-            // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
 
         double indirimOran;
         bool indirim;
-        bool durum;
+        DurumType durum;
+        Sehirler sehirId;
+        Ilceler ilceId; 
+        Ulkeler ulkeId;
         string email;
         string telefon;
-        string ulke;
-        string sehir;
         string adres;
         string tanim;
         string kod;
@@ -48,6 +52,7 @@ namespace TicariSet.Module.BusinessObjects
         }
 
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        [RuleRequiredField]
         public string Tanim
         {
             get => tanim;
@@ -55,27 +60,35 @@ namespace TicariSet.Module.BusinessObjects
         }
 
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        [RuleRequiredField]
         public string Adres
         {
             get => adres;
             set => SetPropertyValue(nameof(Adres), ref adres, value);
         }
-
-        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
-        public string Sehir
+        [XafDisplayName("Şehir")]
+        [Association("Sehirler-Cari")]
+        public Sehirler SehirId
         {
-            get => sehir;
-            set => SetPropertyValue(nameof(Sehir), ref sehir, value);
+            get => sehirId;
+            set => SetPropertyValue(nameof(SehirId), ref sehirId, value);
         }
-
-        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
-        public string Ulke
+        [XafDisplayName("İlçe")]
+        [Association("Ilceler-Cari")]
+        public Ilceler IlceId
         {
-            get => ulke;
-            set => SetPropertyValue(nameof(Ulke), ref ulke, value);
+            get => ilceId;
+            set => SetPropertyValue(nameof(IlceId), ref ilceId, value);
         }
-
+        [XafDisplayName("Ülke")]
+        [Association("Ulkeler-Cari")]
+        public Ulkeler UlkeId
+        {
+            get => ulkeId;
+            set => SetPropertyValue(nameof(UlkeId), ref ulkeId, value);
+        }
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        [RuleRequiredField]
         public string Telefon
         {
             get => telefon;
@@ -89,7 +102,7 @@ namespace TicariSet.Module.BusinessObjects
             set => SetPropertyValue(nameof(Email), ref email, value);
         }
 
-        public bool Durum
+        public DurumType Durum
         {
             get => durum;
             set => SetPropertyValue(nameof(Durum), ref durum, value);
@@ -126,7 +139,7 @@ namespace TicariSet.Module.BusinessObjects
         [ModelDefault("DisplayFormat", "c3")]
         [ModelDefault("EditFormat", "c3")]
         public double Bakiye => Borc-Alacak;
-
+        [ImmediatePostData]
         public bool Indirim
         {   
             get => indirim;

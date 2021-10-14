@@ -1,4 +1,5 @@
-﻿using DevExpress.Data.Filtering;
+﻿using System;
+using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp.DC;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
@@ -7,20 +8,17 @@ using System.ComponentModel;
 using System.Linq;
 using DevExpress.ExpressApp.Model;
 using DevExpress.ExpressApp.SystemModule;
+using TicariSet.Module.EnumObjects;
 
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    //[ImageName("BO_Contact")]
     [DefaultProperty("Tanim")]
     [ListViewFilter("Tüm Liste", "")]
-    [ListViewFilter("Aktif Stoklar", "[Durum] == true", true)]
-    [ListViewFilter("Pasif Stoklar", "[Durum] == false")]
-    //[DefaultListViewOptions(MasterDetailMode.ListViewOnly, false, NewItemRowPosition.None)]
-    //[Persistent("DatabaseTableName")]
-    // Specify more UI options using a declarative approach (https://documentation.devexpress.com/#eXpressAppFramework/CustomDocument112701).
+    [ListViewFilter("Aktif Stoklar", "[Durum] == false", true)]
+    [ListViewFilter("Pasif Stoklar", "[Durum] == true")]
     public class Stoklar : BaseObject
-    { // Inherit from a different class to provide a custom primary key, concurrency and deletion behavior, etc. (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument113146.aspx).
+    {
         public Stoklar(Session session)
             : base(session)
         {
@@ -31,17 +29,17 @@ namespace TicariSet.Module.BusinessObjects
             Birimler birim = Session.FindObject<Birimler>(new BinaryOperator(nameof(birim.Varsayilan), true));
             if (birim != null)
                 BirimID = birim;
-            Durum = true;
-            // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
+            Durum = DurumType.Aktif;
         }
 
-        bool durum;
-        double satisFiyati;
-        double alisFiyati;
+        DurumType durum;
         double vergiOrani;
         Birimler birimID;
         string tanim;
         string kod;
+        byte[] fotograf;
+        DateTime olusturulmaTarihi;
+        string barkod;
 
         [VisibleInDetailView(false)]
         public string Kod
@@ -50,7 +48,7 @@ namespace TicariSet.Module.BusinessObjects
             set => SetPropertyValue(nameof(Kod), ref kod, value);
         }
 
-        [Size(200)]
+        [Size(256)]
         public string Tanim
         {
             get => tanim;
@@ -68,39 +66,48 @@ namespace TicariSet.Module.BusinessObjects
             get => vergiOrani;
             set => SetPropertyValue(nameof(VergiOrani), ref vergiOrani, value);
         }
-        [ModelDefault("DisplayFormat", "c2")]
-        [ModelDefault("EditFormat", "c2")]
-        public double AlisFiyati
-        {
-            get => alisFiyati;
-            set => SetPropertyValue(nameof(AlisFiyati), ref alisFiyati, value);
-        }
-        [ModelDefault("DisplayFormat", "c2")]
-        [ModelDefault("EditFormat", "c2")]
-        public double SatisFiyati
-        {
-            get => satisFiyati;
-            set => SetPropertyValue(nameof(SatisFiyati), ref satisFiyati, value);
-        }
-
-        public bool Durum
+        public DurumType Durum
         {
             get => durum;
             set => SetPropertyValue(nameof(Durum), ref durum, value);
         }
+
+        [ImageEditor]
+        public byte[] Fotograf
+        {
+            get => fotograf;
+            set => SetPropertyValue(nameof(Fotograf), ref fotograf, value);
+        }
+
+        [DbType("Date")]
+        public DateTime OlusturulmaTarihi   
+        {
+            get => olusturulmaTarihi;
+            set => SetPropertyValue(nameof(OlusturulmaTarihi), ref olusturulmaTarihi, value);
+        }
+
+        [Size(32)]
+        [VisibleInListView(false)]
+        public string Barkod
+        {
+            get => barkod;
+            set => SetPropertyValue(nameof(Barkod), ref barkod, value);
+        }
+        [Association("Stoklar-Fiyatlar")]
+        [XafDisplayName("Fiyatlar")]
+        public XPCollection<StFiyat> StFiyatId => GetCollection<StFiyat>(nameof(StFiyatId));
+
+        [XafDisplayName("Renkler")]
+        [Association("Stoklar-Renkler"),DevExpress.ExpressApp.DC.Aggregated]
+        public XPCollection<StKartRenk> StKartRenk=> GetCollection<StKartRenk>(nameof(StKartRenk));
+
         [VisibleInDetailView(false)]
-        [ModelDefault("DisplayFormat", "c2")]
-        [ModelDefault("EditFormat", "c2")]
         public double Giren => StokHareket.Where(c => c.Hareket == EnumObjects.StokHareketType.Giris).Sum(c => c.Miktar);
 
         [VisibleInDetailView(false)]
-        [ModelDefault("DisplayFormat", "c2")]
-        [ModelDefault("EditFormat", "c2")]
         public double Cikan => StokHareket.Where(c => c.Hareket == EnumObjects.StokHareketType.Cikis).Sum(c => c.Miktar);
 
         [VisibleInDetailView(false)]
-        [ModelDefault("DisplayFormat", "c2")]
-        [ModelDefault("EditFormat", "c2")]
         public double Kalan => Giren - Cikan;
 
         [Association("Stoklar-StokHareket")]

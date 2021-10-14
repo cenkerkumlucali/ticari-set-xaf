@@ -2,6 +2,7 @@
 using DevExpress.Persistent.Base;
 using DevExpress.Xpo;
 using System;
+using System.Linq;
 using DevExpress.ExpressApp.Model;
 using TicariSet.Module.EnumObjects;
 
@@ -21,6 +22,8 @@ namespace TicariSet.Module.BusinessObjects
         }
         public override void AfterConstruction()
         {
+            Tarih = DateTime.Now;
+            Miktar = 1;
             base.AfterConstruction();
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
@@ -37,7 +40,7 @@ namespace TicariSet.Module.BusinessObjects
         double toplam;
         double birimFiyat;
         Birimler birimID;
-        double miktar;
+        int miktar;
         Stoklar stokID;
         StokHareketType hareket;
         DateTime tarih;
@@ -70,47 +73,56 @@ namespace TicariSet.Module.BusinessObjects
             {
                 if (SetPropertyValue(nameof(StokID), ref stokID, value))
                 {
-                    BirimID = StokID.BirimID;
+                    BirimID = StokID?.BirimID;
                     if (Hareket == StokHareketType.Giris)
-                        BirimFiyat = StokID.AlisFiyati;
-                    else
-                        BirimFiyat = StokID.SatisFiyati;
-                    VergiOran = StokID.VergiOrani;
+                    {
+                        if (StokID?.StFiyatId != null)
+                            foreach (var stFiyat in StokID?.StFiyatId)
+                            {
+                                if (stFiyat.FiyatGrubu == FisHareketType.Alis)
+                                {
+                                    BirimFiyat = stFiyat.Fiyat;
+                                }
+                            }
+                    }
+               
+                    if (StokID != null) VergiOran = StokID.VergiOrani;
                 }
             }
         }
 
-        public double Miktar
+        public int Miktar
         {
             get => miktar;
             set
             {
                 if (SetPropertyValue(nameof(Miktar), ref miktar, value))
                 {
-                //    if (StokID.Kalan >= 0)
-                //    {
-                //        if (Miktar >= StokID.Kalan)
-                //        {
-                //            Miktar = StokID.Kalan;
-                //            HesaplaToplam();
-                //        }
-                //    }
-                //    else
-                //    {
-                        HesaplaToplam();
+                    //    if (StokID.Kalan >= 0)
+                    //    {
+                    //        if (Miktar >= StokID.Kalan)
+                    //        {
+                    //            Miktar = StokID.Kalan;
+                    //            HesaplaToplam();
+                    //        }
+                    //    }
+                    //    else
+                    //    {
+                    HesaplaToplam();
                     //}
 
-                 }
+                }
             }
         }
+
         [XafDisplayName("Birim")]
         public Birimler BirimID
         {
             get => birimID;
             set => SetPropertyValue(nameof(BirimID), ref birimID, value);
         }
-        [ModelDefault("DisplayFormat", "c2")]
-        [ModelDefault("EditFormat", "c2")]
+        [ModelDefault("DisplayFormat", "c1")]
+        [ModelDefault("EditFormat", "c1")]
         public double BirimFiyat
         {
             get => birimFiyat;
@@ -120,8 +132,8 @@ namespace TicariSet.Module.BusinessObjects
                     HesaplaToplam();
             }
         }
-        [ModelDefault("DisplayFormat", "c2")]
-        [ModelDefault("EditFormat", "c2")]
+        [ModelDefault("DisplayFormat", "c1")]
+        [ModelDefault("EditFormat", "c1")]
         public double Toplam
         {
             get => toplam;
@@ -184,17 +196,24 @@ namespace TicariSet.Module.BusinessObjects
             {
                 Fisler eskiFis = fisID;
                 bool degistimi = SetPropertyValue(nameof(FisID), ref fisID, value);
-                if (!IsLoading && !IsSaving && eskiFis != fisID && degistimi)
+                if (!IsLoading && !IsSaving && !IsDeleted && eskiFis != fisID && degistimi)
                 {
                     eskiFis = eskiFis ?? fisID;
                     eskiFis.HesaplaAltToplam(true);
                     eskiFis.HesaplaGenelToplam(true);
                     eskiFis.HesaplaIndirimToplam(true);
                     eskiFis.HesaplaVergiToplam(true);
-                    if (FisID.CariID.Indirim)
+                    if (FisID.CariID.Indirim != null)
                         IndirimOran = FisID.CariID.IndirimOran;
                 }
             }
+        }
+
+        protected override void OnDeleting()
+        {
+            Fisler eskiFis = fisID;
+            base.OnDeleting();
+
         }
 
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
@@ -216,7 +235,6 @@ namespace TicariSet.Module.BusinessObjects
                 FisID.HesaplaGenelToplam(true);
                 FisID.HesaplaIndirimToplam(true);
                 FisID.HesaplaVergiToplam(true);
-
             }
         }
 
