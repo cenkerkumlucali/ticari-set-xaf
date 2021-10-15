@@ -46,30 +46,13 @@
     </Class>
     <Class Name="TicariSet.Module.BusinessObjects.Stoklar">
       <OwnMembers>
-        <Member Name="AlisFiyati" DisplayFormat="C3" EditMask="C3" />
-        <Member Name="SatisFiyati" DisplayFormat="C3" EditMask="C3" />
         <Member Name="VergiOrani" DisplayFormat="N2" EditMask="N2" />
       </OwnMembers>
     </Class>
   </BOModel>
   <NavigationItems>
     <Items>
-      <Item Id="Kullanıcılar">
-        <Items>
-          <Item Id="Event_ListView" Caption="Ajanda" />
-        </Items>
-      </Item>
-      <Item Id="Ödemeler">
-        <Items>
-          <Item Id="CariOdeme_ListView" Caption=" Kasa Cari Odeme" />
-        </Items>
-      </Item>
-      <Item Id="Reports" Caption="Raporlar" />
-      <Item Id="Tahsilat">
-        <Items>
-          <Item Id="CariTahsilat_ListView" Caption="Kasa Cari Tahsilat" />
-        </Items>
-      </Item>
+      <Item Id="Personel" Caption="Personel" />
     </Items>
   </NavigationItems>
   <Views>
@@ -80,9 +63,18 @@
             <LayoutGroup Id="BankaHesaplari">
               <LayoutGroup Id="BankaHesaplari_col1" Caption="BankaHesaplari_col1" />
               <LayoutGroup Id="BankaHesaplari_col2" Caption="BankaHesaplari_col2">
-                <LayoutGroup Id="Auto2502e489-8d8a-4727-9a06-26a933bc3138" Caption="" />
+                <LayoutGroup Id="Auto2502e489-8d8a-4727-9a06-26a933bc3138" Caption="Auto2502e489-8d8a-4727-9a06-26a933bc3138(9)" />
               </LayoutGroup>
             </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Bankalar_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
             <LayoutGroup Id="XPObject" Caption="Oid" />
           </LayoutGroup>
         </LayoutGroup>
@@ -100,6 +92,15 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
+    <DetailView Id="BankaSubeleri_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="XPObject" Caption="Oid" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
     <DetailView Id="BankaTahsilat_DetailView">
       <Layout>
         <LayoutGroup Id="Main">
@@ -112,6 +113,38 @@
             <LayoutGroup Id="BankaHareket" Caption="BankaHareket" />
           </LayoutGroup>
           <LayoutGroup Id="SizeableEditors" Caption="Aciklama" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Birimler_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="XPObject" Caption="Oid" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CariAdresBilgileri_DetailView">
+      <Items>
+        <PropertyEditor Id="CariId" Caption="Cari Hesap" />
+      </Items>
+    </DetailView>
+    <DetailView Id="CariIletisimBilgileri_DetailView">
+      <Items>
+        <PropertyEditor Id="CariId" Caption="Cari Hesap" />
+      </Items>
+    </DetailView>
+    <DetailView Id="Cariler_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Item3" Caption="Genel Bilgiler">
+              <LayoutGroup Id="Auto33510209-846e-4bb9-9b41-33eca91adbfa" Caption="" />
+            </LayoutGroup>
+            <LayoutGroup Id="Item2" Caption="Diğer Açıklamalar" />
+            <LayoutGroup Id="Item1" Caption="Resim" />
+          </LayoutGroup>
         </LayoutGroup>
       </Layout>
     </DetailView>
@@ -153,7 +186,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <DetailView Id="StokHareketler_DetailView">
+    <DetailView Id="Masraflar_DetailView">
       <Layout>
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
@@ -162,10 +195,84 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
+    <DetailView Id="PersonelIletisimBilgileri_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="XPObject" Caption="Oid" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="PersonelKart_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Item2" Caption="Genel Bilgiler" />
+            <LayoutGroup Id="Item1" Caption="Resim" />
+            <LayoutGroup Id="PersonelKart">
+              <LayoutGroup Id="PersonelKart_col2" Caption="PersonelKart_col2" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RenkTanimlari_DetailView">
+      <Items>
+        <PropertyEditor Id="Resim" Caption="Fotoğraf" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="RenkTanimlari" Caption="Renk Tanimlari" />
+            <LayoutGroup Id="Item1" Caption="Resim" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Sehirler_DetailView">
+      <Items>
+        <PropertyEditor Id="NortheastLat" Caption="Kuzeydoğu Sınırı Enlem" />
+        <PropertyEditor Id="NortheastLng" Caption="Kuzeydoğu Sınırı Boylam" />
+        <PropertyEditor Id="SouthwestLat" Caption="Güneybatı Sınırı Enlem" />
+        <PropertyEditor Id="SouthwestLng" Caption="Güneybatı Sınırı Boylam" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="XPObject" Caption="Oid" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="StokHareketler_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="StokHareketler">
+              <LayoutGroup Id="StokHareketler_col2" Caption="StokHareketler_col2" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
     <DetailView Id="Stoklar_DetailView">
       <Layout>
         <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Item1" Caption="Resim" />
+          </LayoutGroup>
           <LayoutGroup Id="SizeableEditors" Caption="Tanim" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Ulkeler_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="XPObject" Caption="Oid" />
+          </LayoutGroup>
         </LayoutGroup>
       </Layout>
     </DetailView>

@@ -161,12 +161,16 @@
     <Compile Include="BusinessObjects\BankaSubeleri.cs" />
     <Compile Include="BusinessObjects\BankaTahsilat.cs" />
     <Compile Include="BusinessObjects\Birimler.cs" />
+    <Compile Include="BusinessObjects\CariAdresBilgileri.cs" />
+    <Compile Include="BusinessObjects\CariIletisimBilgileri.cs" />
     <Compile Include="BusinessObjects\CariOdeme.cs" />
     <Compile Include="BusinessObjects\CariTahsilat.cs" />
     <Compile Include="BusinessObjects\Cariler.cs" />
     <Compile Include="BusinessObjects\BirimSetiTanimlari.cs" />
     <Compile Include="BusinessObjects\ColorConverter.cs" />
     <Compile Include="BusinessObjects\Ilceler.cs" />
+    <Compile Include="BusinessObjects\PersonelIletisimBilgileri.cs" />
+    <Compile Include="BusinessObjects\PersonelKart.cs" />
     <Compile Include="BusinessObjects\RenkTanimlari.cs" />
     <Compile Include="BusinessObjects\Doviz.cs" />
     <Compile Include="BusinessObjects\Fisler.cs" />
@@ -195,8 +199,10 @@
       <DependentUpon>KasaHareketViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseUpdate\Updater.cs" />
+    <Compile Include="EnumObjects\Cinsiyet.cs" />
     <Compile Include="EnumObjects\DurumType.cs" />
     <Compile Include="EnumObjects\FisHareketTuru.cs" />
+    <Compile Include="EnumObjects\IletisimTipleri.cs" />
     <Compile Include="EnumObjects\KasaHareketType.cs" />
     <Compile Include="EnumObjects\StokHareketType.cs" />
     <Compile Include="Module.cs">
@@ -208,13 +214,25 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="UnusableNodes_tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="UnusableNodes6.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="UnusableNodes5.xml">
       <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="UnusableNodes4.xml">
       <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <EmbeddedResource Include="Controllers\FislerViewController.resx">
       <DependentUpon>FislerViewController.cs</DependentUpon>
@@ -222,7 +240,9 @@
     <EmbeddedResource Include="Controllers\KasaHareketViewController.resx">
       <DependentUpon>KasaHareketViewController.cs</DependentUpon>
     </EmbeddedResource>
-    <Content Include="Model.DesignedDiffs.xafml" />
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Module.resx">
       <DependentUpon>Module.cs</DependentUpon>
     </EmbeddedResource>
@@ -235,6 +255,7 @@
     <EmbeddedResource Include="Model.DesignedDiffs.Localization.tr.xafml">
       <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <None Include="ReadMe.txt" />
   </ItemGroup>
@@ -250,24 +271,28 @@
     <None Include="UnusableNodes.xml">
       <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="UnusableNodes1.xml">
       <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="UnusableNodes2.xml">
       <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="UnusableNodes3.xml">
       <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
