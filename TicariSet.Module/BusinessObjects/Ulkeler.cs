@@ -16,6 +16,8 @@ namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
     [DefaultProperty("Ad")]
+    [CreatableItem(false)]
+    [ImageName("BO_Country_v92")]
     public class Ulkeler : XPObject
     {
         public Ulkeler(Session session)
@@ -37,6 +39,8 @@ namespace TicariSet.Module.BusinessObjects
             set => SetPropertyValue(nameof(Ad), ref ad, value);
         }
 
-        [Association("Ulkeler-Cari")] public XPCollection<Cariler> Cariler => GetCollection<Cariler>(nameof(Cariler));
+        [Association("Ulkeler-CariAdres")]
+        public XPCollection<CariAdresBilgileri> CariAdresBilgileri =>
+            GetCollection<CariAdresBilgileri>(nameof(CariAdresBilgileri));
     }
 }

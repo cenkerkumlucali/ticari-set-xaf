@@ -8,8 +8,8 @@ using DevExpress.Persistent.Validation;
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
-
     [DefaultProperty("Hesap")]
+    [RuleCombinationOfPropertiesIsUnique("IbanRule",DefaultContexts.Save,"Iban",messageTemplate:"Girilen iban zaten mevcuttur.")]
     public class BankaHesaplari : XPObject
     {
         public BankaHesaplari(Session session)
@@ -27,6 +27,7 @@ namespace TicariSet.Module.BusinessObjects
         string iban;
         string hesap;
         string kod;
+        Cariler cariId;
 
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
         public string Kod
@@ -73,7 +74,13 @@ namespace TicariSet.Module.BusinessObjects
             get => aciklama;
             set => SetPropertyValue(nameof(Aciklama), ref aciklama, value);
         }
-     
+        [Association("Cariler-BankaHesaplari")]
+        [XafDisplayName("Cari")]
+        public Cariler CariId
+        {
+            get => cariId;
+            set => SetPropertyValue(nameof(CariId), ref cariId, value);
+        }
         protected override void OnSaving()
         {
             if (!(Session is NestedUnitOfWork

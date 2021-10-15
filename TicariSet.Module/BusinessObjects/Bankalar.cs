@@ -8,7 +8,7 @@ namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
     [DefaultProperty("Tanim")]
-  
+    [ImageName("Business_Bank")]
     public class Bankalar : XPObject
     { 
         public Bankalar(Session session)

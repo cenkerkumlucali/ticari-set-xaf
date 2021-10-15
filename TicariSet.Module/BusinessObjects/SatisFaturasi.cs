@@ -7,6 +7,7 @@ using System;
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
+    [ImageName("BO_Price")]
     public class SatisFaturasi : Fisler
     { 
         public SatisFaturasi(Session session)

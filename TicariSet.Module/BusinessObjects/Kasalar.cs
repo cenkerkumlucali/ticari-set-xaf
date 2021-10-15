@@ -10,6 +10,7 @@ using TicariSet.Module.EnumObjects;
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
+    [ImageName("Business_Dollar")]
     [DefaultProperty("Tanim")]
     [ListViewFilter("Tüm Liste", "")]
     [ListViewFilter("Aktif Kasalar", "[Durum] == false", true)]

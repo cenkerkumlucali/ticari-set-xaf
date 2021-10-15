@@ -6,7 +6,7 @@ using System;
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    
+    [ImageName("BO_Invoice")]
     public class AlisFaturasi : Fisler
     { 
         public AlisFaturasi(Session session)

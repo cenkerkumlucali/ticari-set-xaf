@@ -2,11 +2,13 @@
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
 using System.ComponentModel;
+using DevExpress.Persistent.Validation;
 
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
     [DefaultProperty("Tanim")]
+    [RuleCombinationOfPropertiesIsUnique("MasrafGrubuRule",DefaultContexts.Save,"Tanim",messageTemplate:"Girilen masraf grubu zaten mevcuttur.")]
     public class MasrafGrubu : XPObject
     {
         public MasrafGrubu(Session session)

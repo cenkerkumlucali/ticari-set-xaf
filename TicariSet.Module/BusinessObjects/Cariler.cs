@@ -13,11 +13,14 @@ using TicariSet.Module.EnumObjects;
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
+    [ImageName("BO_Customer")]
     [ListViewFilter("Tüm Liste", "")]
     [ListViewFilter("Aktif Hesaplar", "[Durum] == false", true)]
     [ListViewFilter("Pasif Hesaplar", "[Durum] == true")]
     [DefaultProperty("Tanim")]
     [Appearance("CariIndirim",Criteria = "Indirim!=true",TargetItems = "IndirimOran",Enabled = false)]
+    //[RuleCombinationOfPropertiesIsUnique("EmailRule",DefaultContexts.Save,"Email",messageTemplate:"Girilen email zaten mevcuttur")]
+    //[RuleCombinationOfPropertiesIsUnique("TelefonRule",DefaultContexts.Save,"Telefon",messageTemplate:"Girilen telefon numarası zaten mevcuttur")]
     //[RuleCriteria("", DefaultContexts.Save, "Durum != 1","Durum pasif olamaz", SkipNullOrEmptyValues = false)]
     public class Cariler : BaseObject
     { 
@@ -31,17 +34,16 @@ namespace TicariSet.Module.BusinessObjects
             base.AfterConstruction();
         }
 
+        string kısaAd;
+        string digerAd;
+        string yabanciAd;
+        string aciklama;
         double indirimOran;
         bool indirim;
         DurumType durum;
-        Sehirler sehirId;
-        Ilceler ilceId; 
-        Ulkeler ulkeId;
-        string email;
-        string telefon;
-        string adres;
         string tanim;
         string kod;
+        byte[] fotograf;
 
         [VisibleInDetailView(false)]
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
@@ -59,48 +61,58 @@ namespace TicariSet.Module.BusinessObjects
             set => SetPropertyValue(nameof(Tanim), ref tanim, value);
         }
 
-        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
-        [RuleRequiredField]
-        public string Adres
+        [ImageEditor]
+        public byte[] Fotograf
         {
-            get => adres;
-            set => SetPropertyValue(nameof(Adres), ref adres, value);
+            get => fotograf;
+            set => SetPropertyValue(nameof(Fotograf), ref fotograf, value);
         }
-        [XafDisplayName("Şehir")]
-        [Association("Sehirler-Cari")]
-        public Sehirler SehirId
+
+        [Size(16)]
+        public string KısaAd
         {
-            get => sehirId;
-            set => SetPropertyValue(nameof(SehirId), ref sehirId, value);
+            get => kısaAd;
+            set => SetPropertyValue(nameof(KısaAd), ref kısaAd, value);
         }
-        [XafDisplayName("İlçe")]
-        [Association("Ilceler-Cari")]
-        public Ilceler IlceId
+
+        [Size(32)]
+        public string DigerAd
         {
-            get => ilceId;
-            set => SetPropertyValue(nameof(IlceId), ref ilceId, value);
+            get => digerAd;
+            set => SetPropertyValue(nameof(DigerAd), ref digerAd, value);
         }
-        [XafDisplayName("Ülke")]
-        [Association("Ulkeler-Cari")]
-        public Ulkeler UlkeId
+
+        [Size(32)]
+        public string YabanciAd
         {
-            get => ulkeId;
-            set => SetPropertyValue(nameof(UlkeId), ref ulkeId, value);
-        }
-        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
-        [RuleRequiredField]
-        public string Telefon
-        {
-            get => telefon;
-            set => SetPropertyValue(nameof(Telefon), ref telefon, value);
+            get => yabanciAd;
+            set => SetPropertyValue(nameof(YabanciAd), ref yabanciAd, value);
         }
 
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
-        public string Email
+        public string Aciklama
         {
-            get => email;
-            set => SetPropertyValue(nameof(Email), ref email, value);
+            get => aciklama;
+            set => SetPropertyValue(nameof(Aciklama), ref aciklama, value);
         }
+
+        //[Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        //[RuleRequiredField]
+        //public string Telefon
+        //{
+        //    get => telefon;
+        //    set => SetPropertyValue(nameof(Telefon), ref telefon, value);
+        //}
+        //[Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        //[RuleRegularExpression("RRE-Email.01", DefaultContexts.Save,
+        //    @"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$",
+        //    messageTemplate:"Email formatınız yanlış lütfen kontrol edip tekrardan deneyin.")]
+        //[RuleUniqueValue("RUV-Email.01", DefaultContexts.Save,CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction)]
+        //public string Email
+        //{
+        //    get => email;
+        //    set => SetPropertyValue(nameof(Email), ref email, value);
+        //}
 
         public DurumType Durum
         {
@@ -152,11 +164,26 @@ namespace TicariSet.Module.BusinessObjects
             get => indirimOran;
             set => SetPropertyValue(nameof(IndirimOran), ref indirimOran, value);
         }
-        [Association("Cariler-AlisSatisIslem")]
+        [Association("Cariler-AlisSatisIslem"), DevExpress.ExpressApp.DC.Aggregated]
+        //[ImageName("BO_Sale")]
         public XPCollection<Fisler> AlisSatisIslem => GetCollection<Fisler>(nameof(AlisSatisIslem));
 
-        [Association("Cariler-ParasalHareket")]
+        [Association("Cariler-ParasalHareket"), DevExpress.ExpressApp.DC.Aggregated]
+        //[ImageName("Business_DollarCircled")]
         public XPCollection<KasaHareket> ParasalHareket => GetCollection<KasaHareket>(nameof(ParasalHareket));
+
+        [Association("Cariler-CariIletisimBilgileri"), DevExpress.ExpressApp.DC.Aggregated]
+        [XafDisplayName("İletişim Bilgileri")]
+        public XPCollection<CariIletisimBilgileri> CariIletisimBilgileri => GetCollection<CariIletisimBilgileri>(nameof(CariIletisimBilgileri));
+
+        [Association("Cariler-BankaHesaplari"), DevExpress.ExpressApp.DC.Aggregated]
+        [XafDisplayName("Banka Hesapları")]
+        public XPCollection<BankaHesaplari> BankaHesaplari => GetCollection<BankaHesaplari>(nameof(BankaHesaplari));
+
+        [Association("Cari-Adres")]
+        [XafDisplayName("Adres Bilgileri")]
+        public XPCollection<CariAdresBilgileri> CariAdres =>
+            GetCollection<CariAdresBilgileri>(nameof(CariAdres));
 
         protected override void OnSaving()
         {

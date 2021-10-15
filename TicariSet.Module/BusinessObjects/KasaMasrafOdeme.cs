@@ -4,12 +4,15 @@ using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
 using System;
 using System.ComponentModel;
+using DevExpress.Persistent.Validation;
 using TicariSet.Module.EnumObjects;
 
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
     [DefaultProperty("Kod")]
+    [ImageName("Business_DollarCircled")]
+
     public class KasaMasrafOdeme : KasaHareket
     {
         public KasaMasrafOdeme(Session session)

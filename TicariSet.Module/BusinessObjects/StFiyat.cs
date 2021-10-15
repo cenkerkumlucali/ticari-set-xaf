@@ -80,7 +80,10 @@ namespace TicariSet.Module.BusinessObjects
             get => fiyatGrubu;
             set => SetPropertyValue(nameof(FiyatGrubu), ref fiyatGrubu, value);
         }
-        [MemberDesignTimeVisibility(false)]
+
+        #region Kriter
+
+          [MemberDesignTimeVisibility(false)]
         public Type ObjectName => typeof(Cariler);
 
         [XafDisplayName("Kriter")]
@@ -90,8 +93,11 @@ namespace TicariSet.Module.BusinessObjects
         [ModelDefault("RowCount", "0")]
         public string ChCriteria
         {
-            get { return _ChCriteria; }
-            set { SetPropertyValue(nameof(ChCriteria), ref _ChCriteria, value); }
+            get => _ChCriteria;
+            set => SetPropertyValue(nameof(ChCriteria), ref _ChCriteria, value);
         }
+
+        #endregion
+      
     }
 }

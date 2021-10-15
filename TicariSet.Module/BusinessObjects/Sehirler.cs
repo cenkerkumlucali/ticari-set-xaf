@@ -16,7 +16,15 @@ namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
     [DefaultProperty("Ad")]
-  
+    [CreatableItem(false)]
+    [RuleIsReferenced("", DefaultContexts.Delete, typeof(Ilceler), "SehirId", InvertResult = true,
+        CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction,
+        MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
+    [RuleIsReferenced("RIR-Sehirler.01", DefaultContexts.Delete, typeof(Cariler), "SehirId", InvertResult = true,
+        CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction,
+        MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
+
+
     public class Sehirler : XPObject
     { 
         public Sehirler(Session session)
@@ -84,7 +92,9 @@ namespace TicariSet.Module.BusinessObjects
         [Association("Sehirler-Ilceler")]
         public XPCollection<Ilceler> Ilceler => GetCollection<Ilceler>(nameof(Ilceler));
 
-        [Association("Sehirler-Cari")] 
-        public XPCollection<Cariler> Cariler => GetCollection<Cariler>(nameof(Cariler));
+        [Association("Sehirler-CariAdres")]
+        public XPCollection<CariAdresBilgileri> CariAdresBilgileri =>
+            GetCollection<CariAdresBilgileri>(nameof(CariAdresBilgileri));
+
     }
 }

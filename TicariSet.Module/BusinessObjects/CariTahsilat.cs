@@ -7,7 +7,6 @@ using TicariSet.Module.EnumObjects;
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
-   
     public class CariTahsilat : KasaHareket
     {
         public CariTahsilat(Session session)
@@ -27,8 +26,7 @@ namespace TicariSet.Module.BusinessObjects
             {
                 if (CariID != null)
                     return CariID.Bakiye;
-                else
-                    return 0;
+                return 0;
             }
         }
         protected override void OnSaving()

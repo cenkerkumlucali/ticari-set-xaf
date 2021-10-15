@@ -12,6 +12,7 @@ namespace TicariSet.Module.BusinessObjects
     [DefaultClassOptions]
     [CreatableItem(false)]
     [DefaultProperty("Kod")]
+  
     public class KasaHareket : BaseObject
     { 
         public KasaHareket(Session session)

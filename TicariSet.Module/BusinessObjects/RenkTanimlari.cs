@@ -4,6 +4,7 @@ using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
 using System.ComponentModel;
 using System.Drawing;
+using DevExpress.Persistent.Validation;
 using DevExpress.Utils.Design;
 using DevExpress.XtraEditors;
 using TicariSet.Module.EnumObjects;
@@ -13,7 +14,9 @@ namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
     [DefaultBindingPropertyEx("Color")]
+    [ImageName("RedWhiteBlueColorScale")]
     [DefaultProperty("Ad")]
+    [RuleCombinationOfPropertiesIsUnique("RenkTanimlariAdRule",DefaultContexts.Save,"Ad",messageTemplate:"Girilen renk zaten mevcuttur.")]
     public class RenkTanimlari : BaseObject
     { 
         public RenkTanimlari(Session session)
@@ -30,7 +33,6 @@ namespace TicariSet.Module.BusinessObjects
         private Color rgbKod;
         private DurumType durum;
         private byte[] resim;
-        private Stoklar stokID;
 
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
         public string Kod

@@ -21,6 +21,7 @@ namespace TicariSet.Module.BusinessObjects
     [ListViewFilter("Tüm Dövizler","")]
     [ListViewFilter("Aktif Dövizler","[Durum]==0",true)]
     [ListViewFilter("Pasif Dövizler","[Durum]==1")]
+    [RuleCombinationOfPropertiesIsUnique("DovizAdRule",DefaultContexts.Save,"Ad",messageTemplate:"Girilen döviz zaten mevcuttur.")]
     public class Doviz : BaseObject
     { 
         public Doviz(Session session)
@@ -44,6 +45,7 @@ namespace TicariSet.Module.BusinessObjects
         }
 
         [Size(32)]
+        [RuleRequiredField]
         public string Ad
         {
             get => ad;

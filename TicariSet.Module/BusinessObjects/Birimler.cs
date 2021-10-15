@@ -4,6 +4,7 @@ using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
 using System.ComponentModel;
 using DevExpress.ExpressApp.SystemModule;
+using DevExpress.Persistent.Validation;
 using TicariSet.Module.EnumObjects;
 
 namespace TicariSet.Module.BusinessObjects
@@ -13,7 +14,7 @@ namespace TicariSet.Module.BusinessObjects
     [ListViewFilter("Tüm Liste", "")]
     [ListViewFilter("Aktif Birimler", "[Durum] == false", true)]
     [ListViewFilter("Pasif Birimler", "[Durum] == true")]
-
+    [RuleCombinationOfPropertiesIsUnique("TanimRule",DefaultContexts.Save,"Tanim",messageTemplate:"Girilen birim zaten mevcuttur.")]
     public class Birimler : XPObject
     {
         public Birimler(Session session)
@@ -25,9 +26,7 @@ namespace TicariSet.Module.BusinessObjects
 
             base.AfterConstruction();
             Durum = DurumType.Aktif;
-            // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
-
 
         bool varsayilan;
         DurumType durum;
@@ -43,6 +42,7 @@ namespace TicariSet.Module.BusinessObjects
         }
 
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        [RuleRequiredField]
         public string Tanim
         {
             get => tanim;

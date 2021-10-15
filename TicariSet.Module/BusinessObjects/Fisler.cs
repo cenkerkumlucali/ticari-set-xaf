@@ -14,6 +14,7 @@ namespace TicariSet.Module.BusinessObjects
     [DefaultClassOptions]
     [DefaultProperty("Kod")]
     [CreatableItem(false)]
+   
     public class Fisler : XPObject
     {
         public Fisler(Session session)

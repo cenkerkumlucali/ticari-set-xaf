@@ -16,13 +16,10 @@ using TicariSet.Module.EnumObjects;
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    //[ImageName("BO_Contact")]
-    //[DefaultProperty("DisplayMemberNameForLookupEditorsOfThisType")]
-    //[DefaultListViewOptions(MasterDetailMode.ListViewOnly, false, NewItemRowPosition.None)]
-    //[Persistent("DatabaseTableName")]
-    // Specify more UI options using a declarative approach (https://documentation.devexpress.com/#eXpressAppFramework/CustomDocument112701).
+    [DefaultProperty("Kod")]
+    [RuleCombinationOfPropertiesIsUnique("BirimSetiAdRule",DefaultContexts.Save,"Ad",messageTemplate:"Girilen birim seti zaten mevcuttur.")]
     public class BirimSetiTanimlari : BaseObject
-    { // Inherit from a different class to provide a custom primary key, concurrency and deletion behavior, etc. (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument113146.aspx).
+    { 
         public BirimSetiTanimlari(Session session)
             : base(session)
         {
@@ -30,7 +27,6 @@ namespace TicariSet.Module.BusinessObjects
         public override void AfterConstruction()
         {
             base.AfterConstruction();
-            // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
 
         private string kod;
@@ -39,13 +35,15 @@ namespace TicariSet.Module.BusinessObjects
         private DurumType durum;
 
         [Size(8)]
+        [RuleRequiredField]
         public string Kod
-        {
+        { 
             get => kod;
             set => SetPropertyValue(nameof(Kod), ref kod, value);
         }
 
         [Size(32)]
+        [RuleRequiredField]
         public string Ad
         {
             get => ad;
@@ -53,6 +51,7 @@ namespace TicariSet.Module.BusinessObjects
         }
 
         [Size(8)]
+        [RuleRequiredField]
         public string AnaBirim
         {
             get => anaBirim;
