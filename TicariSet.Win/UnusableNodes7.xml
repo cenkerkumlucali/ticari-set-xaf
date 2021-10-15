@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="Default">
+        <Items Id="Items">
+          <Item Id="AlisFaturasi_ListView" Removed="True" />
+          <Item Id="BankaHareket_ListView" Visible="False" />
+          <Item Id="BankaHesaplari_ListView" Removed="True" />
+          <Item Id="Bankalar_ListView" Removed="True" />
+          <Item Id="BankaOdeme_ListView" Removed="True" />
+          <Item Id="BankaSubeleri_ListView" Removed="True" />
+          <Item Id="BankaTahsilat_ListView" Removed="True" />
+          <Item Id="Birimler_ListView" Removed="True" />
+          <Item Id="Cariler_ListView" Removed="True" />
+          <Item Id="CariOdeme_ListView" Removed="True" />
+          <Item Id="CariTahsilat_ListView" Removed="True" />
+          <Item Id="Event_ListView" Removed="True" />
+          <Item Id="Fisler_ListView" Removed="True" />
+          <Item Id="KasaHareket_ListView" Removed="True" />
+          <Item Id="Kasalar_ListView" Removed="True" />
+          <Item Id="KasaMasrafOdeme_ListView" Removed="True" />
+          <Item Id="MasrafGrubu_ListView" Removed="True" />
+          <Item Id="Masraflar_ListView" Removed="True" />
+          <Item Id="SatisFaturasi_ListView" Removed="True" />
+          <Item Id="StokHareketler_ListView" Removed="True" />
+          <Item Id="Stoklar_ListView" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views Id="Views">
+    <DetailView Id="AlisFaturasi_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Detay_Group" TextAlignMode="UseParentOptions" Direction="Horizontal" RelativeSize="30.290456431535269" Removed="True">
+            <LayoutGroup Id="Auto286af81f-1074-402f-9bc8-b9e9849a4254" ShowCaption="False" Index="1" RelativeSize="22.590837282780409">
+              <LayoutItem Id="AltToplam" ViewItem="AltToplam" Index="0" RelativeSize="28.571428571428573" />
+              <LayoutItem Id="IndirimToplam" ViewItem="IndirimToplam" Index="1" RelativeSize="21.428571428571427" />
+              <LayoutItem Id="VergiToplam" ViewItem="VergiToplam" Index="2" RelativeSize="21.428571428571427" />
+              <LayoutItem Id="GenelToplam" ViewItem="GenelToplam" Index="3" RelativeSize="28.571428571428573" />
+            </LayoutGroup>
+            <LayoutItem Id="Detay" RelativeSize="77.409162717219587" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Fisler">
+              <LayoutGroup Id="Fisler_col2" RelativeSize="50.078988941548182" Direction="Vertical">
+                <LayoutItem Id="GenelToplam" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="Tarih" ViewItem="Tarih" Index="0" RelativeSize="100" />
+                <LayoutItem Id="VergiToplam" RelativeSize="50" Index="0" Removed="True" />
+                <LayoutItem Id="IndirimToplam" RelativeSize="36.363636363636367" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Fisler_col1">
+                <LayoutItem Id="AltToplam" RelativeSize="36.363636363636367" Removed="True" />
+                <LayoutItem Id="Tarih" RelativeSize="50" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BankaHesaplari_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="XPObject">
+              <LayoutItem Id="Oid" Removed="True" />
+              <LayoutGroup Id="Hareket_Group">
+                <LayoutItem Id="Hareket" ViewItem="Hareket" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BankaOdeme_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="KasaHareket" Index="1" RelativeSize="79.7872340425532" Removed="True">
+              <LayoutGroup Id="KasaHareket_col1" RelativeSize="50">
+                <LayoutItem Id="BankaID" ViewItem="BankaID" Index="0" RelativeSize="27.118644067796609" />
+                <LayoutItem Id="CariID" Index="1" RelativeSize="20.338983050847457" />
+                <LayoutItem Id="HesapID" ViewItem="HesapID" Index="2" RelativeSize="52.542372881355931" />
+                <LayoutItem Id="KasaID" Index="3" RelativeSize="28.571428571428573" Removed="True" />
+                <LayoutItem Id="Kod" RelativeSize="28.571428571428573" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="KasaHareket_col2" RelativeSize="50">
+                <LayoutItem Id="Tutar" RelativeSize="27.118644067796609" Index="0" />
+                <LayoutItem Id="Tarih" ViewItem="Tarih" Index="1" RelativeSize="20.338983050847457" Removed="True" />
+                <LayoutItem Id="Aciklama" ViewItem="Aciklama" Index="2" RelativeSize="52.542372881355931" />
+                <LayoutItem Id="Hareket" RelativeSize="36.363636363636367" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="BankaHareket">
+              <LayoutItem Id="HesapID" Index="0" RelativeSize="100" Removed="True" />
+              <LayoutItem Id="BankaID" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors">
+            <LayoutItem Id="Aciklama" RelativeSize="100" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BankaTahsilat_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="BankaHareket" Index="1" RelativeSize="73.535791757049893" Direction="Horizontal">
+              <LayoutItem Id="HesapID" Index="0" RelativeSize="100" Removed="True" />
+              <LayoutItem Id="BankaID" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="KasaHareket">
+              <LayoutGroup Id="KasaHareket_col1">
+                <LayoutItem Id="CariID" Index="2" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="KasaID" Index="2" RelativeSize="21.428571428571427" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors">
+            <LayoutItem Id="Aciklama" RelativeSize="100" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CariOdeme_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SizeableEditors">
+            <LayoutItem Id="Aciklama" RelativeSize="100" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CariTahsilat_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SizeableEditors">
+            <LayoutItem Id="Aciklama" RelativeSize="100" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Fisler_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Detay_Group" TextAlignMode="UseParentOptions" Direction="Horizontal" RelativeSize="24.596774193548388" Removed="True">
+            <LayoutItem Id="Aciklama" ViewItem="Aciklama" Index="0" RelativeSize="69.574468085106389" />
+            <LayoutGroup Id="Auto76e530e1-9f50-4182-8e2d-86505f3c0acf" ShowCaption="False" Index="1" RelativeSize="30.425531914893618">
+              <LayoutItem Id="IndirimToplam" ViewItem="IndirimToplam" Index="0" RelativeSize="36.363636363636367" />
+              <LayoutItem Id="VergiToplam" ViewItem="VergiToplam" Index="1" RelativeSize="27.272727272727273" />
+              <LayoutItem Id="GenelToplam" ViewItem="GenelToplam" Index="2" RelativeSize="36.363636363636367" />
+            </LayoutGroup>
+            <LayoutItem Id="Detay" RelativeSize="100" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="XPObject" RelativeSize="63.725490196078432" Direction="Horizontal" TextAlignMode="UseParentOptions" Removed="True">
+              <LayoutItem Id="Oid" RelativeSize="100" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Fisler">
+              <LayoutGroup Id="Fisler_col1">
+                <LayoutItem Id="AltToplam" Removed="True" />
+                <LayoutItem Id="Tarih" RelativeSize="50" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Fisler_col2">
+                <LayoutItem Id="GenelToplam" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="VergiToplam" RelativeSize="50" Index="0" Removed="True" />
+                <LayoutItem Id="IndirimToplam" RelativeSize="36.363636363636367" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Kasalar_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="KasaHareketleri_Group" TextAlignMode="AlignWithChildren" Direction="Vertical" RelativeSize="62.096774193548384" Removed="True">
+            <LayoutItem Id="KasaHareketleri" RelativeSize="100" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Kasalar">
+              <LayoutGroup Id="Kasalar_col1">
+                <LayoutItem Id="Tahsilat" RelativeSize="37.647058823529413" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors">
+            <LayoutItem Id="Aciklama" RelativeSize="100" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="KasaMasrafOdeme_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="KasaHareket" RelativeSize="75.9493670886076" Removed="True">
+              <LayoutGroup Id="KasaHareket_col1" RelativeSize="50">
+                <LayoutItem Id="KasaID" RelativeSize="36.363636363636367" Index="0" />
+                <LayoutItem Id="MasrafID" ViewItem="MasrafID" Index="1" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="Kod" ViewItem="Kod" Index="2" RelativeSize="36.363636363636367" Removed="True" />
+                <LayoutItem Id="CariID" RelativeSize="21.428571428571427" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="KasaHareket_col2" RelativeSize="50">
+                <LayoutItem Id="Tutar" RelativeSize="36.363636363636367" Index="0" />
+                <LayoutItem Id="Tarih" RelativeSize="27.272727272727273" Index="1" />
+                <LayoutItem Id="Aciklama" ViewItem="Aciklama" Index="2" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Hareket" RelativeSize="36.363636363636367" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="KasaMasrafOdeme">
+              <LayoutItem Id="MasrafID" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors">
+            <LayoutItem Id="Aciklama" RelativeSize="100" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="SatisFaturasi_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Detay_Group" Removed="True" />
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Fisler">
+              <LayoutGroup Id="Fisler_col1">
+                <LayoutItem Id="AltToplam" RelativeSize="36.363636363636367" Removed="True" />
+                <LayoutItem Id="Tarih" RelativeSize="50" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Fisler_col2">
+                <LayoutItem Id="GenelToplam" RelativeSize="100" Index="0" Removed="True" />
+                <LayoutItem Id="VergiToplam" RelativeSize="50" Index="0" Removed="True" />
+                <LayoutItem Id="IndirimToplam" RelativeSize="36.363636363636367" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject">
+              <LayoutItem Id="Oid" RelativeSize="19.108280254777071" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="StokHareketler_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="XPObject">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

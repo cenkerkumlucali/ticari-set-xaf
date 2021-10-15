@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="BankaHesaplari_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="XPObject">
+              <LayoutGroup Id="Hareket_Group">
+                <LayoutItem Id="Hareket" ViewItem="Hareket" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BankaTahsilat_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="KasaHareket">
+              <LayoutGroup Id="KasaHareket_col1">
+                <LayoutItem Id="Kod" RelativeSize="28.571428571428573" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="KasaHareket_col2">
+                <LayoutItem Id="Hareket" RelativeSize="36.363636363636367" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CariOdeme_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="KasaHareket">
+              <LayoutGroup Id="KasaHareket_col1">
+                <LayoutItem Id="Kod" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+              <LayoutGroup Id="KasaHareket_col2">
+                <LayoutItem Id="Hareket" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CariTahsilat_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="KasaHareket">
+              <LayoutGroup Id="KasaHareket_col1">
+                <LayoutItem Id="Kod" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+              <LayoutGroup Id="KasaHareket_col2">
+                <LayoutItem Id="Hareket" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
