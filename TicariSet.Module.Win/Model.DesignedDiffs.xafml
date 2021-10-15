@@ -1,2 +1,11 @@
-﻿<?xml version="1.0" ?>
-<Application />
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Options UIType="SingleWindowSDI" />
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="20.2.3.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="20.2.3.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerWindowsFormsModule" Version="20.2.3.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="20.2.3.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="20.2.3.0" IsNewNode="True" />
+  </SchemaModules>
+</Application>
