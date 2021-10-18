@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="GenelTipTanimlari_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="GenelTipTanimlari">
+              <LayoutItem Id="NTipleri" RelativeSize="27.906976744186046" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="GenelTipTanimlari_LookupListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="NTipleri" PropertyName="NTipleri" Index="1" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

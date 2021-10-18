@@ -2,9 +2,24 @@
 <Application>
   <NavigationItems>
     <Items>
-      <Item Id="Cari Hesap">
+      <Item Id="Genel Tanımlar" Caption="Genel Tanımlar">
         <Items>
-          <Item Id="Cariler_ListView" Caption="Cari Hesap (Tedarikçi)" />
+          <Item Id="Ilceler_ListView" Caption="İlçe Tanımları" />
+          <Item Id="Sehirler_ListView" Caption="Şehir Tanımları" />
+          <Item Id="Ulkeler_ListView" Caption="Ulke Tanımları" />
+        </Items>
+      </Item>
+      <Item Id="Stoklar" Caption="Stok Yönetimi" />
+      <Item Id="Cari Hesap" Caption="Finansal Tanımlar">
+        <Items>
+          <Item Id="@1376ff57-e9d9-4832-ba8c-d4acd424ce18" Caption="C.H Kartları (Depo)" />
+          <Item Id="@19344010-b490-4cd9-b9ad-9cce4d250283" Caption="C.H Kartları (Üreticiler)" />
+          <Item Id="@5fd567f1-7e67-4040-b502-78fd90f08663" Caption="C.H Kartları (Departman)" />
+          <Item Id="@623e01c9-89d5-4404-8ab6-66ce506cb6a8" Caption="C.H Kartları (Yerel)" />
+          <Item Id="@90da6c14-1969-407b-b282-0a3821f0a120" Caption="C.H Kartları (Personel)" />
+          <Item Id="@de0e8ec3-e3e7-4da6-b9b6-e7527ada4fe0" Caption="C.H Kartları (Müşteriler)" />
+          <Item Id="@fa14df54-8d95-4b86-8c3d-9221b4655b8a" Caption="C.H Kartları (Süreç)" />
+          <Item Id="Cariler_ListView" Caption="C.H Kartları (Tedarikçiler)" />
         </Items>
       </Item>
       <Item Id="Personel" Caption="Personel" />
@@ -97,10 +112,22 @@
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
             <LayoutGroup Id="Item3" Caption="Genel Bilgiler">
-              <LayoutGroup Id="Auto33510209-846e-4bb9-9b41-33eca91adbfa" Caption="" />
+              <LayoutGroup Id="Auto33510209-846e-4bb9-9b41-33eca91adbfa" Caption="Auto33510209-846e-4bb9-9b41-33eca91adbfa(6)" />
             </LayoutGroup>
             <LayoutGroup Id="Item2" Caption="Diğer Açıklamalar" />
             <LayoutGroup Id="Item1" Caption="Resim" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Cariler_DetailView_Tedarikci">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Item3" Caption="Genel Bilgiler">
+              <LayoutGroup Id="Auto33510209-846e-4bb9-9b41-33eca91adbfa" Caption="Auto33510209-846e-4bb9-9b41-33eca91adbfa(6)" />
+            </LayoutGroup>
+            <LayoutGroup Id="Item2" Caption="Diğer Açıklamalar" />
           </LayoutGroup>
         </LayoutGroup>
       </Layout>
@@ -116,6 +143,15 @@
       <Layout>
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SizeableEditors" Caption="Aciklama" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="GenelTipTanimlari_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="XPObject" Caption="Oid" />
+          </LayoutGroup>
         </LayoutGroup>
       </Layout>
     </DetailView>
@@ -169,11 +205,18 @@
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
             <LayoutGroup Id="Item2" Caption="Genel Bilgiler" />
+            <LayoutGroup Id="Item3" Caption="Kimlik Bilgileri">
+              <LayoutGroup Id="Auto329ad84f-6be6-4bdf-9f94-abc4eca54baa" Caption="">
+                <LayoutGroup Id="Auto0557448b-a837-4006-b870-b0c9653641a4" Caption="" />
+                <LayoutGroup Id="Autocf9d92ba-c9e8-4619-ae00-16f0bfb57fdb" Caption="" />
+              </LayoutGroup>
+            </LayoutGroup>
             <LayoutGroup Id="Item1" Caption="Resim" />
             <LayoutGroup Id="PersonelKart">
               <LayoutGroup Id="PersonelKart_col2" Caption="PersonelKart_col2" />
             </LayoutGroup>
           </LayoutGroup>
+          <LayoutGroup Id="Item4" Caption="Diğer Bilgiler" />
         </LayoutGroup>
       </Layout>
     </DetailView>
