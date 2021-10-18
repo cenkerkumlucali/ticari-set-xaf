@@ -1,4 +1,6 @@
 ﻿
+using TicariSet.Module.BusinessObjects.Fisler;
+
 namespace TicariSet.Module.Controllers
 {
     partial class FislerViewController
@@ -32,7 +34,7 @@ namespace TicariSet.Module.Controllers
             // 
             // FislerViewController
             // 
-            this.TargetObjectType = typeof(TicariSet.Module.BusinessObjects.Fisler);
+            this.TargetObjectType = typeof(Fisler);
             this.TargetViewNesting = DevExpress.ExpressApp.Nesting.Nested;
             this.TargetViewType = DevExpress.ExpressApp.ViewType.ListView;
 

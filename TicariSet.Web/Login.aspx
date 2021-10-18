@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="LoginPage" EnableViewState="false"
+﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="TicariSet.Web.LoginPage" EnableViewState="false"
     ValidateRequest="false" CodeBehind="Login.aspx.cs" %>
 <%@ Register Assembly="DevExpress.ExpressApp.Web.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" 
     Namespace="DevExpress.ExpressApp.Web.Controls" TagPrefix="cc4" %>

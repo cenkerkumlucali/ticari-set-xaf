@@ -1,13 +1,13 @@
-﻿using DevExpress.Persistent.Base;
+﻿using System;
+using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
-using System;
 
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
     [ImageName("BO_Invoice")]
-    public class AlisFaturasi : Fisler
+    public class AlisFaturasi : Fisler.Fisler
     { 
         public AlisFaturasi(Session session)
             : base(session)

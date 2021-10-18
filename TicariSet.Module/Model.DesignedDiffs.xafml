@@ -1,66 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application Title="TicariSet" PreferredLanguage="tr">
-  <BOModel>
-    <Class Name="TicariSet.Module.BusinessObjects.BankaHesaplari">
-      <OwnMembers>
-        <Member Name="SubeID" DataSourceProperty="BankaID.Subeler" />
-      </OwnMembers>
-    </Class>
-    <Class Name="TicariSet.Module.BusinessObjects.Bankalar">
-      <OwnMembers>
-        <Member Name="Kod" AllowEdit="False" />
-      </OwnMembers>
-    </Class>
-    <Class Name="TicariSet.Module.BusinessObjects.BankaSubeleri">
-      <OwnMembers>
-        <Member Name="Kod" AllowEdit="False" />
-      </OwnMembers>
-    </Class>
-    <Class Name="TicariSet.Module.BusinessObjects.Birimler">
-      <OwnMembers>
-        <Member Name="Kod" AllowEdit="False" />
-      </OwnMembers>
-    </Class>
-    <Class Name="TicariSet.Module.BusinessObjects.Cariler">
-      <OwnMembers>
-        <Member Name="Kod" AllowEdit="False" />
-      </OwnMembers>
-    </Class>
-    <Class Name="TicariSet.Module.BusinessObjects.Fisler">
-      <OwnMembers>
-        <Member Name="CariID" DataSourceCriteria="[Durum] = True" />
-      </OwnMembers>
-    </Class>
-    <Class Name="TicariSet.Module.BusinessObjects.KasaHareket">
-      <OwnMembers>
-        <Member Name="CariID" DataSourcePropertyIsNullMode="SelectAll" DataSourceCriteria="[Durum] = True Or [Durum] = False" />
-        <Member Name="KasaID" DataSourceCriteria="[Durum] = True" />
-        <Member Name="Kod" AllowEdit="False" />
-      </OwnMembers>
-    </Class>
-    <Class Name="TicariSet.Module.BusinessObjects.Kasalar">
-      <OwnMembers>
-        <Member Name="Kod" AllowEdit="False" />
-      </OwnMembers>
-    </Class>
-    <Class Name="TicariSet.Module.BusinessObjects.StokHareketler">
-      <OwnMembers>
-        <Member Name="StokID" DataSourceCriteria="[Durum] = True" />
-      </OwnMembers>
-    </Class>
-    <Class Name="TicariSet.Module.BusinessObjects.Stoklar">
-      <OwnMembers>
-        <Member Name="Kod" AllowEdit="False" />
-      </OwnMembers>
-    </Class>
-  </BOModel>
   <NavigationItems DefaultChildItemsDisplayStyle="List" NavigationStyle="TreeList" StartupNavigationItem="">
     <Items>
       <Item Id="Bankalar" Visible="True" IsNewNode="True">
         <Items IsNewNode="True">
           <Item Id="BankaHareket_ListView" ViewId="BankaHareket_ListView" Visible="False" ObjectKey="" IsNewNode="True" />
           <Item Id="BankaHesaplari_ListView" ViewId="BankaHesaplari_ListView" ObjectKey="" IsNewNode="True" />
-          <Item Id="Bankalar_ListView" ViewId="Bankalar_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="Bankalar_ListView" ViewId="Bankalar_ListView" ObjectKey="" ImageName="Business_Bank" IsNewNode="True" />
           <Item Id="BankaSubeleri_ListView" ViewId="BankaSubeleri_ListView" ObjectKey="" IsNewNode="True" />
         </Items>
       </Item>
@@ -71,7 +17,7 @@
           <Item Id="Cariler_ListView" ViewId="Cariler_ListView" ObjectKey="" IsNewNode="True" />
         </Items>
       </Item>
-      <Item Id="Default" Visible="False">
+      <Item Id="Default" Visible="True">
         <Items>
           <Item Id="AlisFaturasi_ListView" Removed="True" />
           <Item Id="BankaHareket_ListView" ViewId="BankaHareket_ListView" Visible="False" ObjectKey="" Removed="True" />
@@ -96,8 +42,12 @@
           <Item Id="KasaMasrafOdeme_ListView" Removed="True" />
           <Item Id="MasrafGrubu_ListView" Removed="True" />
           <Item Id="Masraflar_ListView" Removed="True" />
+          <Item Id="PersonelAdresBilgileri_ListView" Removed="True" />
+          <Item Id="PersonelAile_ListView" Removed="True" />
           <Item Id="PersonelIletisimBilgileri_ListView" Removed="True" />
           <Item Id="PersonelKart_ListView" Removed="True" />
+          <Item Id="PersonelKimlikBilgileri_ListView" Removed="True" />
+          <Item Id="PersonelSurucuBelgesi_ListView" Removed="True" />
           <Item Id="RenkTanimlari_ListView" Removed="True" />
           <Item Id="SatisFaturasi_ListView" Removed="True" />
           <Item Id="Sehirler_ListView" Removed="True" />
@@ -128,8 +78,8 @@
       </Item>
       <Item Id="Masraflar" IsNewNode="True">
         <Items IsNewNode="True">
-          <Item Id="MasrafGrubu_ListView" ViewId="MasrafGrubu_ListView" ObjectKey="" IsNewNode="True" />
-          <Item Id="Masraflar_ListView" ViewId="Masraflar_ListView" ObjectKey="" ImageName="BO_Folder" IsNewNode="True" />
+          <Item Id="MasrafGrubu_ListView" ViewId="MasrafGrubu_ListView" ObjectKey="" ImageName="Action_CloneMerge_Clone_Object" IsNewNode="True" />
+          <Item Id="Masraflar_ListView" ViewId="Masraflar_ListView" ObjectKey="" IsNewNode="True" />
         </Items>
       </Item>
       <Item Id="Ödemeler" IsNewNode="True">
@@ -141,10 +91,15 @@
       </Item>
       <Item Id="Personel" IsNewNode="True">
         <Items IsNewNode="True">
+          <Item Id="PersonelAdresBilgileri_ListView" ViewId="PersonelAdresBilgileri_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="PersonelAile_ListView" ViewId="PersonelAile_ListView" ObjectKey="" IsNewNode="True" />
           <Item Id="PersonelIletisimBilgileri_ListView" ViewId="PersonelIletisimBilgileri_ListView" ObjectKey="" IsNewNode="True" />
-          <Item Id="PersonelKart_ListView" ViewId="PersonelKart_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="PersonelKart_ListView" ViewId="PersonelKart_ListView" ObjectKey="" ImageName="BO_Customer" IsNewNode="True" />
+          <Item Id="PersonelKimlikBilgileri_ListView" ViewId="PersonelKimlikBilgileri_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="PersonelSurucuBelgesi_ListView" ViewId="PersonelSurucuBelgesi_ListView" ObjectKey="" IsNewNode="True" />
         </Items>
       </Item>
+      <Item Id="Satın Alma Yönetimi" IsNewNode="True" />
       <Item Id="Stoklar" IsNewNode="True">
         <Items IsNewNode="True">
           <Item Id="StokHareketler_ListView" ViewId="StokHareketler_ListView" ObjectKey="" Visible="False" IsNewNode="True" />
@@ -808,9 +763,6 @@
               <LayoutItem Id="Oid" RelativeSize="100" />
             </LayoutGroup>
           </LayoutGroup>
-          <LayoutGroup Id="CariAdresBilgileri_Group" Direction="Vertical" RelativeSize="64.015904572564608">
-            <LayoutItem Id="CariAdresBilgileri" RelativeSize="100" />
-          </LayoutGroup>
         </LayoutGroup>
       </Layout>
     </DetailView>
@@ -824,6 +776,12 @@
         <ColumnInfo Id="SehirId" Index="1" />
         <ColumnInfo Id="Lat" Index="2" />
         <ColumnInfo Id="Lng" Index="3" />
+      </Columns>
+    </ListView>
+    <ListView Id="Ilceler_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Ad" Width="64" />
+        <ColumnInfo Id="SehirId" PropertyName="SehirId" Index="1" IsNewNode="True" />
       </Columns>
     </ListView>
     <ListView Id="KasaHareket_ListView">
@@ -980,6 +938,21 @@
         <ColumnInfo Id="Aciklama" Index="4" Width="118" />
       </Columns>
     </ListView>
+    <ListView Id="PersonelAdresBilgileri_ListView">
+      <Columns>
+        <ColumnInfo Id="PersonelId" Index="-1" />
+        <ColumnInfo Id="Kod" Index="0" />
+        <ColumnInfo Id="AdresDetay" Width="100" Index="1" />
+        <ColumnInfo Id="SehirId" Index="2" />
+        <ColumnInfo Id="IlceId" Index="3" />
+        <ColumnInfo Id="UlkeId" Index="4" />
+      </Columns>
+    </ListView>
+    <ListView Id="PersonelAile_LookupListView" AllowEdit="True" NewItemRowPosition="Bottom">
+      <Columns>
+        <ColumnInfo Id="PrsYakınlık" Index="3" />
+      </Columns>
+    </ListView>
     <DetailView Id="PersonelIletisimBilgileri_DetailView">
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
@@ -1007,28 +980,27 @@
     </ListView>
     <ListView Id="PersonelIletisimBilgileri_LookupListView">
       <Columns>
-        <ColumnInfo Id="PersonelId" Index="0" />
-        <ColumnInfo Id="IletisimBilgileri" Index="1" Width="89" />
         <ColumnInfo Id="IletisimTipi" Index="2" />
-        <ColumnInfo Id="Aciklama" Index="3" />
       </Columns>
     </ListView>
     <DetailView Id="PersonelKart_DetailView">
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="SimpleEditors" RelativeSize="53.876739562624252" Direction="Horizontal">
-            <LayoutGroup Id="Item2" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="58.583106267029976" IsNewNode="True">
-              <LayoutItem Id="Ad" ViewItem="Ad" Index="0" RelativeSize="13.793103448275861" IsNewNode="True" />
-              <LayoutItem Id="Ad2" ViewItem="Ad2" Index="1" RelativeSize="10.344827586206897" IsNewNode="True" />
-              <LayoutItem Id="Soyad" ViewItem="Soyad" Index="2" RelativeSize="10.344827586206897" IsNewNode="True" />
-              <LayoutItem Id="AdSoyad" ViewItem="AdSoyad" Index="3" RelativeSize="10.344827586206897" IsNewNode="True" />
-              <LayoutItem Id="Cinsiyet" ViewItem="Cinsiyet" Index="4" RelativeSize="10.344827586206897" IsNewNode="True" />
-              <LayoutItem Id="IseGirisTarihi" ViewItem="IseGirisTarihi" Index="5" RelativeSize="10.344827586206897" IsNewNode="True" />
-              <LayoutItem Id="KartNumarası" ViewItem="KartNumarası" Index="6" RelativeSize="10.344827586206897" IsNewNode="True" />
-              <LayoutItem Id="SgkBaslamaTarihi" ViewItem="SgkBaslamaTarihi" Index="7" RelativeSize="10.344827586206897" IsNewNode="True" />
-              <LayoutItem Id="Durum" ViewItem="Durum" Index="8" RelativeSize="13.793103448275861" IsNewNode="True" />
+          <LayoutGroup Id="SimpleEditors" RelativeSize="63.419483101391648" Direction="Horizontal">
+            <LayoutGroup Id="Item2" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="58.333333333333336" IsNewNode="True">
+              <LayoutItem Id="Ad" ViewItem="Ad" Index="0" RelativeSize="11.428571428571429" IsNewNode="True" />
+              <LayoutItem Id="Ad2" ViewItem="Ad2" Index="1" RelativeSize="8.5714285714285712" IsNewNode="True" />
+              <LayoutItem Id="Soyad" ViewItem="Soyad" Index="2" RelativeSize="8.5714285714285712" IsNewNode="True" />
+              <LayoutItem Id="AdSoyad" ViewItem="AdSoyad" Index="3" RelativeSize="8.5714285714285712" IsNewNode="True" />
+              <LayoutItem Id="Cinsiyet" ViewItem="Cinsiyet" Index="4" RelativeSize="8.5714285714285712" IsNewNode="True" />
+              <LayoutItem Id="PersonelKimlikBilgileri" ViewItem="PersonelKimlikBilgileri" Index="5" RelativeSize="8.5714285714285712" IsNewNode="True" />
+              <LayoutItem Id="PersonelSurucuBelgesi" ViewItem="PersonelSurucuBelgesi" Index="6" RelativeSize="8.5714285714285712" IsNewNode="True" />
+              <LayoutItem Id="IseGirisTarihi" ViewItem="IseGirisTarihi" Index="7" RelativeSize="8.5714285714285712" IsNewNode="True" />
+              <LayoutItem Id="KartNumarası" ViewItem="KartNumarası" Index="8" RelativeSize="8.5714285714285712" IsNewNode="True" />
+              <LayoutItem Id="SgkBaslamaTarihi" ViewItem="SgkBaslamaTarihi" Index="9" RelativeSize="8.5714285714285712" IsNewNode="True" />
+              <LayoutItem Id="Durum" ViewItem="Durum" Index="10" RelativeSize="11.428571428571429" IsNewNode="True" />
             </LayoutGroup>
-            <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="1" RelativeSize="41.416893732970024" IsNewNode="True">
+            <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="1" RelativeSize="41.666666666666664" IsNewNode="True">
               <LayoutItem Id="Fotograf" ViewItem="Fotograf" Index="0" RelativeSize="100" IsNewNode="True" />
             </LayoutGroup>
             <LayoutGroup Id="PersonelKart" RelativeSize="12.9973474801061" Removed="True">
@@ -1048,23 +1020,148 @@
               </LayoutGroup>
             </LayoutGroup>
           </LayoutGroup>
-          <LayoutGroup Id="PersonelIletisimBilgileri_Group" Direction="Vertical" RelativeSize="46.123260437375748">
-            <LayoutItem Id="PersonelIletisimBilgileri" RelativeSize="100" />
-          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="36.580516898608352">
+            <LayoutGroup Id="PersonelIletisimBilgileri" RelativeSize="100">
+              <LayoutItem Id="PersonelIletisimBilgileri" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="PersonelAile" RelativeSize="100">
+              <LayoutItem Id="PersonelAile" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="PersonelAdresBilgileri" RelativeSize="100">
+              <LayoutItem Id="PersonelAdresBilgileri" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
         </LayoutGroup>
       </Layout>
     </DetailView>
     <ListView Id="PersonelKart_ListView">
       <Columns>
-        <ColumnInfo Id="AdSoyad" Width="109" />
+        <ColumnInfo Id="Ad" Index="-1" />
+        <ColumnInfo Id="Ad2" Index="-1" />
+        <ColumnInfo Id="Soyad" Index="-1" />
+        <ColumnInfo Id="Kod" Index="0" />
+        <ColumnInfo Id="AdSoyad" Width="109" Index="1" />
+        <ColumnInfo Id="Cinsiyet" Index="2" />
+        <ColumnInfo Id="IseGirisTarihi" Index="3" />
+        <ColumnInfo Id="KartNumarası" Index="4" />
+        <ColumnInfo Id="SgkBaslamaTarihi" Index="5" />
+        <ColumnInfo Id="Durum" Index="6" />
+        <ColumnInfo Id="Fotograf" Index="7" />
+        <ColumnInfo Id="PersonelKimlikBilgileri" Index="8" />
+      </Columns>
+    </ListView>
+    <ListView Id="PersonelKart_PersonelAdresBilgileri_ListView" AllowEdit="True" NewItemRowPosition="Bottom">
+      <Columns>
+        <ColumnInfo Id="Kod" Index="-1" />
+        <ColumnInfo Id="AdresDetay" Width="128" />
+        <ColumnInfo Id="AdresTipi" Index="1" />
+        <ColumnInfo Id="SehirId" Index="2" />
+        <ColumnInfo Id="IlceId" Index="3" />
+        <ColumnInfo Id="UlkeId" Index="4" />
+      </Columns>
+    </ListView>
+    <ListView Id="PersonelKart_PersonelAile_ListView" AllowEdit="True" NewItemRowPosition="Bottom">
+      <Columns>
+        <ColumnInfo Id="AdSoyad" Index="-1" />
+        <ColumnInfo Id="Kod" Index="-1" />
+        <ColumnInfo Id="Ad" Index="0" />
+        <ColumnInfo Id="Soyad" Index="1" />
+        <ColumnInfo Id="PrsYakınlık" Index="2" Width="74" />
+        <ColumnInfo Id="Cinsiyet" Index="3" />
+        <ColumnInfo Id="Meslegi" Index="4" />
       </Columns>
     </ListView>
     <ListView Id="PersonelKart_PersonelIletisimBilgileri_ListView">
       <Columns>
-        <ColumnInfo Id="PersonelId" SortIndex="0" SortOrder="Ascending" Index="-1" />
-        <ColumnInfo Id="IletisimBilgileri" Width="93" />
+        <ColumnInfo Id="PersonelId" SortIndex="-1" SortOrder="None" Index="-1" />
+        <ColumnInfo Id="IletisimBilgileri" Width="110" Index="0" SortIndex="0" SortOrder="Ascending" />
+        <ColumnInfo Id="IletisimTipi" Width="84" Index="1" SortIndex="-1" SortOrder="None" />
       </Columns>
     </ListView>
+    <DetailView Id="PersonelKimlikBilgileri_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="PersonelKimlikBilgileri" RelativeSize="100" Direction="Vertical">
+              <LayoutGroup Id="PersonelKimlikBilgileri_col1" RelativeSize="100">
+                <LayoutItem Id="PersonelId" RelativeSize="6.9264069264069263" />
+                <LayoutItem Id="KimlikNo" RelativeSize="5.1948051948051948" />
+                <LayoutItem Id="Ad" RelativeSize="5.1948051948051948" />
+                <LayoutItem Id="Soyad" RelativeSize="5.1948051948051948" />
+                <LayoutItem Id="BabaAdı" RelativeSize="5.1948051948051948" />
+                <LayoutItem Id="AnneAdı" RelativeSize="5.1948051948051948" />
+                <LayoutItem Id="IlceId" RelativeSize="5.1948051948051948" />
+                <LayoutItem Id="DogumTarihi" RelativeSize="5.1948051948051948" />
+                <LayoutItem Id="MedeniDurum" ViewItem="MedeniDurum" Index="8" RelativeSize="5.1948051948051948" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="Din" ViewItem="Din" Index="9" RelativeSize="5.1948051948051948" IsNewNode="True" />
+                <LayoutItem Id="NcKayitliOlduguSehir" ViewItem="NcKayitliOlduguSehir" Index="10" RelativeSize="5.1948051948051948" IsNewNode="True" />
+                <LayoutItem Id="NcKayitliOlduguIlce" ViewItem="NcKayitliOlduguIlce" Index="11" RelativeSize="5.1948051948051948" IsNewNode="True" />
+                <LayoutItem Id="NcKayıtliOlduguMahalleKoy" ViewItem="NcKayıtliOlduguMahalleKoy" Index="12" RelativeSize="5.1948051948051948" IsNewNode="True" />
+                <LayoutItem Id="NcCiltNo" ViewItem="NcCiltNo" Index="13" RelativeSize="5.1948051948051948" IsNewNode="True" />
+                <LayoutItem Id="NcAileSıraNo" ViewItem="NcAileSıraNo" Index="14" RelativeSize="5.1948051948051948" IsNewNode="True" />
+                <LayoutItem Id="NcVerildigiYer" ViewItem="NcVerildigiYer" Index="15" RelativeSize="5.1948051948051948" IsNewNode="True" />
+                <LayoutItem Id="PersonelKimlikVerilisNedeni" ViewItem="PersonelKimlikVerilisNedeni" Index="16" RelativeSize="15.151515151515152" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="PersonelKimlikBilgileri_col2" RelativeSize="40.476190476190474" Removed="True">
+                <LayoutItem Id="NcAileSıraNo" Index="0" RelativeSize="6.9264069264069263" Removed="True" />
+                <LayoutItem Id="NcCiltNo" Index="0" RelativeSize="6.9264069264069263" Removed="True" />
+                <LayoutItem Id="NcKayıtliOlduguMahalleKoy" Index="0" RelativeSize="6.9264069264069263" Removed="True" />
+                <LayoutItem Id="NcKayitliOlduguIlce" Index="0" RelativeSize="6.9264069264069263" Removed="True" />
+                <LayoutItem Id="NcKayitliOlduguSehir" Index="0" RelativeSize="6.9264069264069263" Removed="True" />
+                <LayoutItem Id="NcVerildigiYer" Index="0" RelativeSize="6.9264069264069263" Removed="True" />
+                <LayoutItem Id="PersonelKimlikVerilisNedeni" Index="0" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="Din" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="PersonelKimlikBilgileri_ListView">
+      <Columns>
+        <ColumnInfo Id="Ad" Index="-1" />
+        <ColumnInfo Id="Din" Index="-1" />
+        <ColumnInfo Id="Soyad" Index="-1" />
+        <ColumnInfo Id="PersonelId" Index="0" />
+        <ColumnInfo Id="KimlikNo" Width="80" Index="1" />
+        <ColumnInfo Id="BabaAdı" Index="2" />
+        <ColumnInfo Id="AnneAdı" Index="3" />
+        <ColumnInfo Id="IlceId" Index="4" />
+        <ColumnInfo Id="DogumTarihi" Index="5" />
+        <ColumnInfo Id="MedeniDurum" Index="6" />
+        <ColumnInfo Id="NcKayitliOlduguSehir" Index="7" />
+        <ColumnInfo Id="NcKayitliOlduguIlce" Index="8" />
+        <ColumnInfo Id="NcKayıtliOlduguMahalleKoy" Index="9" />
+        <ColumnInfo Id="NcCiltNo" Index="10" />
+        <ColumnInfo Id="NcAileSıraNo" Index="11" />
+        <ColumnInfo Id="NcVerildigiYer" Index="12" />
+        <ColumnInfo Id="PersonelKimlikVerilisNedeni" Index="13" />
+      </Columns>
+    </ListView>
+    <DetailView Id="PersonelSurucuBelgesi_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="PersonelSurucuBelgesi" RelativeSize="100" Direction="Vertical">
+              <LayoutGroup Id="PersonelSurucuBelgesi_col1" RelativeSize="100">
+                <LayoutItem Id="EhliyetSınıfı" RelativeSize="6.5708418891170428" Index="0" />
+                <LayoutItem Id="SbBelgeNo" RelativeSize="4.9281314168377826" Index="1" />
+                <LayoutItem Id="SbSeriNo" ViewItem="SbSeriNo" Index="2" RelativeSize="4.9281314168377826" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="SbSehir" ViewItem="SbSehir" Index="3" RelativeSize="4.9281314168377826" IsNewNode="True" />
+                <LayoutItem Id="SbIlce" ViewItem="SbIlce" Index="4" RelativeSize="4.9281314168377826" IsNewNode="True" />
+                <LayoutItem Id="SbVerildigiTarih" ViewItem="SbVerildigiTarih" Index="5" RelativeSize="73.716632443531822" IsNewNode="True" />
+                <LayoutItem Id="Kod" RelativeSize="6.5708418891170428" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="PersonelSurucuBelgesi_col2" RelativeSize="48.448275862068968" Removed="True">
+                <LayoutItem Id="SbIlce" Index="0" RelativeSize="6.5708418891170428" Removed="True" />
+                <LayoutItem Id="SbVerildigiTarih" Index="0" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="SbSehir" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
     <DetailView Id="RenkTanimlari_DetailView">
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
@@ -1372,9 +1469,6 @@
             <LayoutGroup Id="XPObject" RelativeSize="89.86666666666666" Removed="True">
               <LayoutItem Id="Oid" Removed="True" />
             </LayoutGroup>
-          </LayoutGroup>
-          <LayoutGroup Id="CariAdresBilgileri_Group" Direction="Vertical" RelativeSize="94.933333333333337">
-            <LayoutItem Id="CariAdresBilgileri" RelativeSize="100" />
           </LayoutGroup>
         </LayoutGroup>
       </Layout>

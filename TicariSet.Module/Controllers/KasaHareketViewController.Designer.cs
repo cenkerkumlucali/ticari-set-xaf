@@ -1,4 +1,6 @@
 ﻿
+using TicariSet.Module.BusinessObjects.Kasa;
+
 namespace TicariSet.Module.Controllers
 {
     partial class KasaHareketViewController
@@ -32,7 +34,7 @@ namespace TicariSet.Module.Controllers
             // 
             // KasaHareketViewController
             // 
-            this.TargetObjectType = typeof(TicariSet.Module.BusinessObjects.KasaHareket);
+            this.TargetObjectType = typeof(KasaHareket);
             this.TargetViewNesting = DevExpress.ExpressApp.Nesting.Root;
             this.TargetViewType = DevExpress.ExpressApp.ViewType.ListView;
 

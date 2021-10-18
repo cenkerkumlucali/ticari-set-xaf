@@ -154,38 +154,44 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessObjects\AlisFaturasi.cs" />
-    <Compile Include="BusinessObjects\BankaHareket.cs" />
-    <Compile Include="BusinessObjects\BankaHesaplari.cs" />
-    <Compile Include="BusinessObjects\Bankalar.cs" />
-    <Compile Include="BusinessObjects\BankaOdeme.cs" />
-    <Compile Include="BusinessObjects\BankaSubeleri.cs" />
-    <Compile Include="BusinessObjects\BankaTahsilat.cs" />
-    <Compile Include="BusinessObjects\Birimler.cs" />
-    <Compile Include="BusinessObjects\CariAdresBilgileri.cs" />
-    <Compile Include="BusinessObjects\CariIletisimBilgileri.cs" />
+    <Compile Include="BusinessObjects\Banka\BankaHareket.cs" />
+    <Compile Include="BusinessObjects\Banka\BankaHesaplari.cs" />
+    <Compile Include="BusinessObjects\Banka\Bankalar.cs" />
+    <Compile Include="BusinessObjects\Banka\BankaOdeme.cs" />
+    <Compile Include="BusinessObjects\Banka\BankaSubeleri.cs" />
+    <Compile Include="BusinessObjects\Banka\BankaTahsilat.cs" />
+    <Compile Include="BusinessObjects\Personel\PersonelPasaportBilgileri.cs" />
+    <Compile Include="BusinessObjects\Tanım\Birimler.cs" />
+    <Compile Include="BusinessObjects\Cari\CariAdresBilgileri.cs" />
+    <Compile Include="BusinessObjects\Cari\CariIletisimBilgileri.cs" />
     <Compile Include="BusinessObjects\CariOdeme.cs" />
-    <Compile Include="BusinessObjects\CariTahsilat.cs" />
-    <Compile Include="BusinessObjects\Cariler.cs" />
-    <Compile Include="BusinessObjects\BirimSetiTanimlari.cs" />
-    <Compile Include="BusinessObjects\ColorConverter.cs" />
-    <Compile Include="BusinessObjects\Ilceler.cs" />
-    <Compile Include="BusinessObjects\PersonelIletisimBilgileri.cs" />
-    <Compile Include="BusinessObjects\PersonelKart.cs" />
-    <Compile Include="BusinessObjects\RenkTanimlari.cs" />
-    <Compile Include="BusinessObjects\Doviz.cs" />
-    <Compile Include="BusinessObjects\Fisler.cs" />
-    <Compile Include="BusinessObjects\KasaHareket.cs" />
-    <Compile Include="BusinessObjects\Kasalar.cs" />
-    <Compile Include="BusinessObjects\KasaMasrafOdeme.cs" />
-    <Compile Include="BusinessObjects\MasrafGrubu.cs" />
-    <Compile Include="BusinessObjects\Masraflar.cs" />
+    <Compile Include="BusinessObjects\Cari\CariTahsilat.cs" />
+    <Compile Include="BusinessObjects\Cari\Cariler.cs" />
+    <Compile Include="BusinessObjects\Tanım\BirimSetiTanimlari.cs" />
+    <Compile Include="EnumObjects\PasaportTipleri.cs" />
+    <Compile Include="OtherClasses\ColorConverter.cs" />
+    <Compile Include="BusinessObjects\Tanım\Ilceler.cs" />
+    <Compile Include="BusinessObjects\Personel\PersonelAdresBilgileri.cs" />
+    <Compile Include="BusinessObjects\Personel\PersonelAile.cs" />
+    <Compile Include="BusinessObjects\Personel\PersonelIletisimBilgileri.cs" />
+    <Compile Include="BusinessObjects\Personel\PersonelKart.cs" />
+    <Compile Include="BusinessObjects\Personel\PersonelKimlikBilgileri.cs" />
+    <Compile Include="BusinessObjects\Personel\PersonelSurucuBelgesi.cs" />
+    <Compile Include="BusinessObjects\Tanım\RenkTanimlari.cs" />
+    <Compile Include="BusinessObjects\Tanım\Doviz.cs" />
+    <Compile Include="BusinessObjects\Fisler\Fisler.cs" />
+    <Compile Include="BusinessObjects\Kasa\KasaHareket.cs" />
+    <Compile Include="BusinessObjects\Kasa\Kasalar.cs" />
+    <Compile Include="BusinessObjects\Kasa\KasaMasrafOdeme.cs" />
+    <Compile Include="BusinessObjects\Masraf\MasrafGrubu.cs" />
+    <Compile Include="BusinessObjects\Masraf\Masraflar.cs" />
     <Compile Include="BusinessObjects\SatisFaturasi.cs" />
-    <Compile Include="BusinessObjects\Sehirler.cs" />
-    <Compile Include="BusinessObjects\StFiyat.cs" />
-    <Compile Include="BusinessObjects\StKartRenk.cs" />
-    <Compile Include="BusinessObjects\StokHareketler.cs" />
-    <Compile Include="BusinessObjects\Stoklar.cs" />
-    <Compile Include="BusinessObjects\Ulkeler.cs" />
+    <Compile Include="BusinessObjects\Tanım\Sehirler.cs" />
+    <Compile Include="BusinessObjects\Stok\StFiyat.cs" />
+    <Compile Include="BusinessObjects\Stok\StKartRenk.cs" />
+    <Compile Include="BusinessObjects\Stok\StokHareketler.cs" />
+    <Compile Include="BusinessObjects\Stok\Stoklar.cs" />
+    <Compile Include="BusinessObjects\Tanım\Ulkeler.cs" />
     <Compile Include="Controllers\FislerViewController.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -199,11 +205,17 @@
       <DependentUpon>KasaHareketViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseUpdate\Updater.cs" />
+    <Compile Include="EnumObjects\AdresTipi.cs" />
     <Compile Include="EnumObjects\Cinsiyet.cs" />
+    <Compile Include="EnumObjects\Din.cs" />
     <Compile Include="EnumObjects\DurumType.cs" />
+    <Compile Include="EnumObjects\EhliyetSınıfı.cs" />
     <Compile Include="EnumObjects\FisHareketTuru.cs" />
     <Compile Include="EnumObjects\IletisimTipleri.cs" />
     <Compile Include="EnumObjects\KasaHareketType.cs" />
+    <Compile Include="EnumObjects\MedeniDurum.cs" />
+    <Compile Include="EnumObjects\PersonelKimlikVerilisNedeni.cs" />
+    <Compile Include="EnumObjects\PrsYakınlık.cs" />
     <Compile Include="EnumObjects\StokHareketType.cs" />
     <Compile Include="Module.cs">
       <SubType>Component</SubType>
@@ -293,6 +305,36 @@
       <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes7.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes8.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes9.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes10.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes1_tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

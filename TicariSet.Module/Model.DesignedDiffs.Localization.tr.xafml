@@ -1,58 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application>
-  <BOModel>
-    <Class Name="TicariSet.Module.BusinessObjects.Cariler">
-      <OwnMembers>
-        <Member Name="Alacak" DisplayFormat="C2" EditMask="C2" />
-        <Member Name="Bakiye" DisplayFormat="C2" EditMask="C2" />
-        <Member Name="Borc" DisplayFormat="C2" EditMask="C2" />
-      </OwnMembers>
-    </Class>
-    <Class Name="TicariSet.Module.BusinessObjects.Fisler">
-      <OwnMembers>
-        <Member Name="AltToplam" DisplayFormat="C2" EditMask="C2" />
-        <Member Name="GenelToplam" DisplayFormat="C2" EditMask="C2" />
-        <Member Name="IndirimToplam" DisplayFormat="C2" EditMask="C2" />
-        <Member Name="Tarih" DisplayFormat="dd.MM.yyyy HH:mm:ss" />
-        <Member Name="VergiToplam" DisplayFormat="C2" EditMask="C2" />
-      </OwnMembers>
-    </Class>
-    <Class Name="TicariSet.Module.BusinessObjects.KasaHareket">
-      <OwnMembers>
-        <Member Name="Tarih" DisplayFormat="dd.MM.yyyy HH:mm:ss" EditMask="dd.MM.yyyy HH:mm:ss" />
-        <Member Name="Tutar" DisplayFormat="c2" EditMask="c2" />
-      </OwnMembers>
-    </Class>
-    <Class Name="TicariSet.Module.BusinessObjects.Kasalar">
-      <OwnMembers>
-        <Member Name="Bakiye" DisplayFormat="C3" EditMask="C3" />
-        <Member Name="Odeme" DisplayFormat="C3" EditMask="C3" />
-        <Member Name="Tahsilat" DisplayFormat="C3" EditMask="C3" />
-      </OwnMembers>
-    </Class>
-    <Class Name="TicariSet.Module.BusinessObjects.StokHareketler">
-      <OwnMembers>
-        <Member Name="BirimFiyat" DisplayFormat="C3" EditMask="C3" />
-        <Member Name="GenelTutar" DisplayFormat="C3" EditMask="C3" />
-        <Member Name="IndirimOran" DisplayFormat="N2" EditMask="N2" />
-        <Member Name="IndirimTutar" DisplayFormat="C3" EditMask="C3" />
-        <Member Name="Miktar" DisplayFormat="N3" EditMask="N3" />
-        <Member Name="NetTutar" DisplayFormat="C3" EditMask="C3" />
-        <Member Name="Tarih" DisplayFormat="dd.MM.yyyy HH:mm:ss" EditMask="dd.MM.yyyy HH:mm:ss" />
-        <Member Name="Toplam" DisplayFormat="C3" EditMask="C3" />
-        <Member Name="VergiOran" DisplayFormat="N2" EditMask="N2" />
-        <Member Name="VergiTutar" DisplayFormat="C3" EditMask="C3" />
-      </OwnMembers>
-    </Class>
-    <Class Name="TicariSet.Module.BusinessObjects.Stoklar">
-      <OwnMembers>
-        <Member Name="VergiOrani" DisplayFormat="N2" EditMask="N2" />
-      </OwnMembers>
-    </Class>
-  </BOModel>
   <NavigationItems>
     <Items>
+      <Item Id="Cari Hesap">
+        <Items>
+          <Item Id="Cariler_ListView" Caption="Cari Hesap (Tedarikçi)" />
+        </Items>
+      </Item>
       <Item Id="Personel" Caption="Personel" />
+      <Item Id="Reports" Caption="Raporlar" />
+      <Item Id="Satın Alma Yönetimi" Caption="Satın Alma Yönetimi" />
     </Items>
   </NavigationItems>
   <Views>
@@ -205,6 +162,9 @@
       </Layout>
     </DetailView>
     <DetailView Id="PersonelKart_DetailView">
+      <Items>
+        <PropertyEditor Id="PersonelKimlikBilgileri" Caption="Kimlik Bilgileri" />
+      </Items>
       <Layout>
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
@@ -212,6 +172,28 @@
             <LayoutGroup Id="Item1" Caption="Resim" />
             <LayoutGroup Id="PersonelKart">
               <LayoutGroup Id="PersonelKart_col2" Caption="PersonelKart_col2" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="PersonelKimlikBilgileri_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="PersonelKimlikBilgileri">
+              <LayoutGroup Id="PersonelKimlikBilgileri_col2" Caption="PersonelKimlikBilgileri_col2" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="PersonelSurucuBelgesi_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="PersonelSurucuBelgesi">
+              <LayoutGroup Id="PersonelSurucuBelgesi_col2" Caption="PersonelSurucuBelgesi_col2" />
             </LayoutGroup>
           </LayoutGroup>
         </LayoutGroup>

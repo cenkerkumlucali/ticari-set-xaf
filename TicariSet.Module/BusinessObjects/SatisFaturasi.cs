@@ -1,14 +1,13 @@
-﻿using DevExpress.Persistent.Base;
+﻿using System;
+using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
-using System;
-
 
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
     [ImageName("BO_Price")]
-    public class SatisFaturasi : Fisler
+    public class SatisFaturasi : Fisler.Fisler
     { 
         public SatisFaturasi(Session session)
             : base(session)
