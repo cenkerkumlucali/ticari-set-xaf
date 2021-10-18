@@ -2,7 +2,7 @@
 using DevExpress.ExpressApp.SystemModule;
 using System;
 using System.Collections.Generic;
-using TicariSet.Module.BusinessObjects.Kasa;
+using TicariSet.Module.BusinessObjects;
 
 namespace TicariSet.Module.Controllers
 {

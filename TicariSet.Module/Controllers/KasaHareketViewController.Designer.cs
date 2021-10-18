@@ -1,5 +1,5 @@
 ﻿
-using TicariSet.Module.BusinessObjects.Kasa;
+using TicariSet.Module.BusinessObjects;
 
 namespace TicariSet.Module.Controllers
 {
