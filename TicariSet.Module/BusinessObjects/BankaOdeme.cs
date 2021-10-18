@@ -2,24 +2,22 @@
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
+using TicariSet.Module.EnumObjects;
 
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    [ImageName("BO_Price")]
-    public class SatisFaturasi : Fisler
+    public class BankaOdeme : BankaHareket
     { 
-        public SatisFaturasi(Session session)
+        public BankaOdeme(Session session)
             : base(session)
         {
         }
         public override void AfterConstruction()
         {
-            
             base.AfterConstruction();
             Tarih = DateTime.Now;
-            Turu = EnumObjects.FisHareketType.Satis;
-            HareketTipi = EnumObjects.StokHareketType.Cikis;
+            Hareket = KasaHareketType.BankaOdeme;
         }
         protected override void OnSaving()
         {
@@ -28,11 +26,10 @@ namespace TicariSet.Module.BusinessObjects
                 && Session.IsNewObject(this)
                 && string.IsNullOrEmpty(Kod))
             {
-                int deger = DistributedIdGeneratorHelper.Generate(Session.DataLayer, this.GetType().FullName, "SatisFaturaPrefix");
-                Kod = string.Format("SF{0:D8}", deger);
+                int deger = DistributedIdGeneratorHelper.Generate(Session.DataLayer, this.GetType().FullName, "BankaOdemeServerPrefix");
+                Kod = string.Format("BO{0:D8}", deger);
             }
-
-            Aciklama = $"{Kod} nolu {Tarih} tarihli {CariID} hesaba {GenelToplam} tutarındaki satış faturası.";
+            Aciklama = $"{Kod} nolu {Tarih} tarihli {BankaID.Tanim} bankadan {HesapID.Hesap} nolu hesaba {CariID.Tanim} hesabına {Tutar} tutarında ödeme yapılmıştır.";
             base.OnSaving();
         }
     }

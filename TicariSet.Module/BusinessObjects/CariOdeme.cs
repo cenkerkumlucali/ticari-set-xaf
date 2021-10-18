@@ -2,7 +2,6 @@
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
-using TicariSet.Module.BusinessObjects.Kasa;
 using TicariSet.Module.EnumObjects;
 
 namespace TicariSet.Module.BusinessObjects
