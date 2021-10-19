@@ -8,7 +8,6 @@ namespace TicariSet.Module.BusinessObjects
     {
 
         #region Overrides
-
         public override object ConvertFromStorageType(object stringObjectType)
         {
             return ReflectionHelper.FindType((string)stringObjectType);

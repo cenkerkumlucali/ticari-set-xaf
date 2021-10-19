@@ -160,8 +160,8 @@
     <Compile Include="BusinessObjects\BankaOdeme.cs" />
     <Compile Include="BusinessObjects\BankaSubeleri.cs" />
     <Compile Include="BusinessObjects\BankaTahsilat.cs" />
+    <Compile Include="BusinessObjects\FileAttachment.cs" />
     <Compile Include="BusinessObjects\GenelTipTanimlari.cs" />
-    <Compile Include="BusinessObjects\NesneTipleri.cs" />
     <Compile Include="BusinessObjects\PersonelPasaportBilgileri.cs" />
     <Compile Include="BusinessObjects\Birimler.cs" />
     <Compile Include="BusinessObjects\CariAdresBilgileri.cs" />
@@ -348,6 +348,24 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="OtherClasses\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes12.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes2_tr.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes13.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application>
+  <BOModel>
+    <Class Name="TicariSet.Module.BusinessObjects.StokHareketler">
+      <OwnMembers>
+        <Member Name="IndirimOran" EditMask="P" DisplayFormat="P" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
   <NavigationItems>
     <Items>
       <Item Id="Genel Tanımlar" Caption="Genel Tanımlar">
@@ -12,17 +19,22 @@
       <Item Id="Stoklar" Caption="Stok Yönetimi" />
       <Item Id="Cari Hesap" Caption="Finansal Tanımlar">
         <Items>
-          <Item Id="@1376ff57-e9d9-4832-ba8c-d4acd424ce18" Caption="C.H Kartları (Depo)" />
-          <Item Id="@19344010-b490-4cd9-b9ad-9cce4d250283" Caption="C.H Kartları (Üreticiler)" />
-          <Item Id="@5fd567f1-7e67-4040-b502-78fd90f08663" Caption="C.H Kartları (Departman)" />
           <Item Id="@623e01c9-89d5-4404-8ab6-66ce506cb6a8" Caption="C.H Kartları (Yerel)" />
-          <Item Id="@90da6c14-1969-407b-b282-0a3821f0a120" Caption="C.H Kartları (Personel)" />
-          <Item Id="@de0e8ec3-e3e7-4da6-b9b6-e7527ada4fe0" Caption="C.H Kartları (Müşteriler)" />
-          <Item Id="@fa14df54-8d95-4b86-8c3d-9221b4655b8a" Caption="C.H Kartları (Süreç)" />
           <Item Id="Cariler_ListView" Caption="C.H Kartları (Tedarikçiler)" />
+          <Item Id="@de0e8ec3-e3e7-4da6-b9b6-e7527ada4fe0" Caption="C.H Kartları (Müşteriler)" />
+          <Item Id="@19344010-b490-4cd9-b9ad-9cce4d250283" Caption="C.H Kartları (Üreticiler)" />
+          <Item Id="@90da6c14-1969-407b-b282-0a3821f0a120" Caption="C.H Kartları (Personel)" />
+          <Item Id="@5fd567f1-7e67-4040-b502-78fd90f08663" Caption="C.H Kartları (Departman)" />
+          <Item Id="@1376ff57-e9d9-4832-ba8c-d4acd424ce18" Caption="C.H Kartları (Depo)" />
+          <Item Id="@fa14df54-8d95-4b86-8c3d-9221b4655b8a" Caption="C.H Kartları (Süreç)" />
         </Items>
       </Item>
-      <Item Id="Personel" Caption="Personel" />
+      <Item Id="@9186321d-b062-4ad1-a129-0b6eab26bb87" Caption="İnsan Kaynakları Yönetimi" />
+      <Item Id="Faturalar" Caption="Fatura Tanımları" />
+      <Item Id="Kasalar" Caption="Kasa Tanımları" />
+      <Item Id="Masraflar" Caption="Masraf Tanımları" />
+      <Item Id="Ödemeler" Caption="Ödeme Tanımları" />
+      <Item Id="Bankalar" Caption="Banka Tanımları" />
       <Item Id="Reports" Caption="Raporlar" />
       <Item Id="Satın Alma Yönetimi" Caption="Satın Alma Yönetimi" />
     </Items>
@@ -120,6 +132,71 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
+    <DetailView Id="Cariler_DetailView_Departman">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Item3" Caption="Genel Bilgiler">
+              <LayoutGroup Id="Auto33510209-846e-4bb9-9b41-33eca91adbfa" Caption="Auto33510209-846e-4bb9-9b41-33eca91adbfa(6)" />
+            </LayoutGroup>
+            <LayoutGroup Id="Item2" Caption="Diğer Açıklamalar" />
+            <LayoutGroup Id="Item1" Caption="Resim" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Cariler_DetailView_Depo">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Item3" Caption="Genel Bilgiler">
+              <LayoutGroup Id="Auto33510209-846e-4bb9-9b41-33eca91adbfa" Caption="Auto33510209-846e-4bb9-9b41-33eca91adbfa(6)" />
+            </LayoutGroup>
+            <LayoutGroup Id="Item2" Caption="Diğer Açıklamalar" />
+            <LayoutGroup Id="Item1" Caption="Resim" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Cariler_DetailView_Musteriler">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Item3" Caption="Genel Bilgiler">
+              <LayoutGroup Id="Auto33510209-846e-4bb9-9b41-33eca91adbfa" Caption="Auto33510209-846e-4bb9-9b41-33eca91adbfa(6)" />
+            </LayoutGroup>
+            <LayoutGroup Id="Item2" Caption="Diğer Açıklamalar" />
+            <LayoutGroup Id="Item1" Caption="Resim" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Cariler_DetailView_Personel">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Item3" Caption="Genel Bilgiler">
+              <LayoutGroup Id="Auto33510209-846e-4bb9-9b41-33eca91adbfa" Caption="Auto33510209-846e-4bb9-9b41-33eca91adbfa(6)" />
+            </LayoutGroup>
+            <LayoutGroup Id="Item2" Caption="Diğer Açıklamalar" />
+            <LayoutGroup Id="Item1" Caption="Resim" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Cariler_DetailView_Surec">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Item3" Caption="Genel Bilgiler">
+              <LayoutGroup Id="Auto33510209-846e-4bb9-9b41-33eca91adbfa" Caption="Auto33510209-846e-4bb9-9b41-33eca91adbfa(6)" />
+            </LayoutGroup>
+            <LayoutGroup Id="Item2" Caption="Diğer Açıklamalar" />
+            <LayoutGroup Id="Item1" Caption="Resim" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
     <DetailView Id="Cariler_DetailView_Tedarikci">
       <Layout>
         <LayoutGroup Id="Main">
@@ -128,6 +205,32 @@
               <LayoutGroup Id="Auto33510209-846e-4bb9-9b41-33eca91adbfa" Caption="Auto33510209-846e-4bb9-9b41-33eca91adbfa(6)" />
             </LayoutGroup>
             <LayoutGroup Id="Item2" Caption="Diğer Açıklamalar" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Cariler_DetailView_Ureticiler">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Item3" Caption="Genel Bilgiler">
+              <LayoutGroup Id="Auto33510209-846e-4bb9-9b41-33eca91adbfa" Caption="Auto33510209-846e-4bb9-9b41-33eca91adbfa(6)" />
+            </LayoutGroup>
+            <LayoutGroup Id="Item2" Caption="Diğer Açıklamalar" />
+            <LayoutGroup Id="Item1" Caption="Resim" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Cariler_DetailView_Yerel">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Item3" Caption="Genel Bilgiler">
+              <LayoutGroup Id="Auto33510209-846e-4bb9-9b41-33eca91adbfa" Caption="Auto33510209-846e-4bb9-9b41-33eca91adbfa(6)" />
+            </LayoutGroup>
+            <LayoutGroup Id="Item2" Caption="Diğer Açıklamalar" />
+            <LayoutGroup Id="Item1" Caption="Resim" />
           </LayoutGroup>
         </LayoutGroup>
       </Layout>
@@ -163,7 +266,6 @@
               <LayoutGroup Id="KasaHareketleri_Group" Caption="Kasa Hareketleri" />
             </LayoutGroup>
           </LayoutGroup>
-          <LayoutGroup Id="SizeableEditors" Caption="Aciklama" />
         </LayoutGroup>
       </Layout>
     </DetailView>
@@ -205,10 +307,12 @@
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
             <LayoutGroup Id="Item2" Caption="Genel Bilgiler" />
-            <LayoutGroup Id="Item3" Caption="Kimlik Bilgileri">
-              <LayoutGroup Id="Auto329ad84f-6be6-4bdf-9f94-abc4eca54baa" Caption="">
-                <LayoutGroup Id="Auto0557448b-a837-4006-b870-b0c9653641a4" Caption="" />
-                <LayoutGroup Id="Autocf9d92ba-c9e8-4619-ae00-16f0bfb57fdb" Caption="" />
+            <LayoutGroup Id="Item3" Caption="Ek Bilgiler">
+              <LayoutGroup Id="Auto329ad84f-6be6-4bdf-9f94-abc4eca54baa" Caption="Auto329ad84f-6be6-4bdf-9f94-abc4eca54baa(11)">
+                <LayoutGroup Id="Auto32061c7f-dbca-4cb6-85ac-17f44c2c7daa" Caption="Auto32061c7f-dbca-4cb6-85ac-17f44c2c7daa(12)">
+                  <LayoutGroup Id="Auto0557448b-a837-4006-b870-b0c9653641a4" Caption="Auto0557448b-a837-4006-b870-b0c9653641a4(12)" />
+                  <LayoutGroup Id="Autocf9d92ba-c9e8-4619-ae00-16f0bfb57fdb" Caption="Autocf9d92ba-c9e8-4619-ae00-16f0bfb57fdb(15)" />
+                </LayoutGroup>
               </LayoutGroup>
             </LayoutGroup>
             <LayoutGroup Id="Item1" Caption="Resim" />
