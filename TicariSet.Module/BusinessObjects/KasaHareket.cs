@@ -4,6 +4,7 @@ using DevExpress.ExpressApp.DC;
 using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
+using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
 using TicariSet.Module.EnumObjects;
 
@@ -34,7 +35,7 @@ namespace TicariSet.Module.BusinessObjects
         string kod;
 
         [VisibleInDetailView(false)]
-        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        [Size(32)]
         public string Kod
         {
             get => kod;
@@ -42,6 +43,7 @@ namespace TicariSet.Module.BusinessObjects
         }
         [Association("Kasalar-KasaHareketleri")]
         [XafDisplayName("Kasa")]
+        [RuleRequiredField]
         public Kasalar KasaID
         {
             get => kasaID;
@@ -49,6 +51,7 @@ namespace TicariSet.Module.BusinessObjects
         }
         [Association("Cariler-ParasalHareket")]
         [XafDisplayName("Cari Hesap")]
+        [RuleRequiredField]
         public Cariler CariID
         {
             get => cariID;

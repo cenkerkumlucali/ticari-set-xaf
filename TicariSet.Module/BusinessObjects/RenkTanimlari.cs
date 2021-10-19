@@ -32,7 +32,7 @@ namespace TicariSet.Module.BusinessObjects
         private DurumType durum;
         private byte[] resim;
 
-        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        [Size(32)]
         public string Kod
         {
             get => kod;
@@ -40,6 +40,7 @@ namespace TicariSet.Module.BusinessObjects
         }
 
         [Size(32)]
+        [RuleRequiredField]
         public string Ad
         {
             get => ad;

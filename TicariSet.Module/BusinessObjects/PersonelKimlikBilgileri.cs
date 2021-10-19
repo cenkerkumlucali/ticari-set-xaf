@@ -80,6 +80,7 @@ namespace TicariSet.Module.BusinessObjects
         private Ilceler ilceId;
         [XafDisplayName("Doğum Yeri")]
 
+
         public Ilceler IlceId
         {
             get => ilceId;
@@ -118,6 +119,7 @@ namespace TicariSet.Module.BusinessObjects
         }
 
         private Ilceler ncKayitliOlduguIlce;
+        [DataSourceProperty("NcKayitliOlduguSehir.Ilceler")]
         [XafDisplayName("Nc.Kayıtlı Olduğu İlçe")]
         public Ilceler NcKayitliOlduguIlce
         {
@@ -146,6 +148,7 @@ namespace TicariSet.Module.BusinessObjects
         private string ncAileSıraNo;
         [XafDisplayName("Nc.Aile Sıra No")]
         [Size(5)]
+        [Nullable(true)]
         public string NcAileSıraNo
         {
             get => ncAileSıraNo;

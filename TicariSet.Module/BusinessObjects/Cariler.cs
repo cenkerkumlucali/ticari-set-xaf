@@ -1,5 +1,9 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using DevExpress.Data.Async.Helpers;
+using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp.ConditionalAppearance;
 using DevExpress.ExpressApp.DC;
 using DevExpress.ExpressApp.Model;
@@ -8,6 +12,7 @@ using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
+using DevExpress.XtraPrinting.Native;
 using TicariSet.Module.EnumObjects;
 
 namespace TicariSet.Module.BusinessObjects
@@ -18,13 +23,13 @@ namespace TicariSet.Module.BusinessObjects
     [RuleCombinationOfPropertiesIsUnique("RCOPIU-CariTanim", DefaultContexts.Save, "Tanim,KısaAd", messageTemplate: "Cari hesap zaten mevcut")]
     
     [Appearance("CariIndirim", Criteria = "Indirim!=true", TargetItems = "IndirimOran", Enabled = false)]
-    
+
     #region ListViewFilter
     [ListViewFilter("Tüm Liste", "")]
     [ListViewFilter("Aktif Hesaplar", "[Durum] == false", true)]
     [ListViewFilter("Pasif Hesaplar", "[Durum] == true")]
     #endregion
-    
+
     #region RuleIsReferenced
     [RuleIsReferenced("RIR-Cariler.BankaHesapları", DefaultContexts.Delete, typeof(BankaHesaplari), "CariId", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
     [RuleIsReferenced("RIR-Cariler.AdresBilgileri", DefaultContexts.Delete, typeof(BankaHesaplari), "CariId", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
@@ -36,15 +41,16 @@ namespace TicariSet.Module.BusinessObjects
     //[RuleCriteria("", DefaultContexts.Save, "Durum != 1","Durum pasif olamaz", SkipNullOrEmptyValues = false)]
     public class Cariler : BaseObject
     {
-        public const string CDC_OBJNAME_GNTIP = @"ObjectName = 'Cariler' ";
+        string alternatifKod;
         public Cariler(Session session)
             : base(session)
         {
         }
         public override void AfterConstruction()
         {
-            Durum = 0;
             base.AfterConstruction();
+            Durum = 0;
+
         }
 
         GenelTipTanimlari kartTipi;
@@ -66,8 +72,17 @@ namespace TicariSet.Module.BusinessObjects
             get => kod;
             set => SetPropertyValue(nameof(Kod), ref kod, value);
         }
-        
-        [DataSourceCriteria(CDC_OBJNAME_GNTIP)]
+
+        public IList<GenelTipTanimlari> GetGnTipList
+        {
+            get
+            {
+                CriteriaOperator criteria = CriteriaOperator.Parse("ObjectName = ?", GetType().Name);
+                return new XPCollection<GenelTipTanimlari>(Session, criteria);
+            }
+        }
+
+        [DataSourceProperty("GetGnTipList")]
         public GenelTipTanimlari KartTipi
         {
             get => kartTipi;
@@ -90,6 +105,12 @@ namespace TicariSet.Module.BusinessObjects
             set => SetPropertyValue(nameof(Fotograf), ref fotograf, value);
         }
 
+        [Size(32)]
+        public string AlternatifKod
+        {
+            get => alternatifKod;
+            set => SetPropertyValue(nameof(AlternatifKod), ref alternatifKod, value);
+        }
         [Size(16)]
         public string KısaAd
         {
@@ -179,8 +200,8 @@ namespace TicariSet.Module.BusinessObjects
             get => indirim;
             set => SetPropertyValue(nameof(Indirim), ref indirim, value);
         }
-        [ModelDefault("DisplayFormat", "n2")]
-        [ModelDefault("EditFormat", "n2")]
+        [ModelDefault("DisplayFormat", "P")]
+        [ModelDefault("EditFormat", "P")]
         public double IndirimOran
         {
             get => indirimOran;

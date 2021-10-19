@@ -13,6 +13,11 @@ namespace TicariSet.Module.BusinessObjects
     [DefaultClassOptions]
     [DefaultProperty("StokID")]
     [XafDisplayName("Stok Fiyat")]
+    [ImageName("Business_Money")]
+    #region Persistent
+    [Persistent("StokFiyat")]
+    #endregion
+
     public class StFiyat : BaseObject
     { 
         public StFiyat(Session session)
@@ -78,7 +83,7 @@ namespace TicariSet.Module.BusinessObjects
 
         #region Kriter
 
-          [MemberDesignTimeVisibility(false)]
+        [MemberDesignTimeVisibility(false)]
         public Type ObjectName => typeof(Cariler);
 
         [XafDisplayName("Kriter")]

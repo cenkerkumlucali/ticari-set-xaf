@@ -37,20 +37,22 @@ namespace TicariSet.Module.BusinessObjects
 
         [VisibleInDetailView(false)]
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        [RuleRequiredField]
         public string Kod
         {
             get => kod;
             set => SetPropertyValue(nameof(Kod), ref kod, value);
         }
 
-        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        [Size(32)]
+        [RuleRequiredField]
         public string Tanim
         {
             get => tanim;
             set => SetPropertyValue(nameof(Tanim), ref tanim, value);
         }
 
-        [Size(SizeAttribute.Unlimited)]
+        [Size(128)]
         public string Aciklama
         {
             get => aciklama;

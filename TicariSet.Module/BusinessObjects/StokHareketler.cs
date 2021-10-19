@@ -11,7 +11,7 @@ namespace TicariSet.Module.BusinessObjects
     [DefaultClassOptions]
     [DefaultProperty("FisID.Kod")]
     public class StokHareketler : XPObject
-    { 
+    {
         public StokHareketler(Session session)
             : base(session)
         {
@@ -31,7 +31,7 @@ namespace TicariSet.Module.BusinessObjects
         double vergiOran;
         double netTutar;
         double indirimTutar;
-        double indirimOran;
+        int indirimOran;
         double toplam;
         double birimFiyat;
         Birimler birimID;
@@ -54,8 +54,7 @@ namespace TicariSet.Module.BusinessObjects
             {
                 if (fisID?.HareketTipi == StokHareketType.Giris)
                     return hareket = StokHareketType.Giris;
-                else
-                    return hareket = StokHareketType.Cikis;
+                return hareket = StokHareketType.Cikis;
             }
             set => SetPropertyValue(nameof(Hareket), ref hareket, value);
         }
@@ -80,7 +79,7 @@ namespace TicariSet.Module.BusinessObjects
                                 }
                             }
                     }
-               
+
                     if (StokID != null) VergiOran = StokID.VergiOrani;
                 }
             }
@@ -134,8 +133,8 @@ namespace TicariSet.Module.BusinessObjects
             get => toplam;
             set => SetPropertyValue(nameof(Toplam), ref toplam, value);
         }
-
-        public double IndirimOran
+       
+        public int IndirimOran
         {
             get => indirimOran;
             set
@@ -199,7 +198,7 @@ namespace TicariSet.Module.BusinessObjects
                     eskiFis.HesaplaIndirimToplam(true);
                     eskiFis.HesaplaVergiToplam(true);
                     if (FisID.CariID.Indirim != null)
-                        IndirimOran = FisID.CariID.IndirimOran;
+                        IndirimOran = (int) Convert.ToDouble(FisID.CariID.IndirimOran);
                 }
             }
         }

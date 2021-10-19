@@ -1,12 +1,12 @@
-﻿using System;
-using System.ComponentModel;
-using DevExpress.ExpressApp.ConditionalAppearance;
+﻿using DevExpress.ExpressApp.ConditionalAppearance;
 using DevExpress.ExpressApp.DC;
 using DevExpress.ExpressApp.SystemModule;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
+using System;
+using System.ComponentModel;
 using TicariSet.Module.EnumObjects;
 
 namespace TicariSet.Module.BusinessObjects
@@ -17,8 +17,9 @@ namespace TicariSet.Module.BusinessObjects
     [RuleCombinationOfPropertiesIsUnique("RCOPIU-AdSoyad", DefaultContexts.Save, "Ad,Soyad", messageTemplate: "Personel zaten mevcut")]
 
     #region Appearance
+    [Appearance("PersonelAyrılma", Criteria = "AyrilmaTarihi==null", TargetItems = "AyrılmaNedeni", Enabled = false)]
     [Appearance("PersonelEhliyet", Criteria = "SurucuBelgesi!=true", TargetItems = "PersonelSurucuBelgesi", Enabled = false)]
-    [Appearance("PersonelPasaport",Criteria = "Pasaport!=true", TargetItems = "PPasaportBilgileri",Enabled = false)]
+    [Appearance("PersonelPasaport", Criteria = "Pasaport!=true", TargetItems = "PPasaportBilgileri", Enabled = false)]
     #endregion
 
     #region ListViewFilter
@@ -46,6 +47,8 @@ namespace TicariSet.Module.BusinessObjects
             base.AfterConstruction();
         }
 
+        string ayrılmaNedeni;
+        DateTime ayrilmaTarihi;
         bool pasaport;
         PersonelPasaportBilgileri pPasaportBilgileri;
         bool surucuBelgesi;
@@ -64,6 +67,7 @@ namespace TicariSet.Module.BusinessObjects
 
         [Size(32)]
         [VisibleInDetailView(false)]
+        [RuleRequiredField]
         public string Kod
         {
             get => kod;
@@ -97,7 +101,7 @@ namespace TicariSet.Module.BusinessObjects
 
         [Calculated("Ad + ' ' + Ad2 + ' ' +Soyad")]
         [XafDisplayName("Adı Soyadı")]
-        public String AdSoyad => $"{Ad} {Ad2} {Soyad}";
+        public string AdSoyad => $"{Ad} {Ad2} {Soyad}";
 
         public Cinsiyet Cinsiyet
         {
@@ -138,7 +142,24 @@ namespace TicariSet.Module.BusinessObjects
             get => fotograf;
             set => SetPropertyValue(nameof(Fotograf), ref fotograf, value);
         }
+        [DbType("Date")]
+        [ImmediatePostData]
+        public DateTime AyrilmaTarihi
+        {
+            get => ayrilmaTarihi;
+            set => SetPropertyValue(nameof(AyrilmaTarihi), ref ayrilmaTarihi, value);
+        }
+
+        [XafDisplayName("Ayrılma Nedeni")]
+        [Size(128)]
+        public string AyrılmaNedeni
+        {
+            get => ayrılmaNedeni;
+            set => SetPropertyValue(nameof(AyrılmaNedeni), ref ayrılmaNedeni, value);
+        }
+
         [DevExpress.Xpo.Aggregated, ExpandObjectMembers(ExpandObjectMembers.Never)]
+        [RuleRequiredField]
         [XafDisplayName("Kimlik Bilgileri")]
         public PersonelKimlikBilgileri PersonelKimlikBilgileri
         {
@@ -166,7 +187,7 @@ namespace TicariSet.Module.BusinessObjects
             get => pasaport;
             set => SetPropertyValue(nameof(Pasaport), ref pasaport, value);
         }
-        [DevExpress.Xpo.Aggregated,ExpandObjectMembers(ExpandObjectMembers.Never)]
+        [DevExpress.Xpo.Aggregated, ExpandObjectMembers(ExpandObjectMembers.Never)]
         [XafDisplayName("Pasaport")]
         public PersonelPasaportBilgileri PPasaportBilgileri
         {
@@ -182,9 +203,11 @@ namespace TicariSet.Module.BusinessObjects
 
         [Association("Personel-Adres")]
         public XPCollection<PersonelAdresBilgileri> PersonelAdresBilgileri => GetCollection<PersonelAdresBilgileri>(nameof(PersonelAdresBilgileri));
-
+        DateTime tarih = Convert.ToDateTime("01.01.2000");
         protected override void OnSaving()
         {
+            Durum = AyrilmaTarihi > tarih ? DurumType.Pasif : DurumType.Aktif;
+
             if (!(Session is NestedUnitOfWork
                   && (Session.DataLayer != null)
                   && Session.IsNewObject(this))

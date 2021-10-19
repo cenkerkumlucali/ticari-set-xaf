@@ -9,40 +9,31 @@ using DevExpress.Xpo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    [NavigationItem(false)]
-    //[ImageName("BO_Contact")]
-    [DefaultProperty("Tanim")]
 
-    public class NesneTipleri : XPObject
+    [FileAttachment(nameof(File))]
+    public class FileAttachment : BaseObject
     { 
-        public NesneTipleri(Session session)
+        public FileAttachment(Session session)
             : base(session)
         {
         }
         public override void AfterConstruction()
         {
             base.AfterConstruction();
+           
         }
-
-        int kod;
-        string tanim;
-        
-        public int Kod
+        private FileData file;
+        public FileData File
         {
-            get => kod;
-            set => SetPropertyValue(nameof(Kod), ref kod, value);
-        }
-        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
-        public string Tanim
-        {
-            get => tanim;
-            set => SetPropertyValue(nameof(Tanim), ref tanim, value);
+            get { return file; }
+            set { SetPropertyValue(nameof(File), ref file, value); }
         }
     }
 }

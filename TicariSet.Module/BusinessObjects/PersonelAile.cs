@@ -2,6 +2,7 @@
 using DevExpress.ExpressApp.DC;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
+using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
 using TicariSet.Module.EnumObjects;
 
@@ -31,6 +32,7 @@ namespace TicariSet.Module.BusinessObjects
         private PersonelKart personelId;
 
         [Size(32)]
+        [RuleRequiredField]
         public string Kod
         {
             get => kod;

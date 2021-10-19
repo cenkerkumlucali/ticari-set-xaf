@@ -12,7 +12,8 @@ namespace TicariSet.Module.BusinessObjects
     [CreatableItem(false)]
     [RuleIsReferenced("", DefaultContexts.Delete, typeof(Ilceler), "SehirId", InvertResult = true,CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
     [RuleIsReferenced("RIR-Sehirler.01", DefaultContexts.Delete, typeof(Cariler), "SehirId", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction,MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
-
+    [RuleCombinationOfPropertiesIsUnique("RCOPIU-Sehirler.01",DefaultContexts.Save, 
+        "Lat,Lng,NortheastLat,NortheastLng,SouthwestLat,SouthwestLng", messageTemplate: "Bu kayıt zaten mevcuttur.")]
 
     public class Sehirler : XPObject
     { 
@@ -34,6 +35,7 @@ namespace TicariSet.Module.BusinessObjects
         private double southwestLng;
 
         [Size(64)]
+        [RuleUniqueValue("RUV-Sehirler.01", DefaultContexts.Save)]
         public string Ad
         {
             get => ad;
@@ -41,6 +43,7 @@ namespace TicariSet.Module.BusinessObjects
         }
         [DbType("decimal(20, 8)")]
         [XafDisplayName("Enlem")]
+        [RuleUniqueValue("RUV-Sehirler.02", DefaultContexts.Save)]
         public double Lat
         {
             get => lat;
@@ -49,30 +52,35 @@ namespace TicariSet.Module.BusinessObjects
 
         [DbType("decimal(20, 8)")]
         [XafDisplayName("Boylam")]
+        [RuleUniqueValue("RUV-Sehirler.03",DefaultContexts.Save)]
         public double Lng
         {
             get => lng;
             set => SetPropertyValue(nameof(Lng), ref lng, value);
         }
         [DbType("decimal(20, 8)")]
+        [RuleUniqueValue("RUV-Sehirler.04", DefaultContexts.Save)]
         public double NortheastLat
         {
             get => northeastLat;
             set => SetPropertyValue(nameof(NortheastLat), ref northeastLat, value);
         }
         [DbType("decimal(20, 8)")]
+        [RuleUniqueValue("RUV-Sehirler.05", DefaultContexts.Save)]
         public double NortheastLng
         {
             get => northeastLng;
             set => SetPropertyValue(nameof(NortheastLng), ref northeastLng, value);
         }
         [DbType("decimal(20, 8)")]
+        [RuleUniqueValue("RUV-Sehirler.06", DefaultContexts.Save)]
         public double SouthwestLat
         {
             get => southwestLat;
             set => SetPropertyValue(nameof(SouthwestLat), ref southwestLat, value);
         }
         [DbType("decimal(20, 8)")]
+        [RuleUniqueValue("RUV-Sehirler.07", DefaultContexts.Save)]
         public double SouthwestLng
         {
             get => southwestLat;

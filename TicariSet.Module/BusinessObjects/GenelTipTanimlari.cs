@@ -37,23 +37,23 @@ namespace TicariSet.Module.BusinessObjects
 
         DurumType durum;
         string ad;
+        Type _ObjectName;
 
         [XafDisplayName("Tanim")]
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        [RuleRequiredField("RRF-Ad.01",DefaultContexts.Save,SkipNullOrEmptyValues = false)]
         public string Ad
         {
             get => ad;
             set => SetPropertyValue(nameof(Ad), ref ad, value);
         }
-       
 
-        Type _ObjectName;
-        [ValueConverter(typeof(TypeStringConverter))]
-        [EditorAlias("TypeConverterEditor")]
-        [TypeConverter(typeof(LocalizedClassInfoTypeConverter))]
-        [RuleRequiredField("RRF-GnTip.ObjectName", DefaultContexts.Save, SkipNullOrEmptyValues = false)]
         [Size(64)]
         [XafDisplayName("Nesne Tipi")]
+        [ValueConverter(typeof(TypeStringConverter))]
+        [TypeConverter(typeof(LocalizedClassInfoTypeConverter))]
+        [EditorAlias("TypeConverterEditor")]
+        [RuleRequiredField("RRF-GnTip.ObjectName", DefaultContexts.Save, SkipNullOrEmptyValues = false)]
         public Type ObjectName
         {
             get { return _ObjectName; }

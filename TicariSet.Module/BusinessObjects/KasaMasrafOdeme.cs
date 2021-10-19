@@ -3,6 +3,7 @@ using System.ComponentModel;
 using DevExpress.ExpressApp.DC;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
+using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
 using TicariSet.Module.EnumObjects;
 
@@ -11,7 +12,6 @@ namespace TicariSet.Module.BusinessObjects
     [DefaultClassOptions]
     [DefaultProperty("Kod")]
     [ImageName("Business_DollarCircled")]
-
     public class KasaMasrafOdeme : KasaHareket
     {
         public KasaMasrafOdeme(Session session)
@@ -29,6 +29,7 @@ namespace TicariSet.Module.BusinessObjects
 
         [Association("Masraflar-MasrafDetay")]
         [XafDisplayName("Masraf Türü")]
+        [RuleRequiredField]
         public Masraflar MasrafID
         {
             get => masrafID;

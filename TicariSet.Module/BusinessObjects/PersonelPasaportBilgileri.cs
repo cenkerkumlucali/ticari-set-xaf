@@ -2,6 +2,7 @@
 using DevExpress.ExpressApp.DC;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
+using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
 
 namespace TicariSet.Module.BusinessObjects
@@ -41,12 +42,14 @@ namespace TicariSet.Module.BusinessObjects
         }
         [Size(16)]
         [XafDisplayName("Pasaport No")]
+        [RuleUniqueValue("PUV-Pasaport.01",DefaultContexts.Save,CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction)]
         public string PNo
         {
             get => pNo;
             set => SetPropertyValue(nameof(PNo), ref pNo, value);
         }
         [XafDisplayName("Pasaport Tipi")]
+        [RuleRequiredField]
         public PersonelPasaportBilgileri PPasaportBilgileri
         {
             get => pPasaportBilgileri;
@@ -68,6 +71,7 @@ namespace TicariSet.Module.BusinessObjects
         }
         [DbType("Date")]
         [XafDisplayName("Pasaport Geçerlilik Tarih")]
+        [RuleRequiredField]
         public DateTime PGecerlilikTarihi
         {
             get => pGecerlilikTarihi;

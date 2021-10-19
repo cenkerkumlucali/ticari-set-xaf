@@ -4,6 +4,7 @@ using DevExpress.ExpressApp.ConditionalAppearance;
 using DevExpress.ExpressApp.DC;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
+using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
 using TicariSet.Module.EnumObjects;
 
@@ -48,6 +49,7 @@ namespace TicariSet.Module.BusinessObjects
         }
         private string sbBelgeNo;
         [XafDisplayName("Sb.Belge No")]
+        [RuleUniqueValue("RUV-PersonelBelge.01",DefaultContexts.Save,CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction)]    
         [Size(6)]
         public string SbBelgeNo
         {
@@ -56,6 +58,7 @@ namespace TicariSet.Module.BusinessObjects
         }
         private string sbSeriNo;
         [XafDisplayName("Sb.Seri No")]
+        [RuleUniqueValue("RUV-PersonelSeriNo.01", DefaultContexts.Save, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction)]
         [Size(3)]
         public string SbSeriNo
         {

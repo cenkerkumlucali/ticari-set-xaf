@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using DevExpress.Data.Filtering;
@@ -16,11 +17,16 @@ namespace TicariSet.Module.BusinessObjects
     [DefaultClassOptions]
     [ImageName("BO_Product_Group")]
     [DefaultProperty("Tanim")]
+
+    #region ListViewFilter
     [ListViewFilter("Tüm Liste", "")]
     [ListViewFilter("Aktif Stoklar", "[Durum] == false", true)]
     [ListViewFilter("Pasif Stoklar", "[Durum] == true")]
-    [Appearance("RedPriceObject", AppearanceItemType = "ViewItem", TargetItems = "*", Criteria = "Kalan<1000", Context = "ListView", BackColor = "Yellow", FontColor = "Maroon", Priority = 2)]
+    #endregion
 
+    #region Appearance
+    [Appearance("RedPriceObject", AppearanceItemType = "ViewItem", TargetItems = "*", Criteria = "Kalan<1000", Context = "ListView", BackColor = "Yellow", FontColor = "Maroon", Priority = 2)]
+    #endregion
 
     #region RuleIsReferenced
     [RuleIsReferenced("RIR-Stoklar.StokHareketler", DefaultContexts.Delete, typeof(StokHareketler), "StokID", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
@@ -28,7 +34,7 @@ namespace TicariSet.Module.BusinessObjects
     [RuleIsReferenced("RIR-Stoklar.StFiyat", DefaultContexts.Delete, typeof(StFiyat), "StokID", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
     #endregion
 
-        
+
     public class Stoklar : BaseObject
     {
         public Stoklar(Session session)
@@ -52,15 +58,28 @@ namespace TicariSet.Module.BusinessObjects
         byte[] fotograf;
         DateTime olusturulmaTarihi;
         string barkod;
-         GenelTipTanimlari kartTipi;
+        GenelTipTanimlari kartTipi;
 
         [VisibleInDetailView(false)]
+        [RuleUniqueValue("RUV-Stoklar.03",DefaultContexts.Save,CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction)]
         public string Kod
         {
             get => kod;
             set => SetPropertyValue(nameof(Kod), ref kod, value);
         }
-        [DataSourceCriteria(@"ObjectName = 'Stoklar'")]
+
+        [VisibleInDetailView(false)]
+        [VisibleInListView(false)]
+        public IList<GenelTipTanimlari> GetGnTipList
+        {
+            get
+            {
+                CriteriaOperator criteria = CriteriaOperator.Parse("ObjectName = ?",GetType().Name);
+                return new XPCollection<GenelTipTanimlari>(Session, criteria);
+            }
+        }
+
+        [DataSourceProperty("GetGnTipList")]
         public GenelTipTanimlari KartTipi
         {
             get => kartTipi;
@@ -97,7 +116,7 @@ namespace TicariSet.Module.BusinessObjects
         }
 
         [DbType("Date")]
-        public DateTime OlusturulmaTarihi   
+        public DateTime OlusturulmaTarihi
         {
             get => olusturulmaTarihi;
             set => SetPropertyValue(nameof(OlusturulmaTarihi), ref olusturulmaTarihi, value);
@@ -105,7 +124,7 @@ namespace TicariSet.Module.BusinessObjects
 
         [Size(32)]
         [VisibleInListView(false)]
-        [RuleUniqueValue("RUV-Barkod.01",DefaultContexts.Save,CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction)]
+        [RuleUniqueValue("RUV-Stoklar.01", DefaultContexts.Save, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction)]
         public string Barkod
         {
             get => barkod;
@@ -116,10 +135,10 @@ namespace TicariSet.Module.BusinessObjects
         public XPCollection<StFiyat> StFiyatId => GetCollection<StFiyat>(nameof(StFiyatId));
 
         [XafDisplayName("Renkler")]
-        [Association("Stoklar-Renkler"),DevExpress.ExpressApp.DC.Aggregated]
-        [RuleUniqueValue("RUV-StKartRenk.01",DefaultContexts.Save,
-            CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction,TargetPropertyName = "RenkTanimId")]
-        public XPCollection<StKartRenk> StKartRenk=> GetCollection<StKartRenk>(nameof(StKartRenk));
+        [Association("Stoklar-Renkler"), DevExpress.ExpressApp.DC.Aggregated]
+        [RuleUniqueValue("RUV-Stoklar.02", DefaultContexts.Save,
+            CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, TargetPropertyName = "RenkTanimId")]
+        public XPCollection<StKartRenk> StKartRenk => GetCollection<StKartRenk>(nameof(StKartRenk));
 
         [Association("Stoklar-StokHareket")]
         public XPCollection<StokHareketler> StokHareket => GetCollection<StokHareketler>(nameof(StokHareket));
@@ -133,7 +152,7 @@ namespace TicariSet.Module.BusinessObjects
         [VisibleInDetailView(false)]
         public double Kalan => Giren - Cikan;
 
-        
+
 
         protected override void OnSaving()
         {

@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using DevExpress.Persistent.Base;
+using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
 
 namespace TicariSet.Module.BusinessObjects
@@ -17,12 +18,13 @@ namespace TicariSet.Module.BusinessObjects
         public override void AfterConstruction()
         {
             base.AfterConstruction();
-            // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
 
         private string ad;
 
         [Size(32)]
+        [RuleUniqueValue("RUV-Ulkeler.01",DefaultContexts.Save,CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction)]
+        [RuleRequiredField]
         public string Ad
         {
             get => ad;

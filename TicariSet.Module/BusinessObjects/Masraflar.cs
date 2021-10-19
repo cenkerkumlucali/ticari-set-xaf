@@ -2,6 +2,7 @@
 using DevExpress.ExpressApp.DC;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
+using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
 
 namespace TicariSet.Module.BusinessObjects
@@ -24,14 +25,17 @@ namespace TicariSet.Module.BusinessObjects
         string tanim;
         string kod;
 
-        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        [Size(32)]
+        [RuleUniqueValue]
+        [RuleRequiredField]
         public string Kod
         {
             get => kod;
             set => SetPropertyValue(nameof(Kod), ref kod, value);
         }
 
-        [Size(SizeAttribute.DefaultStringMappingFieldSize)]
+        [Size(128)]
+        [RuleRequiredField]
         public string Tanim
         {
             get => tanim;
@@ -40,6 +44,7 @@ namespace TicariSet.Module.BusinessObjects
 
         [Association("MasrafGrubu-Masraf")]
         [XafDisplayName("Grup")]
+        [RuleRequiredField]
         public MasrafGrubu GrupID
         {
             get => grupID;

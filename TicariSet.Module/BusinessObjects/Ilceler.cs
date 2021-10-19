@@ -10,7 +10,8 @@ namespace TicariSet.Module.BusinessObjects
     [DefaultProperty("Ad")]
     [ImageName("Actions_Home")]
     [CreatableItem(true)]
-    [RuleCombinationOfPropertiesIsUnique("IlcelerRule",DefaultContexts.Save,"Ad",messageTemplate:"Girilen ilçe zaten mevcuttur.")]   
+    [RuleCombinationOfPropertiesIsUnique("RCOPIU-Ilceler.01",DefaultContexts.Save,
+        "Lat,Lng,NortheastLat,NortheastLng,SouthwestLat,SouthwestLng",messageTemplate:"Bu kayıt zaten mevcuttur.")]
     public class Ilceler : XPObject
     { 
         public Ilceler(Session session)
@@ -32,6 +33,7 @@ namespace TicariSet.Module.BusinessObjects
 
         [Size(64)]
         [RuleRequiredField]
+        [RuleUniqueValue("RUV-Ilceler.01",DefaultContexts.Save,CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction)]
         public string Ad
         {
             get => ad;

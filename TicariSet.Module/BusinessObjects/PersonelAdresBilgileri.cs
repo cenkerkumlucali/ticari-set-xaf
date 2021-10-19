@@ -39,6 +39,7 @@ namespace TicariSet.Module.BusinessObjects
         }
 
         [Size(32)]
+        [RuleRequiredField]
         public string Kod
         {
             get => kod;
