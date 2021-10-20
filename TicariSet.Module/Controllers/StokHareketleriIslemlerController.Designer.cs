@@ -1,7 +1,7 @@
 ﻿
 namespace TicariSet.Module.Controllers
 {
-    partial class IslemlerController
+    partial class StokHareketleriIslemlerController
     {
         /// <summary>
         /// Required designer variable.
@@ -30,26 +30,9 @@ namespace TicariSet.Module.Controllers
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.popupWindowShowAction1 = new DevExpress.ExpressApp.Actions.PopupWindowShowAction(this.components);
-            // 
-            // popupWindowShowAction1
-            // 
-            this.popupWindowShowAction1.AcceptButtonCaption = null;
-            this.popupWindowShowAction1.CancelButtonCaption = null;
-            this.popupWindowShowAction1.Caption = null;
-            this.popupWindowShowAction1.ConfirmationMessage = null;
-            this.popupWindowShowAction1.Id = "71d4a3d7-85c3-48c9-ab84-92e37c900a9b";
-            this.popupWindowShowAction1.ToolTip = null;
-            this.popupWindowShowAction1.Execute += new DevExpress.ExpressApp.Actions.PopupWindowShowActionExecuteEventHandler(this.popupWindowShowAction1_Execute);
-            // 
-            // IslemlerController   
-            // 
-            this.Actions.Add(this.popupWindowShowAction1);
-
         }
 
         #endregion
 
-        private DevExpress.ExpressApp.Actions.PopupWindowShowAction popupWindowShowAction1;
     }
 }
