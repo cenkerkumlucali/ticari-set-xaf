@@ -171,6 +171,12 @@
     <Compile Include="BusinessObjects\CariTahsilat.cs" />
     <Compile Include="BusinessObjects\Cariler.cs" />
     <Compile Include="BusinessObjects\BirimSetiTanimlari.cs" />
+    <Compile Include="Controllers\CariAlisSatisIslemleriController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\CariAlisSatisIslemleriController.Designer.cs">
+      <DependentUpon>CariAlisSatisIslemleriController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\DeactivateDeleteController.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -189,11 +195,11 @@
     <Compile Include="Controllers\ExitApp.Designer.cs">
       <DependentUpon>ExitApp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\IslemlerController.cs">
+    <Compile Include="Controllers\StokHareketleriIslemlerController.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controllers\IslemlerController.Designer.cs">
-      <DependentUpon>IslemlerController.cs</DependentUpon>
+    <Compile Include="Controllers\StokHareketleriIslemlerController.Designer.cs">
+      <DependentUpon>StokHareketleriIslemlerController.cs</DependentUpon>
     </Compile>
     <Compile Include="Controllers\ShowListViewController.cs">
       <SubType>Component</SubType>
@@ -283,8 +289,8 @@
     <EmbeddedResource Include="Controllers\FislerViewController.resx">
       <DependentUpon>FislerViewController.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controllers\IslemlerController.resx">
-      <DependentUpon>IslemlerController.cs</DependentUpon>
+    <EmbeddedResource Include="Controllers\StokHareketleriIslemlerController.resx">
+      <DependentUpon>StokHareketleriIslemlerController.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controllers\KasaHareketViewController.resx">
       <DependentUpon>KasaHareketViewController.cs</DependentUpon>
