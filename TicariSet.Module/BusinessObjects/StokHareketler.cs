@@ -10,6 +10,7 @@ namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
     [DefaultProperty("FisID.Kod")]
+    [ImageName("BO_Quote")]
     public class StokHareketler : XPObject
     {
         public StokHareketler(Session session)

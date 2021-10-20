@@ -13,6 +13,7 @@ namespace TicariSet.Module.BusinessObjects
     [DefaultClassOptions]
     [DefaultProperty("Kod")]
     [CreatableItem(false)]
+    [ImageName("Paid")]
     public class Fisler : XPObject
     {
         public Fisler(Session session)

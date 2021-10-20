@@ -67,6 +67,7 @@ namespace TicariSet.Module.BusinessObjects
         }
         private Sehirler sbSehir;
         [XafDisplayName("Sb.Sehir")]
+        [ToolTip("Sürücü belgesinin verildi şehiri giriniz.")]
         public Sehirler SbSehir
         {
             get => sbSehir;
@@ -74,6 +75,7 @@ namespace TicariSet.Module.BusinessObjects
         }
         private Ilceler sbIlce;
         [XafDisplayName("Sb.İlçe")]
+        [ToolTip("Sürücü belgesinin verildiği ilçeyi giriniz.")]
         public Ilceler SbIlce
         {
             get => sbIlce;
@@ -83,6 +85,7 @@ namespace TicariSet.Module.BusinessObjects
 
         [DbType("Date")]
         [XafDisplayName("Sb.Verildiği Tarih")]
+        [ToolTip("Sürücü belgesinin verildiği tarihi giriniz.")]
         public DateTime SbVerildigiTarih
         {
             get => sbVerildigiTarih;

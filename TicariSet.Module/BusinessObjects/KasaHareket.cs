@@ -13,7 +13,7 @@ namespace TicariSet.Module.BusinessObjects
     [DefaultClassOptions]
     [CreatableItem(false)]
     [DefaultProperty("Kod")]
-  
+    [ImageName("Currency")]
     public class KasaHareket : BaseObject
     { 
         public KasaHareket(Session session)

@@ -12,6 +12,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using DevExpress.ExpressApp.SystemModule;
 using DevExpress.ExpressApp.Xpo;
 using DevExpress.Utils;
 using DevExpress.Xpo.Metadata.Helpers;
@@ -22,6 +23,10 @@ namespace TicariSet.Module.BusinessObjects
     [DefaultClassOptions]
     [ImageName("PrintAllPages")]
     [DefaultProperty("Ad")]
+
+    [ListViewFilter("Tüm Liste", "", true)]
+    [ListViewFilter("Aktif Hesaplar", "[Durum] == false")]
+    [ListViewFilter("Pasif Hesaplar", "[Durum] == true")]
 
     public class GenelTipTanimlari : XPObject
     {

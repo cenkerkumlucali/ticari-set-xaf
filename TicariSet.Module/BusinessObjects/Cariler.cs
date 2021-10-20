@@ -222,9 +222,11 @@ namespace TicariSet.Module.BusinessObjects
         public XPCollection<BankaHesaplari> BankaHesaplari => GetCollection<BankaHesaplari>(nameof(BankaHesaplari));
 
         [Association("Cari-Adres")]
-        [XafDisplayName("Adres Bilgileri")]
-        public XPCollection<CariAdresBilgileri> CariAdres =>
-            GetCollection<CariAdresBilgileri>(nameof(CariAdres));
+        [XafDisplayName("Adres Bilgileri"),DevExpress.ExpressApp.DC.Aggregated]
+        public XPCollection<CariAdresBilgileri> CariAdres => GetCollection<CariAdresBilgileri>(nameof(CariAdres));
+
+        [Association("Cariler-EkDosyalar"),DevExpress.ExpressApp.DC.Aggregated]
+        public XPCollection<EkDosyalar> EkDosyalar => GetCollection<EkDosyalar>(nameof(EkDosyalar));
 
         protected override void OnSaving()
         {

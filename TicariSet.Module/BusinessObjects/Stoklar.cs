@@ -142,6 +142,8 @@ namespace TicariSet.Module.BusinessObjects
 
         [Association("Stoklar-StokHareket")]
         public XPCollection<StokHareketler> StokHareket => GetCollection<StokHareketler>(nameof(StokHareket));
+        [Association("Stoklar-EkDosyalar")]
+        public XPCollection<EkDosyalar> EkDosyalar => GetCollection<EkDosyalar>(nameof(EkDosyalar));
 
         [VisibleInDetailView(false)]
         public double Giren => StokHareket.Where(c => c.Hareket == EnumObjects.StokHareketType.Giris).Sum(c => c.Miktar);

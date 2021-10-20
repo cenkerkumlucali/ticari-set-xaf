@@ -49,6 +49,9 @@ namespace TicariSet.Module.BusinessObjects
             get => anaBirim;
             set => SetPropertyValue(nameof(AnaBirim), ref anaBirim, value);
         }
+        [Association("BirimSetiTanimlari-Birimler")]
+        public XPCollection<Birimler> Birimler => GetCollection<Birimler>(nameof(Birimler));
+
         public DurumType Durum
         {
             get => durum;

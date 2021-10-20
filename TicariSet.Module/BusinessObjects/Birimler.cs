@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using DevExpress.Data.Filtering;
+using DevExpress.ExpressApp.DC;
 using DevExpress.ExpressApp.SystemModule;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.Validation;
@@ -27,6 +28,7 @@ namespace TicariSet.Module.BusinessObjects
             Durum = DurumType.Aktif;
         }
 
+        BirimSetiTanimlari bSetiTanimlari;
         bool varsayilan;
         DurumType durum;
         string tanim;
@@ -53,7 +55,13 @@ namespace TicariSet.Module.BusinessObjects
             get => durum;
             set => SetPropertyValue(nameof(Durum), ref durum, value);
         }
-
+        [Association("BirimSetiTanimlari-Birimler")]
+        [XafDisplayName("Birim Seti")]
+        public BirimSetiTanimlari BSetiTanimlari
+        {
+            get => bSetiTanimlari;
+            set => SetPropertyValue(nameof(BSetiTanimlari), ref bSetiTanimlari, value);
+        }
         public bool Varsayilan
         {
             get => varsayilan;

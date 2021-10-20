@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using DevExpress.ExpressApp.DC;
+using DevExpress.ExpressApp.Filtering;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
@@ -26,7 +27,6 @@ namespace TicariSet.Module.BusinessObjects
 
         private PersonelKart personelId;
         [XafDisplayName("Personel")]
-
         public PersonelKart PersonelId
         {
             get => personelId;
@@ -37,6 +37,7 @@ namespace TicariSet.Module.BusinessObjects
 
         [Size(11)]
         [RuleRequiredField]
+        [ToolTip("Kimlik Numarasını giriniz.")]
         [RuleUniqueValue("RUV-KimlikNo.01", DefaultContexts.Save, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction)]
         public string KimlikNo
         {
@@ -112,6 +113,7 @@ namespace TicariSet.Module.BusinessObjects
         
         private Sehirler ncKayitliOlduguSehir;
         [XafDisplayName("Nc.Kayıtlı Olduğu Şehir")]
+        [ToolTip("Nüfus cüzdanınızın kayıtlı olduğu şehiri giriniz.")]
         public Sehirler NcKayitliOlduguSehir
         {
             get => ncKayitliOlduguSehir;
@@ -120,7 +122,9 @@ namespace TicariSet.Module.BusinessObjects
 
         private Ilceler ncKayitliOlduguIlce;
         [DataSourceProperty("NcKayitliOlduguSehir.Ilceler")]
+        [ToolTip("Nüfus cüzdanınızın kayıtlı olduğu ilçeyi giriniz.")]
         [XafDisplayName("Nc.Kayıtlı Olduğu İlçe")]
+        [SearchMemberOptions(SearchMemberMode.Exclude)]
         public Ilceler NcKayitliOlduguIlce
         {
             get => ncKayitliOlduguIlce;
@@ -129,15 +133,16 @@ namespace TicariSet.Module.BusinessObjects
 
         private string ncKayıtliOlduguMahalleKoy;
         [XafDisplayName("Nc.Kayıtlı Olduğu Mahalle/Köy")]
+        [ToolTip("Nüfus cüzdanınızın kayıtlı olduğu mahalle/köy giriniz.")]
         [Size(64)]
         public string NcKayıtliOlduguMahalleKoy
         {
             get => ncKayıtliOlduguMahalleKoy;
             set => SetPropertyValue(nameof(NcKayıtliOlduguMahalleKoy), ref ncKayıtliOlduguMahalleKoy, value);
         }
-        [XafDisplayName("Nc.Cilt No")]
-        private string ncCiltNo;
 
+        private string ncCiltNo;
+        [XafDisplayName("Nc.Cilt No")]
         [Size(5)]
         public string NcCiltNo
         {
