@@ -138,6 +138,7 @@
     <Reference Include="System.Drawing">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -160,7 +161,7 @@
     <Compile Include="BusinessObjects\BankaOdeme.cs" />
     <Compile Include="BusinessObjects\BankaSubeleri.cs" />
     <Compile Include="BusinessObjects\BankaTahsilat.cs" />
-    <Compile Include="BusinessObjects\FileAttachment.cs" />
+    <Compile Include="BusinessObjects\EkDosyalar.cs" />
     <Compile Include="BusinessObjects\GenelTipTanimlari.cs" />
     <Compile Include="BusinessObjects\PersonelPasaportBilgileri.cs" />
     <Compile Include="BusinessObjects\Birimler.cs" />
@@ -170,6 +171,36 @@
     <Compile Include="BusinessObjects\CariTahsilat.cs" />
     <Compile Include="BusinessObjects\Cariler.cs" />
     <Compile Include="BusinessObjects\BirimSetiTanimlari.cs" />
+    <Compile Include="Controllers\DeactivateDeleteController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\DeactivateDeleteController.Designer.cs">
+      <DependentUpon>DeactivateDeleteController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DeactivateNewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\DeactivateNewController.Designer.cs">
+      <DependentUpon>DeactivateNewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ExitApp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ExitApp.Designer.cs">
+      <DependentUpon>ExitApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\IslemlerController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\IslemlerController.Designer.cs">
+      <DependentUpon>IslemlerController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ShowListViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ShowListViewController.Designer.cs">
+      <DependentUpon>ShowListViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Converters\TypeStringConverter.cs" />
     <Compile Include="EnumObjects\PasaportTipleri.cs" />
     <Compile Include="Converters\ColorConverter.cs" />
@@ -251,6 +282,9 @@
     </None>
     <EmbeddedResource Include="Controllers\FislerViewController.resx">
       <DependentUpon>FislerViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\IslemlerController.resx">
+      <DependentUpon>IslemlerController.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controllers\KasaHareketViewController.resx">
       <DependentUpon>KasaHareketViewController.cs</DependentUpon>

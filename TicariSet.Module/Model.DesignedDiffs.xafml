@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application Title="TicariSet" PreferredLanguage="tr">
+  <ActionDesign>
+    <Actions>
+      <Action Id="Stok Hareketleri" TargetObjectsCriteriaMode="TrueAtLeastForOne" />
+    </Actions>
+  </ActionDesign>
   <BOModel>
     <Class Name="TicariSet.Module.BusinessObjects.Bankalar" IsCloneable="True" />
     <Class Name="TicariSet.Module.BusinessObjects.BankaSubeleri" IsCloneable="True" />
@@ -32,20 +37,20 @@
       </Item>
       <Item Id="Stoklar" Index="1" IsNewNode="True">
         <Items IsNewNode="True">
-          <Item Id="StokHareketler_ListView" ViewId="StokHareketler_ListView" ObjectKey="" Visible="True" IsNewNode="True" />
+          <Item Id="StokHareketler_ListView" ViewId="StokHareketler_ListView" ObjectKey="" Visible="True" ImageName="BO_Quote" IsNewNode="True" />
           <Item Id="Stoklar_ListView" ViewId="Stoklar_ListView" ObjectKey="" IsNewNode="True" />
         </Items>
       </Item>
       <Item Id="Cari Hesap" Index="2" IsNewNode="True">
         <Items IsNewNode="True">
-          <Item Id="@623e01c9-89d5-4404-8ab6-66ce506cb6a8" Index="0" ViewId="Cariler_ListView_Yerel" IsNewNode="True" />
+          <Item Id="@623e01c9-89d5-4404-8ab6-66ce506cb6a8" Index="0" ViewId="Cariler_ListView_Yerel" ImageName="BO_Employee" IsNewNode="True" />
           <Item Id="Cariler_ListView" ObjectKey="" ViewId="Cariler_ListView_Tedarikci" Index="1" IsNewNode="True" />
-          <Item Id="@de0e8ec3-e3e7-4da6-b9b6-e7527ada4fe0" Index="2" ViewId="Cariler_ListView_Musteriler" IsNewNode="True" />
-          <Item Id="@19344010-b490-4cd9-b9ad-9cce4d250283" ViewId="Cariler_ListView_Ureticiler" Index="3" IsNewNode="True" />
-          <Item Id="@90da6c14-1969-407b-b282-0a3821f0a120" Index="4" ViewId="Cariler_ListView_Personel" IsNewNode="True" />
-          <Item Id="@5fd567f1-7e67-4040-b502-78fd90f08663" QuickAccessItem="False" ViewId="Cariler_ListView_Departman" Index="5" IsNewNode="True" />
-          <Item Id="@1376ff57-e9d9-4832-ba8c-d4acd424ce18" Index="6" ViewId="Cariler_ListView_Depo" IsNewNode="True" />
-          <Item Id="@fa14df54-8d95-4b86-8c3d-9221b4655b8a" Index="7" ViewId="Cariler_ListView_Surec" IsNewNode="True" />
+          <Item Id="@de0e8ec3-e3e7-4da6-b9b6-e7527ada4fe0" Index="2" ViewId="Cariler_ListView_Musteriler" ImageName="BO_Person" IsNewNode="True" />
+          <Item Id="@19344010-b490-4cd9-b9ad-9cce4d250283" ViewId="Cariler_ListView_Ureticiler" Index="3" ImageName="GroupByResource" IsNewNode="True" />
+          <Item Id="@90da6c14-1969-407b-b282-0a3821f0a120" Index="4" ViewId="Cariler_ListView_Personel" ImageName="BO_MyDetails" IsNewNode="True" />
+          <Item Id="@5fd567f1-7e67-4040-b502-78fd90f08663" QuickAccessItem="False" ViewId="Cariler_ListView_Departman" Index="5" ImageName="BO_Department" IsNewNode="True" />
+          <Item Id="@1376ff57-e9d9-4832-ba8c-d4acd424ce18" Index="6" ViewId="Cariler_ListView_Depo" ImageName="EmployeeProfile" IsNewNode="True" />
+          <Item Id="@fa14df54-8d95-4b86-8c3d-9221b4655b8a" Index="7" ViewId="Cariler_ListView_Surec" ImageName="Miss" IsNewNode="True" />
           <Item Id="CariAdresBilgileri_ListView" ViewId="CariAdresBilgileri_ListView" ObjectKey="" IsNewNode="True" />
           <Item Id="CariIletisimBilgileri_ListView" ViewId="CariIletisimBilgileri_ListView" ObjectKey="" IsNewNode="True" />
         </Items>
@@ -78,6 +83,7 @@
           <Item Id="CariOdeme_ListView" Removed="True" />
           <Item Id="CariTahsilat_ListView" Removed="True" />
           <Item Id="Doviz_ListView" Removed="True" />
+          <Item Id="EkDosyalar_ListView" Removed="True" />
           <Item Id="Event_ListView" Removed="True" />
           <Item Id="Fisler_ListView" Visible="False" Removed="True" />
           <Item Id="GenelTipTanimlari_ListView" Removed="True" />
@@ -107,21 +113,17 @@
       <Item Id="Faturalar" Index="5" IsNewNode="True">
         <Items IsNewNode="True">
           <Item Id="AlisFaturasi_ListView" ViewId="AlisFaturasi_ListView" ObjectKey="" IsNewNode="True" />
-          <Item Id="Fisler_ListView" ViewId="Fisler_ListView" ObjectKey="" Visible="False" IsNewNode="True" />
+          <Item Id="Fisler_ListView" ViewId="Fisler_ListView" ObjectKey="" Visible="False" ImageName="Paid" IsNewNode="True" />
           <Item Id="SatisFaturasi_ListView" ViewId="SatisFaturasi_ListView" ObjectKey="" IsNewNode="True" />
         </Items>
       </Item>
       <Item Id="Kasalar" Index="6" IsNewNode="True">
         <Items IsNewNode="True">
-          <Item Id="KasaHareket_ListView" ViewId="KasaHareket_ListView" ObjectKey="" Visible="False" IsNewNode="True" />
+          <Item Id="KasaHareket_ListView" ViewId="KasaHareket_ListView" ObjectKey="" Visible="False" ImageName="Currency" IsNewNode="True" />
           <Item Id="Kasalar_ListView" ViewId="Kasalar_ListView" ObjectKey="" IsNewNode="True" />
         </Items>
       </Item>
-      <Item Id="Kullanıcılar" Index="7" IsNewNode="True">
-        <Items IsNewNode="True">
-          <Item Id="Event_ListView" ViewId="Event_ListView" ObjectKey="" IsNewNode="True" />
-        </Items>
-      </Item>
+      <Item Id="Kullanıcılar" Index="7" Visible="False" IsNewNode="True" />
       <Item Id="Masraflar" Index="8" IsNewNode="True">
         <Items IsNewNode="True">
           <Item Id="MasrafGrubu_ListView" ViewId="MasrafGrubu_ListView" ObjectKey="" ImageName="Action_CloneMerge_Clone_Object" IsNewNode="True" />
@@ -144,19 +146,25 @@
         </Items>
       </Item>
       <Item Id="Reports" Index="11" />
-      <Item Id="Satın Alma Yönetimi" IsNewNode="True" />
-      <Item Id="Tahsilat" IsNewNode="True">
+      <Item Id="Satın Alma Yönetimi" Index="12" IsNewNode="True" />
+      <Item Id="Tahsilat" Index="13" IsNewNode="True">
         <Items IsNewNode="True">
           <Item Id="BankaTahsilat_ListView" ViewId="BankaTahsilat_ListView" ObjectKey="" IsNewNode="True" />
           <Item Id="CariTahsilat_ListView" ViewId="CariTahsilat_ListView" ObjectKey="" IsNewNode="True" />
         </Items>
       </Item>
-      <Item Id="Tanımlar" IsNewNode="True">
+      <Item Id="Tanımlar" Index="14" IsNewNode="True">
         <Items IsNewNode="True">
           <Item Id="Birimler_ListView" ViewId="Birimler_ListView" ObjectKey="" IsNewNode="True" />
           <Item Id="BirimSetiTanimlari_ListView" ViewId="BirimSetiTanimlari_ListView" ObjectKey="" IsNewNode="True" />
           <Item Id="Doviz_ListView" ViewId="Doviz_ListView" ObjectKey="" IsNewNode="True" />
           <Item Id="RenkTanimlari_ListView" ViewId="RenkTanimlari_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="@9498b125-034a-4edf-a972-c91268f0f721" Index="15" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="EkDosyalar_ListView" ViewId="EkDosyalar_ListView" ObjectKey="" ImageName="BO_FileAttachment" IsNewNode="True" />
+          <Item Id="Event_ListView" ViewId="Event_ListView" ObjectKey="" IsNewNode="True" />
         </Items>
       </Item>
     </Items>
@@ -559,11 +567,11 @@
     <DetailView Id="Cariler_DetailView">
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="SimpleEditors" RelativeSize="29.791271347248578" Direction="Horizontal">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="32.371134020618555" Direction="Horizontal">
             <LayoutGroup Id="Cariler" ShowCaption="True" Index="0" RelativeSize="9.577464788732394" Removed="True">
               <LayoutGroup Id="Cariler_col1" ShowCaption="False" Index="0" RelativeSize="100" IsNewNode="True" />
             </LayoutGroup>
-            <LayoutGroup Id="Item3" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="43.6764705882353" IsNewNode="True">
+            <LayoutGroup Id="Item3" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="48.11643835616438" IsNewNode="True">
               <LayoutItem Id="KartTipi" ViewItem="KartTipi" Index="0" RelativeSize="27.118644067796609" IsNewNode="True" />
               <LayoutItem Id="Tanim" ViewItem="Tanim" Index="1" RelativeSize="20.338983050847457" IsNewNode="True" />
               <LayoutItem Id="Durum" ViewItem="Durum" Index="2" RelativeSize="20.338983050847457" IsNewNode="True" />
@@ -572,32 +580,36 @@
                 <LayoutItem Id="IndirimOran" ViewItem="IndirimOran" Index="1" RelativeSize="50" IsNewNode="True" />
               </LayoutGroup>
             </LayoutGroup>
-            <LayoutGroup Id="Item2" ShowCaption="True" CaptionLocation="Top" Index="1" RelativeSize="24.852941176470587" IsNewNode="True">
+            <LayoutGroup Id="Item2" ShowCaption="True" CaptionLocation="Top" Index="1" RelativeSize="25.513698630136986" IsNewNode="True">
               <LayoutItem Id="KısaAd" ViewItem="KısaAd" Index="0" RelativeSize="27.118644067796609" IsNewNode="True" />
               <LayoutItem Id="DigerAd" ViewItem="DigerAd" Index="1" RelativeSize="20.338983050847457" IsNewNode="True" />
               <LayoutItem Id="YabanciAd" ViewItem="YabanciAd" Index="2" RelativeSize="20.338983050847457" IsNewNode="True" />
               <LayoutItem Id="Aciklama" ViewItem="Aciklama" Index="3" RelativeSize="32.203389830508478" IsNewNode="True" />
             </LayoutGroup>
-            <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="2" RelativeSize="31.470588235294116" IsNewNode="True">
+            <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="2" RelativeSize="26.36986301369863" IsNewNode="True">
               <LayoutItem Id="Fotograf" ViewItem="Fotograf" Index="0" RelativeSize="100" IsNewNode="True" />
             </LayoutGroup>
           </LayoutGroup>
-          <TabbedGroup Id="Tabs" RelativeSize="70.208728652751418">
-            <LayoutGroup Id="AlisSatisIslem" RelativeSize="100">
+          <TabbedGroup Id="Tabs" RelativeSize="67.628865979381445">
+            <LayoutGroup Id="AlisSatisIslem" RelativeSize="100" Index="0">
               <LayoutItem Id="AlisSatisIslem" RelativeSize="100" />
             </LayoutGroup>
-            <LayoutGroup Id="ParasalHareket" RelativeSize="100">
+            <LayoutGroup Id="ParasalHareket" RelativeSize="100" Index="1">
               <LayoutItem Id="ParasalHareket" RelativeSize="100" />
             </LayoutGroup>
-            <LayoutGroup Id="CariIletisimBilgileri" RelativeSize="100">
+            <LayoutGroup Id="CariIletisimBilgileri" RelativeSize="100" Index="2">
               <LayoutItem Id="CariIletisimBilgileri" RelativeSize="100" />
             </LayoutGroup>
-            <LayoutGroup Id="BankaHesaplari" RelativeSize="100">
+            <LayoutGroup Id="BankaHesaplari" RelativeSize="100" Index="3">
               <LayoutItem Id="BankaHesaplari" RelativeSize="100" />
             </LayoutGroup>
-            <LayoutGroup Id="CariAdres" RelativeSize="100">
+            <LayoutGroup Id="CariAdres" RelativeSize="100" Index="4">
               <LayoutItem Id="CariAdres" RelativeSize="100" />
             </LayoutGroup>
+            <LayoutGroup Id="EkDosyalar" Index="5" RelativeSize="100">
+              <LayoutItem Id="EkDosyalar" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="GetGnTipList" Removed="True" />
           </TabbedGroup>
         </LayoutGroup>
       </Layout>
@@ -1119,6 +1131,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
+    <ListView Id="Cariler_EkDosyalar_ListView" AllowEdit="True" NewItemRowPosition="Bottom" />
     <ListView Id="Cariler_ListView">
       <Columns>
         <ColumnInfo Id="DigerAd" Index="-1" />
@@ -1137,7 +1150,7 @@
         <ColumnInfo Id="Aciklama" Index="11" />
       </Columns>
     </ListView>
-    <ListView Id="Cariler_ListView_Departman" ClassName="TicariSet.Module.BusinessObjects.Cariler" DetailViewID="Cariler_DetailView_Departman" Criteria="[KartTipi.Oid] = 11" IsNewNode="True">
+    <ListView Id="Cariler_ListView_Departman" ClassName="TicariSet.Module.BusinessObjects.Cariler" Criteria="[KartTipi.Oid] = 11" DetailViewID="Cariler_DetailView" IsNewNode="True">
       <Columns IsNewNode="True">
         <ColumnInfo Id="DigerAd" PropertyName="DigerAd" Width="70" Index="-1" IsNewNode="True" />
         <ColumnInfo Id="KısaAd" PropertyName="KısaAd" Width="70" Index="-1" IsNewNode="True" />
@@ -1161,7 +1174,7 @@
         <Filter Id="Tüm Liste" Criteria="" IsNewNode="True" />
       </Filters>
     </ListView>
-    <ListView Id="Cariler_ListView_Depo" ClassName="TicariSet.Module.BusinessObjects.Cariler" DetailViewID="Cariler_DetailView_Depo" Criteria="[KartTipi.Oid] = 9" IsNewNode="True">
+    <ListView Id="Cariler_ListView_Depo" ClassName="TicariSet.Module.BusinessObjects.Cariler" Criteria="[KartTipi.Oid] = 9" DetailViewID="Cariler_DetailView" IsNewNode="True">
       <Columns IsNewNode="True">
         <ColumnInfo Id="DigerAd" PropertyName="DigerAd" Width="70" Index="-1" IsNewNode="True" />
         <ColumnInfo Id="KısaAd" PropertyName="KısaAd" Width="70" Index="-1" IsNewNode="True" />
@@ -1185,7 +1198,7 @@
         <Filter Id="Tüm Liste" Criteria="" IsNewNode="True" />
       </Filters>
     </ListView>
-    <ListView Id="Cariler_ListView_Musteriler" ClassName="TicariSet.Module.BusinessObjects.Cariler" MasterDetailView="Cariler_DetailView_Musteriler" DetailViewID="Cariler_DetailView_Musteriler" Criteria="[KartTipi.Oid] = 4" IsNewNode="True">
+    <ListView Id="Cariler_ListView_Musteriler" ClassName="TicariSet.Module.BusinessObjects.Cariler" MasterDetailView="Cariler_DetailView_Musteriler" Criteria="[KartTipi.Oid] = 4" DetailViewID="Cariler_DetailView" IsNewNode="True">
       <Columns IsNewNode="True">
         <ColumnInfo Id="DigerAd" PropertyName="DigerAd" Width="70" Index="-1" IsNewNode="True" />
         <ColumnInfo Id="KısaAd" PropertyName="KısaAd" Width="70" Index="-1" IsNewNode="True" />
@@ -1209,7 +1222,7 @@
         <Filter Id="Tüm Liste" Criteria="" IsNewNode="True" />
       </Filters>
     </ListView>
-    <ListView Id="Cariler_ListView_Personel" ClassName="TicariSet.Module.BusinessObjects.Cariler" DetailViewID="Cariler_DetailView_Personel" Criteria="[KartTipi.Oid] = 12" IsNewNode="True">
+    <ListView Id="Cariler_ListView_Personel" ClassName="TicariSet.Module.BusinessObjects.Cariler" Criteria="[KartTipi.Oid] = 12" DetailViewID="Cariler_DetailView" IsNewNode="True">
       <Columns IsNewNode="True">
         <ColumnInfo Id="DigerAd" PropertyName="DigerAd" Width="70" Index="-1" IsNewNode="True" />
         <ColumnInfo Id="KısaAd" PropertyName="KısaAd" Width="70" Index="-1" IsNewNode="True" />
@@ -1233,7 +1246,7 @@
         <Filter Id="Tüm Liste" Criteria="" IsNewNode="True" />
       </Filters>
     </ListView>
-    <ListView Id="Cariler_ListView_Surec" ClassName="TicariSet.Module.BusinessObjects.Cariler" Criteria="[KartTipi.Oid] = 10" DetailViewID="Cariler_DetailView_Surec" IsNewNode="True">
+    <ListView Id="Cariler_ListView_Surec" ClassName="TicariSet.Module.BusinessObjects.Cariler" Criteria="[KartTipi.Oid] = 10" DetailViewID="Cariler_DetailView" IsNewNode="True">
       <Columns IsNewNode="True">
         <ColumnInfo Id="DigerAd" PropertyName="DigerAd" Width="70" Index="-1" IsNewNode="True" />
         <ColumnInfo Id="KısaAd" PropertyName="KısaAd" Width="70" Index="-1" IsNewNode="True" />
@@ -1257,7 +1270,7 @@
         <Filter Id="Tüm Liste" Criteria="" IsNewNode="True" />
       </Filters>
     </ListView>
-    <ListView Id="Cariler_ListView_Tedarikci" ClassName="TicariSet.Module.BusinessObjects.Cariler" Criteria="[KartTipi.Oid] = 5" MasterDetailView="Cariler_DetailView_Tedarikci" DetailViewID="Cariler_DetailView_Tedarikci" IsNewNode="True">
+    <ListView Id="Cariler_ListView_Tedarikci" ClassName="TicariSet.Module.BusinessObjects.Cariler" Criteria="[KartTipi.Oid] = 5" MasterDetailView="Cariler_DetailView_Tedarikci" DetailViewID="Cariler_DetailView" IsNewNode="True">
       <Columns IsNewNode="True">
         <ColumnInfo Id="DigerAd" PropertyName="DigerAd" Width="70" Index="-1" IsNewNode="True" />
         <ColumnInfo Id="KısaAd" PropertyName="KısaAd" Width="70" Index="-1" IsNewNode="True" />
@@ -1281,7 +1294,7 @@
         <Filter Id="Tüm Liste" Criteria="" IsNewNode="True" />
       </Filters>
     </ListView>
-    <ListView Id="Cariler_ListView_Ureticiler" ClassName="TicariSet.Module.BusinessObjects.Cariler" Criteria="[KartTipi.Oid] = 6" DetailViewID="Cariler_DetailView_Ureticiler" IsNewNode="True">
+    <ListView Id="Cariler_ListView_Ureticiler" ClassName="TicariSet.Module.BusinessObjects.Cariler" Criteria="[KartTipi.Oid] = 6" DetailViewID="Cariler_DetailView" IsNewNode="True">
       <Columns IsNewNode="True">
         <ColumnInfo Id="DigerAd" PropertyName="DigerAd" Width="70" Index="-1" IsNewNode="True" />
         <ColumnInfo Id="KısaAd" PropertyName="KısaAd" Width="70" Index="-1" IsNewNode="True" />
@@ -1305,7 +1318,7 @@
         <Filter Id="Tüm Liste" Criteria="" IsNewNode="True" />
       </Filters>
     </ListView>
-    <ListView Id="Cariler_ListView_Yerel" ClassName="TicariSet.Module.BusinessObjects.Cariler" DetailViewID="Cariler_DetailView_Yerel" Criteria="[KartTipi.Oid] = 1" IsNewNode="True">
+    <ListView Id="Cariler_ListView_Yerel" ClassName="TicariSet.Module.BusinessObjects.Cariler" Criteria="[KartTipi.Oid] = 1" DetailViewID="Cariler_DetailView" IsNewNode="True">
       <Columns IsNewNode="True">
         <ColumnInfo Id="DigerAd" PropertyName="DigerAd" Width="70" Index="-1" IsNewNode="True" />
         <ColumnInfo Id="KısaAd" PropertyName="KısaAd" Width="70" Index="-1" IsNewNode="True" />
@@ -2233,6 +2246,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
+    <ListView Id="Stoklar_EkDosyalar_ListView" AllowEdit="True" NewItemRowPosition="Bottom" />
     <ListView Id="Stoklar_ListView">
       <Columns>
         <ColumnInfo Id="VergiOrani" Index="-1" />

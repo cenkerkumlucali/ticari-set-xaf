@@ -37,6 +37,11 @@
       <Item Id="Bankalar" Caption="Banka Tanımları" />
       <Item Id="Reports" Caption="Raporlar" />
       <Item Id="Satın Alma Yönetimi" Caption="Satın Alma Yönetimi" />
+      <Item Id="@9498b125-034a-4edf-a972-c91268f0f721" Caption="Sistem Yönetimi">
+        <Items>
+          <Item Id="Event_ListView" Caption="Takvim" />
+        </Items>
+      </Item>
     </Items>
   </NavigationItems>
   <Views>
