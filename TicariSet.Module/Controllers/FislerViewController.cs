@@ -63,8 +63,8 @@ namespace TicariSet.Module.Controllers
             NewObjectViewController controller = Frame.GetController<NewObjectViewController>();
             if (controller != null)
             {
-                controller.CollectCreatableItemTypes += Controller_CollectCreatableItemTypes;
-                controller.CollectDescendantTypes += Controller_CollectDescendantTypes;
+                controller.CollectCreatableItemTypes -= Controller_CollectCreatableItemTypes;
+                controller.CollectDescendantTypes -= Controller_CollectDescendantTypes;
             }
             base.OnDeactivated();
         }
