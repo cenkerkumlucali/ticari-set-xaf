@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using DevExpress.ExpressApp.Win.Templates;
+using DevExpress.Xpo;
 using TicariSet.Module.BusinessObjects;
 
 namespace TicariSet.Module.Controllers
@@ -50,6 +51,9 @@ namespace TicariSet.Module.Controllers
                     case "alisIslemleri":
                         AlimIslemleri_Execute(sender, e);
                         break;
+                    case "satisIslemleri":
+                        SatisIslemleri_Execute(sender, e);
+                        break;
                 }
             }
         }
@@ -66,7 +70,7 @@ namespace TicariSet.Module.Controllers
 
             CriteriaOperator criteriaOperator = CriteriaOperator.Parse("[CariID] = ? AND [Turu] = 'Alis'", selectedCari);
             if (!(criteriaOperator is null))
-                collectionSource.Criteria.Add("Criteria",criteriaOperator);
+                collectionSource.Criteria.Add("Criteria", criteriaOperator);
             e.ShowViewParameters.CreatedView = Application.CreateListView(listViewId, collectionSource, false);
             e.ShowViewParameters.TargetWindow = TargetWindow.NewModalWindow;
 
@@ -82,13 +86,13 @@ namespace TicariSet.Module.Controllers
         {
             Type objectType = typeof(Fisler);
             IObjectSpace objectSpace = Application.CreateObjectSpace(objectType);
-            object selectedCari = ((Cariler) View.SelectedObjects[0]).Oid;
+            object selectedCari = ((Cariler)View.SelectedObjects[0]).Oid;
 
             string listViewId = ModelNodeIdHelper.GetListViewId(objectType);
             CollectionSource collectionSource = new CollectionSource(objectSpace, objectType);
-            CriteriaOperator criteriaOperator = CriteriaOperator.Parse("[CariID] = ? AND [Turu] = 'Satis'",selectedCari);
+            CriteriaOperator criteriaOperator = CriteriaOperator.Parse("[CariID] = ? AND [Turu] = 'Satis'", selectedCari);
             if (!(criteriaOperator is null))
-            collectionSource.Criteria.Add("Criteria",criteriaOperator);
+                collectionSource.Criteria.Add("Criteria", criteriaOperator);
             e.ShowViewParameters.CreatedView = Application.CreateListView(listViewId, collectionSource, false);
             e.ShowViewParameters.TargetWindow = TargetWindow.NewModalWindow;
             e.ShowViewParameters.Context = TemplateContext.PopupWindow;
@@ -160,25 +164,51 @@ namespace TicariSet.Module.Controllers
                     itm.Active.SetItemValue("Active", false);
                 }
             }
-            //singleChoiceAction1.Active.SetItemValue("Active", true);
+
             if (View.ObjectTypeInfo.Type == typeof(Cariler))
             {
                 foreach (ChoiceActionItem items in singleChoiceAction1.Items)
                 {
+
                     items.Active.SetItemValue("Active", items.Id == "alisSatisIslemleri");
                     foreach (ChoiceActionItem itm in items.Items)
                     {
                         itm.Active.SetItemValue("Active", true);
                     }
+                    if ((View).SelectedObjects.Count == 1)
+                    {
+                        Type fisler = typeof(Fisler);
+                        IObjectSpace objectSpace = Application.CreateObjectSpace(fisler);
+                        CollectionSource collectionSource = new CollectionSource(objectSpace, fisler);
+                        object selectedCari = ((Cariler)View.SelectedObjects[0]).Oid;
+                        CriteriaOperator criteria = CriteriaOperator.Parse("CariID = ? ", selectedCari);
+                        if (!(criteria is null))
+                            collectionSource.Criteria.Add("Criteria", criteria);
+                        object result = ObjectSpace.GetObjects(type: fisler, criteria: criteria);
+                        if (result is null)
+                        {
+
+                            foreach (ChoiceActionItem itm in items.Items)
+                            {
+                                itm.Enabled.SetItemValue("Enable", itm.Id == "alisIslemleri");
+                                itm.Enabled.SetItemValue("Enable", itm.Id == "satisIslemleri");
+
+                            }
+
+                        }
+                    }
+
                 }
             }
             if (View.ObjectTypeInfo.Type == typeof(Stoklar))
             {
                 foreach (ChoiceActionItem items in singleChoiceAction1.Items)
                 {
+
                     items.Active.SetItemValue("Active", items.Id == "stokDurumu");
                     foreach (ChoiceActionItem itm in items.Items)
                     {
+
                         itm.Active.SetItemValue("Active", true);
                     }
                 }

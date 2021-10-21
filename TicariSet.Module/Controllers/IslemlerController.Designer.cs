@@ -51,6 +51,7 @@ namespace TicariSet.Module.Controllers
             choiceActionItem4.Items.Add(choiceActionItem5);
             choiceActionItem4.Items.Add(choiceActionItem6);
 
+
             this.singleChoiceAction1.ShowItemsOnClick = true;
             this.singleChoiceAction1.ToolTip = null;
             this.singleChoiceAction1.ImageName = "SearchSettingButton";
@@ -102,7 +103,7 @@ namespace TicariSet.Module.Controllers
 
             choiceActionItem6.Caption = "Satış İşlemleri";
             choiceActionItem6.Id = "satisIslemleri";
-            choiceActionItem6.ImageName = ""; 
+            choiceActionItem6.ImageName = "Business_Cash";
 
 
             #endregion
