@@ -6,6 +6,7 @@ using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Security;
 using DevExpress.Persistent.Base;
 using DevExpress.XtraEditors;
+using TicariSet.Module.OtherClasses;
 
 namespace TicariSet.Win {
     static class Program {
@@ -18,6 +19,7 @@ namespace TicariSet.Win {
 #if EASYTEST
             DevExpress.ExpressApp.Win.EasyTest.EasyTestRemotingRegistration.Register();
 #endif
+           
             WindowsFormsSettings.LoadApplicationSettings();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
@@ -26,8 +28,10 @@ namespace TicariSet.Win {
                 Tracing.LocalUserAppDataPath = Application.LocalUserAppDataPath;
             }
             Tracing.Initialize();
+
             TicariSetWindowsFormsApplication winApplication = new TicariSetWindowsFormsApplication();
-           
+
+         
             // Refer to the https://docs.devexpress.com/eXpressAppFramework/112680 help article for more details on how to provide a custom splash form.
             //winApplication.SplashScreen = new DevExpress.ExpressApp.Win.Utils.DXSplashScreen("YourSplashImage.png");
             SecurityStrategy security = (SecurityStrategy)winApplication.Security;
