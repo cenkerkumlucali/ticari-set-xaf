@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
@@ -8,6 +9,7 @@ namespace TicariSet.Module.BusinessObjects
     [DefaultClassOptions]
     [DefaultProperty("Ad")]
     [CreatableItem(false)]
+    [ModelDefault("IsCloneable", "True")]
     [ImageName("BO_Country_v92")]
     public class Ulkeler : XPObject
     {

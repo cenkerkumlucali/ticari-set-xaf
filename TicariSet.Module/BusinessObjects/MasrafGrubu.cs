@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using DevExpress.Persistent.Base;
+using DevExpress.Persistent.Base.General;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
@@ -55,5 +56,6 @@ namespace TicariSet.Module.BusinessObjects
 
             base.OnSaving();
         }
+
     }
 }

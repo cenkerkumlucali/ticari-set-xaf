@@ -43,6 +43,7 @@ namespace TicariSet.Module.Controllers
         {
             base.OnActivated();
             controller = Frame.GetController<DialogController>();
+
         }
         void controller_Accepting(object sender, DialogControllerAcceptingEventArgs e)
         {

@@ -2,6 +2,7 @@
 <Application Title="TicariSet" PreferredLanguage="tr">
   <ActionDesign>
     <Actions>
+      <Action Id="Alış Satış İşlemleri" TargetObjectsCriteriaMode="TrueForAll" />
       <Action Id="Stok Hareketleri" TargetObjectsCriteriaMode="TrueAtLeastForOne" />
     </Actions>
   </ActionDesign>
@@ -24,6 +25,7 @@
     <Class Name="TicariSet.Module.BusinessObjects.StFiyat" ImageName="Business_Money" />
     <Class Name="TicariSet.Module.BusinessObjects.StKartRenk" ImageName="EditColors" />
     <Class Name="TicariSet.Module.BusinessObjects.Stoklar" IsCloneable="True" />
+    <Class Name="TicariSet.Module.BusinessObjects.Ulkeler" IsCloneable="False" />
   </BOModel>
   <NavigationItems DefaultChildItemsDisplayStyle="List" NavigationStyle="TreeList" StartupNavigationItem="">
     <Items>
@@ -1134,6 +1136,7 @@
     <ListView Id="Cariler_EkDosyalar_ListView" AllowEdit="True" NewItemRowPosition="Bottom" />
     <ListView Id="Cariler_ListView">
       <Columns>
+        <ColumnInfo Id="Aciklama" Index="-1" />
         <ColumnInfo Id="DigerAd" Index="-1" />
         <ColumnInfo Id="KısaAd" Index="-1" />
         <ColumnInfo Id="Kod" Index="0" />
@@ -1147,7 +1150,6 @@
         <ColumnInfo Id="Indirim" Index="8" />
         <ColumnInfo Id="IndirimOran" Index="9" />
         <ColumnInfo Id="Fotograf" Index="10" />
-        <ColumnInfo Id="Aciklama" Index="11" />
       </Columns>
     </ListView>
     <ListView Id="Cariler_ListView_Departman" ClassName="TicariSet.Module.BusinessObjects.Cariler" Criteria="[KartTipi.Oid] = 11" DetailViewID="Cariler_DetailView" IsNewNode="True">
@@ -1676,8 +1678,8 @@
     </ListView>
     <ListView Id="MasrafGrubu_ListView">
       <Columns>
-        <ColumnInfo Id="Kod" Width="123" />
-        <ColumnInfo Id="Tanim" Width="126" />
+        <ColumnInfo Id="Kod" Width="70" />
+        <ColumnInfo Id="Tanim" Width="400" />
       </Columns>
     </ListView>
     <ListView Id="MasrafGrubu_Masraf_ListView">
@@ -1706,7 +1708,7 @@
     </DetailView>
     <ListView Id="Masraflar_ListView">
       <Columns>
-        <ColumnInfo Id="Tanim" Width="83" />
+        <ColumnInfo Id="Tanim" Width="400" />
       </Columns>
     </ListView>
     <ListView Id="Masraflar_MasrafDetay_ListView">
@@ -2188,19 +2190,20 @@
     </DetailView>
     <ListView Id="StokHareketler_ListView">
       <Columns>
+        <ColumnInfo Id="FisID" Index="0" />
         <ColumnInfo Id="Tarih" Width="121" />
-        <ColumnInfo Id="Hareket" SortIndex="0" SortOrder="Ascending" />
-        <ColumnInfo Id="BirimFiyat" SortIndex="-1" SortOrder="None" Index="3" />
-        <ColumnInfo Id="BirimID" Index="4" />
-        <ColumnInfo Id="Miktar" Index="5" />
-        <ColumnInfo Id="IndirimTutar" Index="6" />
-        <ColumnInfo Id="IndirimOran" Index="7" />
-        <ColumnInfo Id="VergiOran" Index="8" />
-        <ColumnInfo Id="NetTutar" Index="9" />
-        <ColumnInfo Id="VergiTutar" Index="10" />
-        <ColumnInfo Id="Toplam" Index="11" />
-        <ColumnInfo Id="GenelTutar" Index="12" />
-        <ColumnInfo Id="FisID" Index="13" />
+        <ColumnInfo Id="StokID" Index="2" />
+        <ColumnInfo Id="Hareket" SortIndex="0" SortOrder="Ascending" Index="3" Width="53" />
+        <ColumnInfo Id="BirimFiyat" SortIndex="-1" SortOrder="None" Index="4" />
+        <ColumnInfo Id="BirimID" Index="5" />
+        <ColumnInfo Id="Miktar" Index="6" />
+        <ColumnInfo Id="IndirimTutar" Index="7" />
+        <ColumnInfo Id="IndirimOran" Index="8" />
+        <ColumnInfo Id="VergiOran" Index="9" />
+        <ColumnInfo Id="NetTutar" Index="10" />
+        <ColumnInfo Id="VergiTutar" Index="11" />
+        <ColumnInfo Id="Toplam" Index="12" />
+        <ColumnInfo Id="GenelTutar" Index="13" />
       </Columns>
     </ListView>
     <DetailView Id="Stoklar_DetailView">
@@ -2302,7 +2305,7 @@
     <DetailView Id="Ulkeler_DetailView">
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="SimpleEditors" RelativeSize="5.0666666666666664">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="7.569721115537849">
             <LayoutGroup Id="Ulkeler" RelativeSize="100">
               <LayoutItem Id="Ad" RelativeSize="100" />
             </LayoutGroup>
@@ -2310,6 +2313,12 @@
               <LayoutItem Id="Oid" Removed="True" />
             </LayoutGroup>
           </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="92.430278884462155">
+            <LayoutGroup Id="CariAdresBilgileri" RelativeSize="100" Removed="True">
+              <LayoutItem Id="CariAdresBilgileri" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="PersonelAdresBilgileri" Removed="True" />
+          </TabbedGroup>
         </LayoutGroup>
       </Layout>
     </DetailView>

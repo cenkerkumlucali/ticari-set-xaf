@@ -47,6 +47,7 @@ namespace TicariSet.Module.BusinessObjects
             set => SetPropertyValue(nameof(Ad), ref ad, value);
         }
         [ValueConverter(typeof(ColorConverter))]
+        [NonCloneable]
         public Color RgbKod
         {
             get => rgbKod;

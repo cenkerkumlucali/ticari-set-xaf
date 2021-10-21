@@ -30,7 +30,7 @@ namespace TicariSet.Module.Controllers
         private PopupWindowShowAction showListViewAction;
         public StokHareketleriIslemlerController()
         {
-            showListViewAction = new PopupWindowShowAction(this, "Stok Hareketleri", PredefinedCategory.Edit); 
+            showListViewAction = new PopupWindowShowAction(this, "Stok Hareketleri", PredefinedCategory.Edit);
             TargetObjectType = typeof(Stoklar);
             showListViewAction.ImageName = "BO_Quote";
             showListViewAction.CustomizePopupWindowParams += ShowListViewAction_CustomizePopupWindowParams;

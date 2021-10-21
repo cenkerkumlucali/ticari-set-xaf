@@ -83,6 +83,7 @@
     <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="DevExpress.ExpressApp.Win.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.ExpressApp.Xpo.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -113,10 +114,13 @@
     <Reference Include="DevExpress.Charts.v20.2.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraCharts.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraReports.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -194,6 +198,12 @@
     </Compile>
     <Compile Include="Controllers\ExitApp.Designer.cs">
       <DependentUpon>ExitApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\IslemlerController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\IslemlerController.Designer.cs">
+      <DependentUpon>IslemlerController.cs</DependentUpon>
     </Compile>
     <Compile Include="Controllers\StokHareketleriIslemlerController.cs">
       <SubType>Component</SubType>
@@ -288,6 +298,9 @@
     </None>
     <EmbeddedResource Include="Controllers\FislerViewController.resx">
       <DependentUpon>FislerViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\IslemlerController.resx">
+      <DependentUpon>IslemlerController.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controllers\StokHareketleriIslemlerController.resx">
       <DependentUpon>StokHareketleriIslemlerController.cs</DependentUpon>
