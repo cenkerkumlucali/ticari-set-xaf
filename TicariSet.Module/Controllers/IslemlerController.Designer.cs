@@ -102,7 +102,7 @@ namespace TicariSet.Module.Controllers
 
             choiceActionItem6.Caption = "Satış İşlemleri";
             choiceActionItem6.Id = "satisIslemleri";
-            choiceActionItem6.ImageName = "";
+            choiceActionItem6.ImageName = ""; 
 
 
             #endregion
