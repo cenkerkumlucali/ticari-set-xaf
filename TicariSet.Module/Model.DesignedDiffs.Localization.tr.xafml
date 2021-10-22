@@ -384,6 +384,12 @@
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
             <LayoutGroup Id="StokHareketler">
+              <LayoutGroup Id="StokHareketler_col1" Caption="StokHareketler_col1">
+                <LayoutGroup Id="Auto401f7977-a766-4c55-ba7b-7b7a52be6508" Caption="">
+                  <LayoutGroup Id="Autof05b8d07-b231-4e39-a667-57d3dff2d7d7" Caption="" />
+                  <LayoutGroup Id="Autod78ffc4a-879d-454e-8e1d-080034ab1794" Caption="" />
+                </LayoutGroup>
+              </LayoutGroup>
               <LayoutGroup Id="StokHareketler_col2" Caption="StokHareketler_col2" />
             </LayoutGroup>
             <LayoutGroup Id="XPObject" Caption="Oid" />
