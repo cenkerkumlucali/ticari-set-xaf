@@ -21,15 +21,17 @@ namespace TicariSet.Module.Controllers
 {
     public partial class ShowListViewController : ViewController
     {
-        public ShowListViewController() {
-        PopupWindowShowAction showListViewAction = new PopupWindowShowAction(this, "ShowListView",
-            PredefinedCategory.Edit);
-        this.TargetObjectType = typeof(MasrafGrubu);
-        showListViewAction.CustomizePopupWindowParams += ShowListViewAction_CustomizePopupWindowParams;
-    }
-    private void ShowListViewAction_CustomizePopupWindowParams(object sender, CustomizePopupWindowParamsEventArgs e) {
-        Type objectType = typeof(Masraflar);
-        e.View = Application.CreateListView(objectType, false);
-    }
+        private PopupWindowShowAction showListViewAction;
+        public ShowListViewController()
+        {
+            showListViewAction = new PopupWindowShowAction(this, "ShowListView", PredefinedCategory.Edit);
+            TargetObjectType = typeof(MasrafGrubu);
+            showListViewAction.CustomizePopupWindowParams += ShowListViewAction_CustomizePopupWindowParams;
+        }
+        private void ShowListViewAction_CustomizePopupWindowParams(object sender, CustomizePopupWindowParamsEventArgs e)
+        {
+            Type objectType = typeof(Masraflar);
+            e.View = Application.CreateListView(objectType, false);
+        }
     }
 }
