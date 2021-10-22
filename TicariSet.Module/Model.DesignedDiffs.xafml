@@ -224,6 +224,7 @@
     <ListView Id="AlisFaturasi_ListView">
       <Columns>
         <ColumnInfo Id="Turu" Index="-1" />
+        <ColumnInfo Id="Kod" Width="52" />
         <ColumnInfo Id="Tarih" Index="0" />
         <ColumnInfo Id="CariID" Width="97" />
         <ColumnInfo Id="AltToplam" Width="57" />
@@ -2064,7 +2065,7 @@
         <ColumnInfo Id="Turu" Index="-1" />
         <ColumnInfo Id="Kod" Width="70" SortIndex="-1" SortOrder="None" />
         <ColumnInfo Id="Tarih" Index="0" Width="83" SortIndex="0" SortOrder="Ascending" />
-        <ColumnInfo Id="CariID" Width="121" />
+        <ColumnInfo Id="CariID" Width="86" />
         <ColumnInfo Id="AltToplam" Width="77" />
         <ColumnInfo Id="IndirimToplam" Width="80" />
         <ColumnInfo Id="VergiToplam" Width="0" />
@@ -2148,28 +2149,43 @@
     </ListView>
     <DetailView Id="StokHareketler_DetailView">
       <Items>
+        <PropertyEditor Id="Aciklama" RowCount="3" />
         <PropertyEditor Id="Hareket" AllowEdit="False" LookupEditorMode="Auto" DataSourcePropertyIsNullMode="SelectNothing" />
       </Items>
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100" Direction="Vertical">
             <LayoutGroup Id="StokHareketler" RelativeSize="100" Direction="Vertical">
-              <LayoutGroup Id="StokHareketler_col1" RelativeSize="100">
-                <LayoutItem Id="Tarih" RelativeSize="6.9264069264069263" />
-                <LayoutItem Id="Hareket" RelativeSize="5.1948051948051948" />
-                <LayoutItem Id="FisID" ViewItem="FisID" Index="2" RelativeSize="5.1948051948051948" IsNewNode="True" />
-                <LayoutItem Id="StokID" RelativeSize="5.1948051948051948" Index="3" />
-                <LayoutItem Id="Miktar" RelativeSize="5.1948051948051948" Index="4" />
-                <LayoutItem Id="BirimID" RelativeSize="5.1948051948051948" Index="5" />
-                <LayoutItem Id="BirimFiyat" RelativeSize="5.1948051948051948" Index="6" />
-                <LayoutItem Id="Toplam" RelativeSize="5.1948051948051948" Index="7" />
-                <LayoutItem Id="IndirimOran" RelativeSize="5.1948051948051948" Index="8" />
-                <LayoutItem Id="IndirimTutar" ViewItem="IndirimTutar" Index="9" RelativeSize="5.1948051948051948" IsNewNode="True" />
-                <LayoutItem Id="NetTutar" ViewItem="NetTutar" Index="10" RelativeSize="5.1948051948051948" IsNewNode="True" />
-                <LayoutItem Id="VergiOran" ViewItem="VergiOran" Index="11" RelativeSize="5.1948051948051948" IsNewNode="True" />
-                <LayoutItem Id="VergiTutar" ViewItem="VergiTutar" Index="12" RelativeSize="5.1948051948051948" IsNewNode="True" />
-                <LayoutItem Id="GenelTutar" ViewItem="GenelTutar" Index="13" RelativeSize="5.1948051948051948" IsNewNode="True" />
-                <LayoutItem Id="Aciklama" ViewItem="Aciklama" Index="14" RelativeSize="25.541125541125542" IsNewNode="True" />
+              <LayoutGroup Id="StokHareketler_col1" RelativeSize="100" Direction="Vertical">
+                <LayoutGroup Id="Auto401f7977-a766-4c55-ba7b-7b7a52be6508" ShowCaption="False" Direction="Horizontal" Index="0" RelativeSize="32.971800433839476" IsNewNode="True">
+                  <LayoutGroup Id="Autof05b8d07-b231-4e39-a667-57d3dff2d7d7" ShowCaption="False" Index="0" RelativeSize="54.268292682926827" IsNewNode="True">
+                    <LayoutItem Id="Tarih" ViewItem="Tarih" Index="0" RelativeSize="21.05263157894737" IsNewNode="True" />
+                    <LayoutItem Id="Hareket" ViewItem="Hareket" Index="1" RelativeSize="15.789473684210526" IsNewNode="True" />
+                    <LayoutItem Id="FisID" ViewItem="FisID" Index="2" RelativeSize="15.789473684210526" IsNewNode="True" />
+                    <LayoutItem Id="StokID" ViewItem="StokID" Index="3" RelativeSize="15.789473684210526" IsNewNode="True" />
+                    <LayoutItem Id="VergiOran" ViewItem="VergiOran" Index="4" RelativeSize="15.789473684210526" IsNewNode="True" />
+                    <LayoutItem Id="IndirimOran" ViewItem="IndirimOran" Index="5" RelativeSize="15.789473684210526" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Autod78ffc4a-879d-454e-8e1d-080034ab1794" ShowCaption="False" Index="1" RelativeSize="45.731707317073173" IsNewNode="True">
+                    <LayoutItem Id="BirimID" ViewItem="BirimID" Index="0" RelativeSize="21.05263157894737" IsNewNode="True" />
+                    <LayoutItem Id="Miktar" ViewItem="Miktar" Index="1" RelativeSize="15.789473684210526" IsNewNode="True" />
+                    <LayoutItem Id="BirimFiyat" ViewItem="BirimFiyat" Index="2" RelativeSize="15.789473684210526" IsNewNode="True" />
+                    <LayoutItem Id="Toplam" ViewItem="Toplam" Index="3" RelativeSize="15.789473684210526" IsNewNode="True" />
+                    <LayoutItem Id="NetTutar" ViewItem="NetTutar" Index="4" RelativeSize="15.789473684210526" IsNewNode="True" />
+                    <LayoutItem Id="IndirimTutar" ViewItem="IndirimTutar" Index="5" RelativeSize="15.789473684210526" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="BirimID" ViewItem="BirimID" Index="1" RelativeSize="27.235772357723576" Removed="True" />
+                <LayoutItem Id="Hareket" RelativeSize="5.2060737527114966" Index="1" Removed="True" />
+                <LayoutItem Id="IndirimOran" ViewItem="IndirimOran" Index="1" RelativeSize="5.2060737527114966" Removed="True" />
+                <LayoutItem Id="VergiTutar" ViewItem="VergiTutar" Index="1" RelativeSize="5.2060737527114966" IsNewNode="True" />
+                <LayoutItem Id="GenelTutar" ViewItem="GenelTutar" Index="2" RelativeSize="5.2060737527114966" IsNewNode="True" />
+                <LayoutItem Id="Aciklama" ViewItem="Aciklama" Index="3" RelativeSize="56.61605206073753" IsNewNode="True" />
+                <LayoutItem Id="StokID" RelativeSize="5.2060737527114966" Index="3" Removed="True" />
+                <LayoutItem Id="Miktar" RelativeSize="5.2060737527114966" Index="4" Removed="True" />
+                <LayoutItem Id="BirimFiyat" RelativeSize="5.2060737527114966" Index="5" Removed="True" />
+                <LayoutItem Id="Toplam" RelativeSize="5.2060737527114966" Index="6" Removed="True" />
+                <LayoutItem Id="Tarih" RelativeSize="6.9414316702819958" Removed="True" />
               </LayoutGroup>
               <LayoutGroup Id="StokHareketler_col2" RelativeSize="52.106741573033709" Removed="True">
                 <LayoutItem Id="Aciklama" RelativeSize="100" Index="0" Removed="True" />
@@ -2279,9 +2295,9 @@
     <ListView Id="Stoklar_StKartRenk_ListView" NewItemRowPosition="Bottom" AllowEdit="True" FreezeColumnIndices="False">
       <Columns>
         <ColumnInfo Id="RenkTanimId.Ad" PropertyName="RenkTanimId.Ad" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="RenkTanimId.RgbKod" PropertyName="RenkTanimId.RgbKod" Index="1" IsNewNode="True" />
         <ColumnInfo Id="StokId" SortIndex="0" SortOrder="Ascending" Width="88" />
         <ColumnInfo Id="RenkTanimId" Width="106" />
-        <ColumnInfo Id="RenkTanimId.RgbKod" PropertyName="RenkTanimId.RgbKod" Index="1" IsNewNode="True" />
         <ColumnInfo Id="RenkTanimId.Durum" PropertyName="RenkTanimId.Durum" Index="2" IsNewNode="True" />
       </Columns>
     </ListView>
