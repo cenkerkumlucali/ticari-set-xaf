@@ -39,6 +39,11 @@ namespace TicariSet.Module.Controllers
             DevExpress.ExpressApp.Actions.ChoiceActionItem choiceActionItem4 = new DevExpress.ExpressApp.Actions.ChoiceActionItem();
             DevExpress.ExpressApp.Actions.ChoiceActionItem choiceActionItem5 = new DevExpress.ExpressApp.Actions.ChoiceActionItem();
             DevExpress.ExpressApp.Actions.ChoiceActionItem choiceActionItem6 = new DevExpress.ExpressApp.Actions.ChoiceActionItem();
+            DevExpress.ExpressApp.Actions.ChoiceActionItem choiceActionItem7 = new DevExpress.ExpressApp.Actions.ChoiceActionItem();
+            DevExpress.ExpressApp.Actions.ChoiceActionItem choiceActionItem8 = new DevExpress.ExpressApp.Actions.ChoiceActionItem();
+            DevExpress.ExpressApp.Actions.ChoiceActionItem choiceActionItem9 = new DevExpress.ExpressApp.Actions.ChoiceActionItem();
+            DevExpress.ExpressApp.Actions.ChoiceActionItem choiceActionItem10 = new DevExpress.ExpressApp.Actions.ChoiceActionItem();
+            DevExpress.ExpressApp.Actions.ChoiceActionItem choiceActionItem11 = new DevExpress.ExpressApp.Actions.ChoiceActionItem();
             this.singleChoiceAction1 = new DevExpress.ExpressApp.Actions.SingleChoiceAction(this.components);
             
 
@@ -51,6 +56,11 @@ namespace TicariSet.Module.Controllers
             choiceActionItem4.Items.Add(choiceActionItem5);
             choiceActionItem4.Items.Add(choiceActionItem6);
 
+            this.singleChoiceAction1.Items.Add(choiceActionItem7);
+            choiceActionItem7.Items.Add(choiceActionItem8);
+            choiceActionItem7.Items.Add(choiceActionItem9);
+            choiceActionItem7.Items.Add(choiceActionItem10);
+            choiceActionItem7.Items.Add(choiceActionItem11);
 
             this.singleChoiceAction1.ShowItemsOnClick = true;
             this.singleChoiceAction1.ToolTip = null;
@@ -69,7 +79,7 @@ namespace TicariSet.Module.Controllers
             this.singleChoiceAction1.Id = "834d9df4-1f87-4b91-af78-ec99c10d30e0";
 
             #region Stok
-            choiceActionItem1.Caption = "Stok Durumu";
+            choiceActionItem1.Caption = "Stok Hareketleri";
             choiceActionItem1.Id = "stokDurumu";
             choiceActionItem1.ImageName = "BO_Report";
             choiceActionItem1.Shortcut = null;
@@ -96,15 +106,50 @@ namespace TicariSet.Module.Controllers
             choiceActionItem4.Caption = "Alış Satış İşlemleri";
             choiceActionItem4.Id = "alisSatisIslemleri";
             choiceActionItem4.ImageName = "Paid";
+            choiceActionItem4.Shortcut = null;
+            choiceActionItem4.ToolTip = null;
 
             choiceActionItem5.Caption = "Alış İşlemleri";
             choiceActionItem5.Id = "alisIslemleri";
             choiceActionItem5.ImageName = "Paid";
+            choiceActionItem5.Shortcut = null;
+            choiceActionItem5.ToolTip = null;
 
             choiceActionItem6.Caption = "Satış İşlemleri";
             choiceActionItem6.Id = "satisIslemleri";
             choiceActionItem6.ImageName = "Business_Cash";
+            choiceActionItem6.Shortcut = null;
+            choiceActionItem6.ToolTip = null;
 
+            choiceActionItem7.Caption = "Kasa Hareketleri";
+            choiceActionItem7.Id = "kasaHareketleri";
+            choiceActionItem7.ImageName = "Currency";
+            choiceActionItem7.Shortcut = null;
+            choiceActionItem7.ToolTip = null;
+
+            choiceActionItem8.Caption = "Kasa Ödeme";
+            choiceActionItem8.Id = "kasaOdeme";
+            choiceActionItem8.ImageName = "Currency";
+            choiceActionItem8.Shortcut = null;
+            choiceActionItem8.ToolTip = null;
+
+            choiceActionItem9.Caption = "Kasa Tahsilat";
+            choiceActionItem9.Id = "kasaTahsilat";
+            choiceActionItem9.ImageName = "Currency";
+            choiceActionItem9.Shortcut = null;
+            choiceActionItem9.ToolTip = null;
+
+            choiceActionItem10.Caption = "Banka Ödeme";
+            choiceActionItem10.Id = "bankaOdeme";
+            choiceActionItem10.ImageName = "Currency";
+            choiceActionItem10.Shortcut = null;
+            choiceActionItem10.ToolTip = null;
+
+            choiceActionItem11.Caption = "Banka Tahsilat";
+            choiceActionItem11.Id = "bankaTahsilat";
+            choiceActionItem11.ImageName = "Currency";
+            choiceActionItem11.Shortcut = null;
+            choiceActionItem11.ToolTip = null;
 
             #endregion
             this.Actions.Add(this.singleChoiceAction1);
