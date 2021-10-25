@@ -5,7 +5,15 @@ using DevExpress.ExpressApp.Model.NodeGenerators;
 using DevExpress.ExpressApp.SystemModule;
 using System;
 using System.Collections;
+using System.Windows.Forms;
+using DevExpress.ExpressApp.Utils;
+using DevExpress.Persistent.Base;
+using DevExpress.Persistent.BaseImpl.PermissionPolicy;
+using DevExpress.Xpo;
+using DevExpress.XtraEditors;
 using TicariSet.Module.BusinessObjects;
+using ListView = DevExpress.ExpressApp.ListView;
+using View = DevExpress.ExpressApp.View;
 
 namespace TicariSet.Module.Controllers
 {
@@ -22,7 +30,7 @@ namespace TicariSet.Module.Controllers
         }
         private void singleChoiceAction1_Execute(object sender, SingleChoiceActionExecuteEventArgs e)
         {
-            if (e.CurrentObject.GetType() == typeof(Stoklar))
+            if (e.CurrentObject != null && e.CurrentObject.GetType() == typeof(Stoklar))
             {
                 switch (((DevExpress.ExpressApp.Actions.SingleChoiceAction)e.Action).SelectedItem.Id)
                 {
@@ -34,7 +42,7 @@ namespace TicariSet.Module.Controllers
                         break;
                 }
             }
-            if (e.CurrentObject.GetType() == typeof(Cariler))
+            if (e.CurrentObject != null && e.CurrentObject.GetType() == typeof(Cariler))
             {
                 switch (((DevExpress.ExpressApp.Actions.SingleChoiceAction)e.Action).SelectedItem.Id)
                 {
@@ -61,36 +69,30 @@ namespace TicariSet.Module.Controllers
         }
 
         #region Cari
-
         private void AlimIslemleri_Execute(object sender, SingleChoiceActionExecuteEventArgs e)
         {
             Type objectType = typeof(Fisler);
             GetCollectionById(objectType, e, turu: "'Alis'", criteriaParameterName: "CariID", criteriaParameterName2: "[Turu] =", and: "AND");
         }
-
         private void SatisIslemleri_Execute(object sender, SingleChoiceActionExecuteEventArgs e)
         {
             Type objectType = typeof(Fisler);
             GetCollectionById(objectType, e, turu: "'Satis'", criteriaParameterName: "CariID", criteriaParameterName2: "[Turu] =", and: "AND");
         }
-
         private void KasaOdeme_Execute(object sender, SingleChoiceActionExecuteEventArgs e)
         {
             Type objectType = typeof(KasaHareket);
             GetCollectionById(objectType, e, turu: "'Odeme'", criteriaParameterName: "CariID", criteriaParameterName2: "[Hareket] =", and: "AND");
-
         }
         private void KasaTahsilat_Execute(object sender, SingleChoiceActionExecuteEventArgs e)
         {
             Type objectType = typeof(KasaHareket);
             GetCollectionById(objectType, e, turu: "'Tahsilat'", criteriaParameterName: "CariID", criteriaParameterName2: "[Hareket] =", and: "AND");
-
         }
         private void BankaOdeme_Execute(object sender, SingleChoiceActionExecuteEventArgs e)
         {
             Type objectType = typeof(KasaHareket);
             GetCollectionById(objectType, e, turu: "'BankaOdeme'", criteriaParameterName: "CariID", criteriaParameterName2: "[Hareket] =", and: "AND");
-
         }
         private void BankaTahsilat_Execute(object sender, SingleChoiceActionExecuteEventArgs e)
         {
@@ -191,7 +193,6 @@ namespace TicariSet.Module.Controllers
                 }
             }
         }
-
         #endregion
 
         #region Stok
@@ -200,13 +201,11 @@ namespace TicariSet.Module.Controllers
             Type objectType = typeof(StokHareketler);
             GetCollectionById(objectType, e, "StokID");
         }
-
         private void StokHareketleriHepsi_Execute(object sender, SingleChoiceActionExecuteEventArgs e)
         {
             Type objectType = typeof(StokHareketler);
             GetCollection(objectType, e);
         }
-
         void GetStokHareketleriById(SingleChoiceActionExecuteEventArgs e)
         {
             Type objectType = typeof(StokHareketler);
@@ -216,7 +215,7 @@ namespace TicariSet.Module.Controllers
             CollectionSource cs = new CollectionSource(objectSpace, objectType);
             CriteriaOperator criteria = CriteriaOperator.Parse("StokID = ? ", selectedStokID);
             if (!(criteria is null))
-                cs.Criteria.Add("Criteria", criteria);
+                    cs.Criteria.Add("Criteria", criteria);
             e.ShowViewParameters.CreatedView = Application.CreateListView(lvId, cs, false);
             e.ShowViewParameters.TargetWindow = TargetWindow.NewModalWindow;
             e.ShowViewParameters.Context = TemplateContext.PopupWindow;
@@ -237,8 +236,9 @@ namespace TicariSet.Module.Controllers
             CriteriaOperator criteria = CriteriaOperator.Parse("StokID = ? ", selectedStokID);
             if (!(criteria is null))
                 cs.Criteria.Add("Criteria", criteria);
-            IList result = ObjectSpace.GetObjects(type: objectType, criteria);
-            if (result.Count == 0)
+            int result = objectSpace.GetObjectsCount(objectType, criteria);
+
+            if (result == 0)
             {
                 foreach (ChoiceActionItem items in singleChoiceAction1.Items)
                 {
@@ -261,7 +261,7 @@ namespace TicariSet.Module.Controllers
                     }
                 }
             }
-            else if (result.Count > 0)
+            else if (result > 0)
             {
                 foreach (ChoiceActionItem items in singleChoiceAction1.Items)
                 {
@@ -289,7 +289,6 @@ namespace TicariSet.Module.Controllers
         void GetCollectionById(Type objectType, SingleChoiceActionExecuteEventArgs e, string criteriaParameterName, string turu = "",
            string criteriaParameterName2 = "", string and = "")
         {
-
             IObjectSpace objectSpace = Application.CreateObjectSpace(objectType);
             string listViewId = ModelNodeIdHelper.GetListViewId(objectType);
             CollectionSource collectionSource = new CollectionSource(objectSpace, objectType);
@@ -317,6 +316,7 @@ namespace TicariSet.Module.Controllers
             dialogController.Accepting += new EventHandler<DialogControllerAcceptingEventArgs>(dc_Accepting);
             dialogController.SaveOnAccept = false;
             e.ShowViewParameters.Controllers.Add(dialogController);
+
         }
         void GetCollection(Type objectType, SingleChoiceActionExecuteEventArgs e)
         {
