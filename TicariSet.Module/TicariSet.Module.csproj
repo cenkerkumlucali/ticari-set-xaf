@@ -205,17 +205,17 @@
     <Compile Include="Controllers\IslemlerController.Designer.cs">
       <DependentUpon>IslemlerController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\PersonelEmailController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\PersonelEmailController.Designer.cs">
+      <DependentUpon>PersonelEmailController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\StokHareketleriIslemlerController.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controllers\StokHareketleriIslemlerController.Designer.cs">
       <DependentUpon>StokHareketleriIslemlerController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controllers\ShowListViewController.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controllers\ShowListViewController.Designer.cs">
-      <DependentUpon>ShowListViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="Converters\TypeStringConverter.cs" />
     <Compile Include="EnumObjects\PasaportTipleri.cs" />

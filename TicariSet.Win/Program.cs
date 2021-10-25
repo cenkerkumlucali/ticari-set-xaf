@@ -6,7 +6,6 @@ using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Security;
 using DevExpress.Persistent.Base;
 using DevExpress.XtraEditors;
-using TicariSet.Module.OtherClasses;
 
 namespace TicariSet.Win {
     static class Program {

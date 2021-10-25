@@ -1,7 +1,7 @@
 ﻿
 using TicariSet.Module.BusinessObjects;
 
-namespace TicariSet.Module.Controllers
+namespace TicariSet.Module.Win.Controllers
 {
     partial class WinAlternatingRowsController
     {

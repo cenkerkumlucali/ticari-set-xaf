@@ -1,13 +1,10 @@
-﻿using DevExpress.ExpressApp;
-using DevExpress.ExpressApp.SystemModule;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Drawing;
+using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Win.Editors;
 using DevExpress.XtraGrid.Views.Grid;
-using TicariSet.Module.BusinessObjects;
 
-namespace TicariSet.Module.Controllers
+namespace TicariSet.Module.Win.Controllers
 {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppViewControllertopic.aspx.
     public partial class WinAlternatingRowsController : ViewController
