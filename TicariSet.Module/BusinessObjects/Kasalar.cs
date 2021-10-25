@@ -37,7 +37,6 @@ namespace TicariSet.Module.BusinessObjects
 
         [VisibleInDetailView(false)]
         [Size(SizeAttribute.DefaultStringMappingFieldSize)]
-        [RuleRequiredField]
         public string Kod
         {
             get => kod;
@@ -87,7 +86,7 @@ namespace TicariSet.Module.BusinessObjects
                 && string.IsNullOrEmpty(Kod))
             {
                 int deger = DistributedIdGeneratorHelper.Generate(Session.DataLayer, this.GetType().FullName, "KasalarServerPrefix");
-                Kod = string.Format("{0:D7}", deger);
+                Kod = string.Format("{0:D2}", deger);
             }
             base.OnSaving();
         }

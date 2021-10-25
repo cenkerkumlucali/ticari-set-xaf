@@ -26,8 +26,6 @@ namespace TicariSet.Module.BusinessObjects
         string kod;
 
         [Size(32)]
-        [RuleUniqueValue]
-        [RuleRequiredField]
         public string Kod
         {
             get => kod;
