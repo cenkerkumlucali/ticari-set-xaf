@@ -6,7 +6,7 @@ using DevExpress.Persistent.Validation;
 using DevExpress.Utils.Design;
 using DevExpress.Xpo;
 using TicariSet.Module.EnumObjects;
-using ColorConverter = TicariSet.Module.OtherClasses.ColorConverter;
+using ColorConverter = TicariSet.Module.Converters.ColorConverter;
 
 namespace TicariSet.Module.BusinessObjects
 {
