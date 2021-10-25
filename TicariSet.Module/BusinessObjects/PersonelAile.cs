@@ -32,7 +32,6 @@ namespace TicariSet.Module.BusinessObjects
         private PersonelKart personelId;
 
         [Size(32)]
-        [RuleRequiredField]
         public string Kod
         {
             get => kod;
