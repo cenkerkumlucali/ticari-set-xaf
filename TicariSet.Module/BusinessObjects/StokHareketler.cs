@@ -71,14 +71,14 @@ namespace TicariSet.Module.BusinessObjects
                     BirimID = StokID?.BirimID;
                     if (Hareket == StokHareketType.Giris)
                     {
-                        if (StokID?.StFiyatId != null)
-                            foreach (var stFiyat in StokID?.StFiyatId)
-                            {
-                                if (stFiyat.FiyatGrubu == FisHareketType.Alis)
-                                {
-                                    BirimFiyat = stFiyat.Fiyat;
-                                }
-                            }
+                        //if (StokID?.StFiyatId != null)
+                        //    foreach (var stFiyat in StokID?.StFiyatId)
+                        //    {
+                        //        if (stFiyat.FiyatGrubu == FisHareketType.Alis)
+                        //        {
+                        //            BirimFiyat = stFiyat.Fiyat;
+                        //        }
+                        //    }
                     }
 
                     if (StokID != null) VergiOran = StokID.VergiOrani;
@@ -190,11 +190,11 @@ namespace TicariSet.Module.BusinessObjects
             set
             {
                 Fisler eskiFis = fisID;
-                bool degistimi = SetPropertyValue(nameof(FisID), ref fisID, value);
-                if (!IsLoading && !IsSaving && !IsDeleted && eskiFis != fisID && degistimi)
+                bool isChanged = SetPropertyValue(nameof(FisID), ref fisID, value);
+                if (!IsLoading && !IsSaving && !IsDeleted && eskiFis != fisID && isChanged)
                 {
                     eskiFis = eskiFis ?? fisID;
-                    eskiFis.HesaplaAltToplam(true);
+                    //eskiFis.HesaplaAltToplam(true);
                     eskiFis.HesaplaGenelToplam(true);
                     eskiFis.HesaplaIndirimToplam(true);
                     eskiFis.HesaplaVergiToplam(true);
@@ -226,7 +226,7 @@ namespace TicariSet.Module.BusinessObjects
             genelTutar = netTutar + vergiTutar;
             if (FisID != null)
             {
-                FisID.HesaplaAltToplam(true);
+                //FisID.HesaplaAltToplam(true);
                 FisID.HesaplaGenelToplam(true);
                 FisID.HesaplaIndirimToplam(true);
                 FisID.HesaplaVergiToplam(true);

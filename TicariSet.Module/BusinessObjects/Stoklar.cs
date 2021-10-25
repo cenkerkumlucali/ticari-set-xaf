@@ -61,7 +61,6 @@ namespace TicariSet.Module.BusinessObjects
         GenelTipTanimlari kartTipi;
 
         [VisibleInDetailView(false)]
-        [RuleUniqueValue("RUV-Stoklar.03",DefaultContexts.Save,CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction)]
         public string Kod
         {
             get => kod;
