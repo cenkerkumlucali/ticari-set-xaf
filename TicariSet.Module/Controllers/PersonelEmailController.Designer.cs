@@ -1,7 +1,7 @@
 ﻿
 namespace TicariSet.Module.Controllers
 {
-    partial class ShowListViewController
+    partial class EditPersonelIletisimBilgileriController
     {
         /// <summary>
         /// Required designer variable.
