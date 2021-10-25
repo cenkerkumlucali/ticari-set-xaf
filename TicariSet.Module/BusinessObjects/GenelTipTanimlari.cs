@@ -16,6 +16,7 @@ using DevExpress.ExpressApp.SystemModule;
 using DevExpress.ExpressApp.Xpo;
 using DevExpress.Utils;
 using DevExpress.Xpo.Metadata.Helpers;
+using TicariSet.Module.Converters;
 using TicariSet.Module.EnumObjects;
 
 namespace TicariSet.Module.BusinessObjects

@@ -136,10 +136,11 @@ namespace TicariSet.Module.BusinessObjects
             double? eskiAltToplam = altToplam;
             double temp = 0;
 
-            foreach (StokHareketler item in Detay)
-            {
-                temp += item.Toplam;
-            }
+            if (Detay != null)
+                foreach (StokHareketler item in Detay)
+                {
+                    temp += item.Toplam;
+                }
 
             altToplam = temp;
             if (disposing)
