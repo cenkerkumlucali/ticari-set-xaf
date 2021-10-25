@@ -35,6 +35,8 @@ namespace TicariSet.Module.BusinessObjects
         string aciklama;
         private FileData file;
 
+        [FileTypeFilter("Document files", 1, "*.txt", "*.doc")]
+        [FileTypeFilter("Image files", 2, "*.bmp", "*.png", "*.gif", "*.jpg")]
         [RuleUniqueValue("RUV-EkDosyalar.01", DefaultContexts.Save, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction)]
         [XafDisplayName("Dosya")]
         public FileData File

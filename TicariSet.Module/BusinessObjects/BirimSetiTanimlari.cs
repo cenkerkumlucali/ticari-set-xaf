@@ -27,7 +27,6 @@ namespace TicariSet.Module.BusinessObjects
         private DurumType durum;
 
         [Size(8)]
-        [RuleRequiredField]
         public string Kod
         { 
             get => kod;
