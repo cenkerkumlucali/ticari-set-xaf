@@ -2,7 +2,7 @@
 using System.Drawing;
 using DevExpress.Xpo.Metadata;
 
-namespace TicariSet.Module.OtherClasses
+namespace TicariSet.Module.Converters
 {
     public class ColorConverter : ValueConverter
     {

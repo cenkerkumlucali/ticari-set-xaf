@@ -2,7 +2,7 @@
 using DevExpress.Persistent.Base;
 using DevExpress.Xpo.Metadata;
 
-namespace TicariSet.Module.BusinessObjects
+namespace TicariSet.Module.Converters
 {
     public class TypeStringConverter : ValueConverter
     {
