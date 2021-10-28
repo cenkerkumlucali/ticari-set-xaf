@@ -147,7 +147,7 @@ namespace TicariSet.Module.Controllers
 
             choiceActionItem11.Caption = "Banka Tahsilat";
             choiceActionItem11.Id = "bankaTahsilat";
-            choiceActionItem11.ImageName = "Currency";
+            choiceActionItem11.ImageName = "Currency"; 
             choiceActionItem11.Shortcut = null;
             choiceActionItem11.ToolTip = null;
 
