@@ -1,2 +1,215 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Application />
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="About Info" Caption="Hakkında..." />
+      <Action Id="Cancel" Caption="İptal" />
+      <Action Id="CancelAction" Caption="İptal" />
+      <Action Id="CloneObject" Caption="Klon..." />
+      <Action Id="Close" Caption="Kapat" />
+      <Action Id="CopyPredefinedReport" Caption="Önceden Tanımlanmış Raporu Kopyala" />
+      <Action Id="CreateDashboard" Caption="Gösterge Tablosu Oluştur" />
+      <Action Id="Delete" Caption="Sil" />
+      <Action Id="Delete Item" Caption="Öğeyi sil" />
+      <Action Id="Diagnostic Info.Actions Info">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Actions Info" Caption="&#xD;&#xA;Eylem Bilgisi" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="DialogCancel" Caption="İptal" />
+      <Action Id="DialogClose" Caption="Kapat" />
+      <Action Id="DialogOK" Caption="Tamam" />
+      <Action Id="Dismiss" Caption="Reddet" />
+      <Action Id="DismissAll" Caption="Hepsini reddet" />
+      <Action Id="EditReportControllerV2.Edit" Caption="Düzenle" />
+      <Action Id="Exit" Caption="Çıkış" />
+      <Action Id="ListViewShowObject" Caption="Aç" />
+      <Action Id="Logoff" Caption="&#xD;&#xA;Oturumu Kapat" />
+      <Action Id="Logon" Caption="Giriş yap" />
+      <Action Id="NavigateBack" Caption="Geri" />
+      <Action Id="NavigateForward" Caption="İleri" />
+      <Action Id="New" Caption="Yeni" />
+      <Action Id="NextObject" Caption="Sonraki Kayıt" />
+      <Action Id="Office_Open" Caption="Aç" />
+      <Action Id="Open" Caption="Aç..." />
+      <Action Id="OrganizeDashboard" Caption="Panoyu Düzenle" />
+      <Action Id="PreviousObject" Caption="Önceki Kayıt" />
+      <Action Id="Print" Caption="Yazdır..." />
+      <Action Id="Refresh" Caption="Yenile" />
+      <Action Id="RefreshAction" Caption="Yenile" />
+      <Action Id="RefreshNotifications" Caption="Yenile" />
+      <Action Id="ReportViewerDialogControllerV2_Close" Caption="Kapat" />
+      <Action Id="Save" Caption="Kaydet" />
+      <Action Id="SaveAndClose" Caption="Kaydet ve Kapat" />
+      <Action Id="SaveAndNew" Caption="Kaydet ve Yeni" />
+      <Action Id="SaveTo" Caption="Farklı Kaydet..." />
+      <Action Id="SetFilter" Caption="Filtre" />
+      <Action Id="ShowAllContexts" Caption="&#xD;&#xA;Doğrula" />
+      <Action Id="ShowNavigationItem" Caption="Gezinti" />
+    </Actions>
+    <DisableReasons>
+      <Reason Id="AttachmentAssigned" Caption="Ek(ler) boş" />
+      <Reason Id="ByContext_RequireMultipleObjects" Caption="En az bir nesnenin seçilmesini gerektirir" />
+      <Reason Id="ByContext_RequireSingleObject" Caption="Tek bir nesnenin seçilmesini gerektirir" />
+      <Reason Id="CanCreate" Caption="&#xD;&#xA;Bir nesne örneği oluşturulamıyor" />
+      <Reason Id="IsModifiedObject" Caption="Bu kaydı düzenlemeden önce mevcut değişiklikleri kaydedin" />
+      <Reason Id="Security" Caption="&#xD;&#xA;İzin reddedildi" />
+      <Reason Id="UnsuitableType" Caption="Seçilen türde yeni bir nesne oluşturulamıyor" />
+    </DisableReasons>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Editors.CriteriaProvider" Caption="Kriter Sağlayıcı">
+      <OwnMembers>
+        <Member Name="FilteredObjectsType" Caption="Filtrelenmiş Nesne Türü" />
+        <Member Name="FilterString" Caption="Filtre Dizesi" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.NonPersistentBaseObject" Caption="Kalıcı Olmayan Temel Nesne" />
+    <Class Name="DevExpress.ExpressApp.Notifications.CommonNotificationItem">
+      <OwnMembers>
+        <Member Name="NotificationSource" Caption="Bildirim Kaynağı" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Notifications.Notification" Caption="Bildirim">
+      <OwnMembers>
+        <Member Name="State" Caption="Durum" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.AboutInfo">
+      <OwnMembers>
+        <Member Name="Description" Caption="Açıklama" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardCreationInfo">
+      <OwnMembers>
+        <Member Name="DashboardName" Caption="Ad" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.SystemModule.DashboardName">
+      <OwnMembers>
+        <Member Name="Name" Caption="Ad" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ContextValidationResult">
+      <OwnMembers>
+        <Member Name="ContextValidationOutcome" Caption="Durum" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.DisplayableValidationResultItem">
+      <OwnMembers>
+        <Member Name="ErrorMessage" Caption="Hata Mesajı" />
+        <Member Name="Outcome" Caption="Durum" />
+        <Member Name="Rule" Caption="Kural" />
+        <Member Name="TargetCaption" Caption="Hedef" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ValidationResults" Caption="Doğrulama Sonuçları">
+      <OwnMembers>
+        <Member Name="Results" Caption="Sonuçlar" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.AuditDataItemPersistent">
+      <OwnMembers>
+        <Member Name="Description" Caption="Açıklama" />
+        <Member Name="ModifiedOn" Caption="Değiştirilme Tarihi" />
+        <Member Name="NewValue" Caption="Yeni Değer" />
+        <Member Name="OldValue" Caption="Eski Değer" />
+        <Member Name="UserName" Caption="Kullanıcı Adı" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Event">
+      <OwnMembers>
+        <Member Name="AllDay" Caption="Tüm Gün" />
+        <Member Name="Description" Caption="Açıklama" />
+        <Member Name="EndOn" Caption="Bitiş Tarihi/Saati" />
+        <Member Name="Label" Caption="Etiket" />
+        <Member Name="Location" Caption="Konum" />
+        <Member Name="StartOn" Caption="Başlangıç ​​Tarihi/Saati" />
+        <Member Name="Status" Caption="Durum" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.HCategory">
+      <OwnMembers>
+        <Member Name="Name" Caption="Ad" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.ModelDifferenceAspect">
+      <OwnMembers>
+        <Member Name="Name" Caption="Ad" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Resource">
+      <OwnMembers>
+        <Member Name="Color" Caption="Renk" />
+        <Member Name="Events" Caption="&#xD;&#xA;Olaylar" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleBaseProperties">
+      <OwnMembers>
+        <Member Name="MessageTemplateSkipNullOrEmptyValues" Caption="İleti Şablonu Boş veya Boş Değerleri Atla" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyTargetCriteria" Caption="Mesaj Şablonu Hedefi, Hedef Kriterlerini Karşılamıyor" />
+        <Member Name="Name" Caption="Ad" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Null Veya Boş Değerleri Atla" />
+        <Member Name="TargetCriteria" Caption="Hedef Kriterler" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCollectionPropertyProperties" Caption="Kural Koleksiyonu Özellik Özellikleri">
+      <OwnMembers>
+        <Member Name="MessageTemplateCollectionValidationMessageSuffix" Caption="Mesaj Şablonu Koleksiyon Doğrulama Mesaj Soneki" />
+        <Member Name="MessageTemplateTargetDoesNotSatisfyCollectionCriteria" Caption="İleti Şablonu Hedefi Toplama Kriterlerini Karşılamıyor" />
+        <Member Name="TargetCollectionOwnerType" Caption="Hedef Koleksiyon Sahibi Türü" />
+        <Member Name="TargetCollectionPropertyName" Caption="Hedef Koleksiyon Özellik Adı" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleCombinationOfPropertiesIsUniqueProperties" Caption="Özelliklerin Kural Birleşimi Benzersiz Özelliklerdir">
+      <OwnMembers>
+        <Member Name="MessageTemplateCombinationOfPropertiesMustBeUnique" Caption="İleti Şablonu Özelliklerin Birleşimi Benzersiz Olmalıdır" />
+        <Member Name="TargetProperties" Caption="Hedef Özellikler" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.IRuleRequiredFieldProperties">
+      <OwnMembers>
+        <Member Name="SkipNullOrEmptyValues" Caption="Null Veya Boş Değerleri Atla" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleBaseProperties">
+      <OwnMembers>
+        <Member Name="Name" Caption="Ad" />
+        <Member Name="SkipNullOrEmptyValues" Caption="Null Veya Boş Değerleri Atla" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.Validation.RuleSetValidationResultItem">
+      <OwnMembers>
+        <Member Name="ValidationOutcome" Caption="Durum" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="DialogButtons">
+      <LocalizationItem Name="Close" Value="Kapat" />
+      <LocalizationItem Name="Delete" Value="Sil" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="FileAttachments">
+      <LocalizationItem Name="Editor_Open" Value="Aç" />
+      <LocalizationItem Name="Editor_Save" Value="Farklı Kaydet..." />
+      <LocalizationItem Name="OverwritePromptCaption" Value="Farklı Kaydet..." />
+    </LocalizationGroup>
+  </Localization>
+  <Validation>
+    <Contexts>
+      <ValidationContext Id="Delete" Caption="Sil" />
+    </Contexts>
+  </Validation>
+  <Views>
+    <ListView Id="ModelDifference_Aspects_ListView">
+      <Columns>
+        <ColumnInfo Id="DisplayName" Caption="Ad" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleSetValidationResultItem_ByTarget_ListView">
+      <Columns>
+        <ColumnInfo Id="ErrorMessage" Caption="Açıklama" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>
