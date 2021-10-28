@@ -5,11 +5,13 @@ using DevExpress.ExpressApp.Model.NodeGenerators;
 using DevExpress.ExpressApp.SystemModule;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using DevExpress.ExpressApp.Utils;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl.PermissionPolicy;
 using DevExpress.Xpo;
+using DevExpress.Xpo.DB;
 using DevExpress.XtraEditors;
 using TicariSet.Module.BusinessObjects;
 using ListView = DevExpress.ExpressApp.ListView;
@@ -206,38 +208,17 @@ namespace TicariSet.Module.Controllers
             Type objectType = typeof(StokHareketler);
             GetCollection(objectType, e);
         }
-        void GetStokHareketleriById(SingleChoiceActionExecuteEventArgs e)
-        {
-            Type objectType = typeof(StokHareketler);
-            IObjectSpace objectSpace = Application.CreateObjectSpace(objectType);
-            object selectedStokID = ((Stoklar)View.SelectedObjects[0]).Oid;
-            string lvId = ModelNodeIdHelper.GetListViewId(objectType);
-            CollectionSource cs = new CollectionSource(objectSpace, objectType);
-            CriteriaOperator criteria = CriteriaOperator.Parse("StokID = ? ", selectedStokID);
-            if (!(criteria is null))
-                    cs.Criteria.Add("Criteria", criteria);
-            e.ShowViewParameters.CreatedView = Application.CreateListView(lvId, cs, false);
-            e.ShowViewParameters.TargetWindow = TargetWindow.NewModalWindow;
-            e.ShowViewParameters.Context = TemplateContext.PopupWindow;
-            DialogController dialogc = Application.CreateController<DialogController>();
-            dialogc.FrameAssigned += new EventHandler(DialogController_FrameAssigned);
-            dialogc.Accepting += new EventHandler<DialogControllerAcceptingEventArgs>(DialogController_FrameAssigned);
-            dialogc.SaveOnAccept = false;
-            e.ShowViewParameters.Controllers.Add(dialogc);
-        }
-
         void GetStokHarekelerView_SelectionChanged()
         {
             Type objectType = typeof(StokHareketler);
             IObjectSpace objectSpace = Application.CreateObjectSpace(objectType);
             object selectedStokID = ((Stoklar)View.SelectedObjects[0]).Oid;
-            string lvId = ModelNodeIdHelper.GetListViewId(objectType);
             CollectionSource cs = new CollectionSource(objectSpace, objectType);
             CriteriaOperator criteria = CriteriaOperator.Parse("StokID = ? ", selectedStokID);
             if (!(criteria is null))
                 cs.Criteria.Add("Criteria", criteria);
             int result = objectSpace.GetObjectsCount(objectType, criteria);
-
+            
             if (result == 0)
             {
                 foreach (ChoiceActionItem items in singleChoiceAction1.Items)
