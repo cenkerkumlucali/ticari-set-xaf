@@ -8,4 +8,7 @@
     <SchemaModule Name="SystemModule" Version="20.2.3.0" IsNewNode="True" />
     <SchemaModule Name="SystemWindowsFormsModule" Version="20.2.3.0" IsNewNode="True" />
   </SchemaModules>
+  <Views>
+    <ListView Id="EvrakBeden_LookupListView" EditorTypeName="DevExpress.ExpressApp.Win.Editors.GridListEditor" />
+  </Views>
 </Application>
