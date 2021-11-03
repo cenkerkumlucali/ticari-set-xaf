@@ -1440,6 +1440,16 @@
         <ColumnInfo Id="Kod" Width="84" />
       </Columns>
     </ListView>
+    <ListView Id="Evrak_EvrakSatir_ListView" AllowEdit="True" NewItemRowPosition="Bottom" />
+    <ListView Id="EvrakBeden_ListView" AllowEdit="True" NewItemRowPosition="Bottom" />
+    <ListView Id="EvrakBeden_LookupListView" IsGroupPanelVisible="False" AllowEdit="True" NewItemRowPosition="Bottom">
+      <Columns>
+        <ColumnInfo Id="Beden" PropertyName="Beden" Index="0" IsNewNode="True" />
+        <ColumnInfo Id="Miktar" PropertyName="Miktar" Index="1" IsNewNode="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="EvrakSatir_ListView" AllowEdit="True" NewItemRowPosition="Bottom" />
+    <ListView Id="EvrakSatir_LookupListView" NewItemRowPosition="Bottom" AllowEdit="True" />
     <DetailView Id="Fisler_DetailView">
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
@@ -2295,9 +2305,9 @@
     <ListView Id="Stoklar_StKartRenk_ListView" NewItemRowPosition="Bottom" AllowEdit="True" FreezeColumnIndices="False">
       <Columns>
         <ColumnInfo Id="RenkTanimId.Ad" PropertyName="RenkTanimId.Ad" Index="-1" IsNewNode="True" />
-        <ColumnInfo Id="RenkTanimId.RgbKod" PropertyName="RenkTanimId.RgbKod" Index="1" IsNewNode="True" />
         <ColumnInfo Id="StokId" SortIndex="0" SortOrder="Ascending" Width="88" />
         <ColumnInfo Id="RenkTanimId" Width="106" />
+        <ColumnInfo Id="RenkTanimId.RgbKod" PropertyName="RenkTanimId.RgbKod" Index="1" IsNewNode="True" />
         <ColumnInfo Id="RenkTanimId.Durum" PropertyName="RenkTanimId.Durum" Index="2" IsNewNode="True" />
       </Columns>
     </ListView>

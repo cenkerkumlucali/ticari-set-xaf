@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Application>
-  <CreatableItems Id="CreatableItems">
-    <CreatableItem ClassName="TicariSet.Module.BusinessObjects.Fisler" Index="" />
-  </CreatableItems>
-</Application>
