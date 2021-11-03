@@ -29,13 +29,12 @@ namespace TicariSet.Module.Controllers
             showListView.CustomizePopupWindowParams += ShowListView_CustomizePopupWindowParams;
             InitializeComponent();
 
-        }
+        }   
 
         private void ShowListView_CustomizePopupWindowParams(object sender, CustomizePopupWindowParamsEventArgs e)
         {
             e.DialogController.SaveOnAccept = false;
             Type objectType = typeof(Fisler);
-            IObjectSpace objectSpace = Application.CreateObjectSpace(objectType);
             object selectedCari = ((Cariler) View.SelectedObjects[0]).Oid;
             string listViewId = ModelNodeIdHelper.GetListViewId(objectType);
             CollectionSource collectionSource = new CollectionSource(ObjectSpace, objectType);

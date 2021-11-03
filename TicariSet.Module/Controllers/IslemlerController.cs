@@ -27,8 +27,6 @@ namespace TicariSet.Module.Controllers
         {
             RegisterActions(components);
             InitializeComponent();
-
-
         }
         private void singleChoiceAction1_Execute(object sender, SingleChoiceActionExecuteEventArgs e)
         {
