@@ -4,11 +4,7 @@ using DevExpress.ExpressApp.Model.NodeGenerators;
 using DevExpress.ExpressApp.SystemModule;
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using TicariSet.Module.BusinessObjects;
-using System.Linq;
-using DevExpress.Xpo;
-using DevExpress.XtraPivotGrid;
 
 namespace TicariSet.Module.Controllers
 {
@@ -35,7 +31,6 @@ namespace TicariSet.Module.Controllers
                     CollectionSource collectionSource = new CollectionSource(ObjectSpace, objectType);
                     CriteriaOperator criteriaOperator = CriteriaOperator.Parse("EvrakSatirId = ?", selected);
                     collectionSource.Criteria.Add("Criteria", criteriaOperator);
-
                     ListView listView = Application.CreateListView(listViewId, collectionSource, false);
                     ShowViewParameters svp = new ShowViewParameters(listView)
                     {
@@ -50,30 +45,19 @@ namespace TicariSet.Module.Controllers
                     dialogController.SaveOnAccept = false;
                     svp.Controllers.Add(dialogController);
                     Application.ShowViewStrategy.ShowView(svp, new ShowViewSource(
-                        Application.CreateFrame(TemplateContext.PopupWindow),
-                        null));
+                        Application.CreateFrame(TemplateContext.PopupWindow),null));
                 }
             }
         }
         private void DialogController_Accepting(object sender, DialogControllerAcceptingEventArgs e)
         {
             IList list = ((ListView)((DialogController)sender).AcceptAction.SelectionContext).CollectionSource.List;
-            int total = 0;
+            int toplam = 0;
             foreach (EvrakBeden item in list)
             {
-                total += item.Miktar;
+                toplam += item.Miktar;
             }
-
-            EvrakSatir.HesaplaMiktar((EvrakSatir) View.CurrentObject, total);
-
-            //showing editor
-            //var miktar = 
-            //var mikt = ((EvrakBeden) (new System.Linq.SystemCore_EnumerableDebugView(list).Items[1])).miktar;
-            //XPCollection<int> miktar = ((EvrakBeden)((XPBaseObject) new System.Linq(list).Items[0]).This).Miktar;
-            //var toplamMiktar = ((EvrakBeden)new System.Linq(list).Items[0]).evrakSatirId.miktar;
-            //int miktar = ((EvrakBeden)(new System.Linq.Expressions(list).Items)).Miktar;
-
-            //object selected = ((EvrakSatir)View.SelectedObjects[0]).Miktar;
+            EvrakSatir.HesaplaMiktar((EvrakSatir) View.CurrentObject, toplam);
         }
         private void DialogController_Cancelling(object sender, EventArgs e)
         {

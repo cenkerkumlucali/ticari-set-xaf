@@ -5,14 +5,6 @@ using DevExpress.ExpressApp.Model.NodeGenerators;
 using DevExpress.ExpressApp.SystemModule;
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Windows.Forms;
-using DevExpress.ExpressApp.Utils;
-using DevExpress.Persistent.Base;
-using DevExpress.Persistent.BaseImpl.PermissionPolicy;
-using DevExpress.Xpo;
-using DevExpress.Xpo.DB;
-using DevExpress.XtraEditors;
 using TicariSet.Module.BusinessObjects;
 using ListView = DevExpress.ExpressApp.ListView;
 using View = DevExpress.ExpressApp.View;
@@ -283,7 +275,8 @@ namespace TicariSet.Module.Controllers
             {
                 listViewId = ModelNodeIdHelper.GetListViewId(objectType);
                 object selectedStok = ((Stoklar)View.SelectedObjects[0]).Oid;
-                CriteriaOperator criteriaOperator = CriteriaOperator.Parse($"[{criteriaParameterName}] = ? {and} {criteriaParameterName2}{turu}", selectedStok);
+                CriteriaOperator criteriaOperator = 
+                    CriteriaOperator.Parse($"[{criteriaParameterName}] = ? {and} {criteriaParameterName2}{turu}", selectedStok);
                 if (!(criteriaOperator is null))
                     collectionSource.Criteria.Add("Criteria", criteriaOperator);
             }
