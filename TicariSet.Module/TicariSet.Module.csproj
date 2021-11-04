@@ -205,12 +205,6 @@
     <Compile Include="Controllers\DeactivateNewController.Designer.cs">
       <DependentUpon>DeactivateNewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\ExitApp.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controllers\ExitApp.Designer.cs">
-      <DependentUpon>ExitApp.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controllers\IslemlerController.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -312,7 +306,6 @@
     <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Controllers\ReadMe.txt" />
     <None Include="DatabaseUpdate\ReadMe.txt" />
     <None Include="Images\ReadMe.txt" />
     <EmbeddedResource Include="Model.DesignedDiffs.Localization.tr.xafml">

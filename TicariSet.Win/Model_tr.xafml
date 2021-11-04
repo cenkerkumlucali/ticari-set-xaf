@@ -1,2 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Application />
+<Application>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="&lt;b&gt;&lt;color=red&gt;*&lt;/color&gt;&lt;/b&gt;" />
+  </Options>
+</Application>

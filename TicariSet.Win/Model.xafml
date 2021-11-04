@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application>
+  <Options EnableHtmlFormatting="True" />
   <SchemaModules>
     <SchemaModule Name="CloneObjectModule" Version="20.2.3.0" IsNewNode="True" />
     <SchemaModule Name="SchedulerModuleBase" Version="20.2.3.0" IsNewNode="True" />

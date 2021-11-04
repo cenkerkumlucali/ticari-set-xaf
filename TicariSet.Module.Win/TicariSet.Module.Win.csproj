@@ -255,12 +255,9 @@
     <Compile Include="Controllers\BedenControllerWin.Designer.cs">
       <DependentUpon>BedenControllerWin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\PivotFieldController.cs" />
-    <Compile Include="Controllers\ViewController1.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controllers\ViewController1.Designer.cs">
-      <DependentUpon>ViewController1.cs</DependentUpon>
+    <Compile Include="Controllers\PivotController.cs" />
+    <Compile Include="Controllers\PivotController.Designer.cs">
+      <DependentUpon>PivotController.cs</DependentUpon>
     </Compile>
     <Compile Include="Controllers\WinAlternatingRowsController.cs">
       <SubType>Component</SubType>

@@ -1,24 +1,10 @@
-﻿using DevExpress.Data.Filtering;
-using DevExpress.ExpressApp;
-using DevExpress.ExpressApp.Actions;
+﻿using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Editors;
-using DevExpress.ExpressApp.Layout;
-using DevExpress.ExpressApp.Model.NodeGenerators;
-using DevExpress.ExpressApp.SystemModule;
-using DevExpress.ExpressApp.Templates;
-using DevExpress.ExpressApp.Utils;
-using DevExpress.Persistent.Base;
-using DevExpress.Persistent.Validation;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using DevExpress.ExpressApp.Win.Editors;
 using DevExpress.XtraEditors;
-using DevExpress.XtraGrid;
-using DevExpress.XtraGrid.Columns;
+using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraGrid.Views.Grid;
-using DevExpress.XtraPivotGrid;
 using TicariSet.Module.Controllers;
 
 namespace TicariSet.Module.Win.Controllers
@@ -35,7 +21,6 @@ namespace TicariSet.Module.Win.Controllers
         protected override void CreateEvent()
         {
             Subscribe();
-
         }
 
         private void Subscribe(bool isSubscribe = true)
@@ -72,9 +57,6 @@ namespace TicariSet.Module.Win.Controllers
                         {
                             gridList.GridView.RowCellClick += GridView_RowCellClick;
                             gridList.GridView.FocusedColumnChanged += GridView_FocusedColumnChanged;
-                            gridList.GridView.ShowingEditor += GridView_ShowingEditor;
-
-                            //gridList.GridView.CellValueChanged += GridView_CellValueChanged;
                         }
                         else
                         {
@@ -85,38 +67,7 @@ namespace TicariSet.Module.Win.Controllers
                 }
             }
         }
-
-        private void GridView_ShowingEditor(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            GridControl gridControl = (GridControl)((DevExpress.ExpressApp.ListView)View).Editor.Control;
-            GridView gridView = (GridView)gridControl.FocusedView;
-            e.Cancel = gridView.FocusedColumn.FieldName == "Miktar" && gridView.FocusedRowHandle % 2 == 0;
-        }
-
-        private void PivotGrid_EditValueChanged(object sender, DevExpress.XtraPivotGrid.EditValueChangedEventArgs e)
-        {
-            PivotDrillDownDataSource ds = e.CreateDrillDownDataSource();
-            for (int i = 0; i < ds.RowCount; i++)
-            {
-                ds.SetValue(i, e.DataField, Convert.ToBoolean(e.Editor.EditValue));
-            }
-        }
-
-        private void PivotGrid_CustomCellValue(object sender, DevExpress.XtraPivotGrid.PivotCellValueEventArgs e)
-        {
-            if (e.DataField.Name == "Miktar" && e.Value != null)
-            {
-                e.Value = (Convert.ToInt32(e.Value) > 0) ? true : false;
-            }
-        }
-        //private void GridView_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
-        //{
-        //    GridControl gridControl = (GridControl)((DevExpress.ExpressApp.ListView)View).Editor.Control;
-        //    GridView gridViewCore = (GridView)gridControl.FocusedView;
-        //    foreach (GridColumn column in gridViewCore.Columns)
-
-
-        //}
+        
         private void ViewItem_ControlCreated(object sender, EventArgs e)
         {
             PropertyEditor propertyEditor = sender as PropertyEditor;
@@ -132,7 +83,7 @@ namespace TicariSet.Module.Win.Controllers
             BedenPopup();
         }
 
-        private void GridView_FocusedColumnChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedColumnChangedEventArgs e)
+        private void GridView_FocusedColumnChanged(object sender,FocusedColumnChangedEventArgs e)
         {
             if (e.FocusedColumn != null && e.FocusedColumn.FieldName == "Miktar")
             {
@@ -140,7 +91,7 @@ namespace TicariSet.Module.Win.Controllers
             }
         }
 
-        private void GridView_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
+        private void GridView_RowCellClick(object sender,RowCellClickEventArgs e)
         {
             if (e.Column != null && e.Column.FieldName == "Miktar")
             {

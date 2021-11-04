@@ -18,6 +18,7 @@
         <Member Name="KartTipi" DataSourceCriteria="" DataSourceCriteriaProperty="" />
       </OwnMembers>
     </Class>
+    <Class Name="TicariSet.Module.BusinessObjects.Evrak" ImageName="BO_Contract" />
     <Class Name="TicariSet.Module.BusinessObjects.GenelTipTanimlari" IsCloneable="True" />
     <Class Name="TicariSet.Module.BusinessObjects.Kasalar" IsCloneable="True" />
     <Class Name="TicariSet.Module.BusinessObjects.Masraflar" IsCloneable="True" />
@@ -87,6 +88,7 @@
           <Item Id="Doviz_ListView" Removed="True" />
           <Item Id="EkDosyalar_ListView" Removed="True" />
           <Item Id="Event_ListView" Removed="True" />
+          <Item Id="Evrak_ListView" Removed="True" />
           <Item Id="Fisler_ListView" Visible="False" Removed="True" />
           <Item Id="GenelTipTanimlari_ListView" Removed="True" />
           <Item Id="Ilceler_ListView" Removed="True" />
@@ -115,6 +117,7 @@
       <Item Id="Faturalar" Index="5" IsNewNode="True">
         <Items IsNewNode="True">
           <Item Id="AlisFaturasi_ListView" ViewId="AlisFaturasi_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="Evrak_ListView" ViewId="Evrak_ListView" ObjectKey="" IsNewNode="True" />
           <Item Id="Fisler_ListView" ViewId="Fisler_ListView" ObjectKey="" Visible="False" ImageName="Paid" IsNewNode="True" />
           <Item Id="SatisFaturasi_ListView" ViewId="SatisFaturasi_ListView" ObjectKey="" IsNewNode="True" />
         </Items>
@@ -2305,9 +2308,9 @@
     <ListView Id="Stoklar_StKartRenk_ListView" NewItemRowPosition="Bottom" AllowEdit="True" FreezeColumnIndices="False">
       <Columns>
         <ColumnInfo Id="RenkTanimId.Ad" PropertyName="RenkTanimId.Ad" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="RenkTanimId.RgbKod" PropertyName="RenkTanimId.RgbKod" Index="1" IsNewNode="True" />
         <ColumnInfo Id="StokId" SortIndex="0" SortOrder="Ascending" Width="88" />
         <ColumnInfo Id="RenkTanimId" Width="106" />
-        <ColumnInfo Id="RenkTanimId.RgbKod" PropertyName="RenkTanimId.RgbKod" Index="1" IsNewNode="True" />
         <ColumnInfo Id="RenkTanimId.Durum" PropertyName="RenkTanimId.Durum" Index="2" IsNewNode="True" />
       </Columns>
     </ListView>
