@@ -3,7 +3,6 @@ using DevExpress.ExpressApp.SystemModule;
 
 namespace TicariSet.Module.Controllers
 {
-    // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppViewControllertopic.aspx.
     public partial class DeactivateNewController : ViewController
     {
         private const string Key = "Deactivation in code";
