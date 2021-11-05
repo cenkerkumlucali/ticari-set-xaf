@@ -8,7 +8,6 @@ using TicariSet.Module.BusinessObjects;
 
 namespace TicariSet.Module.Controllers
 {
-    // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppViewControllertopic.aspx.
     public partial class CariAlisSatisIslemleriController : ViewController
     {
         private PopupWindowShowAction showListView;
