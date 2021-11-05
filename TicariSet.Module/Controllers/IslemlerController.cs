@@ -11,7 +11,6 @@ using View = DevExpress.ExpressApp.View;
 
 namespace TicariSet.Module.Controllers
 {
-    // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppViewControllertopic.aspx.
     public partial class IslemlerController : ViewController
     {
 
