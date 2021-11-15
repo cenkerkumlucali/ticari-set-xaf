@@ -6,6 +6,7 @@ using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Security;
 using DevExpress.Persistent.Base;
 using DevExpress.XtraEditors;
+using SmartAssembly.Attributes;
 
 namespace TicariSet.Win {
     static class Program {
@@ -13,6 +14,7 @@ namespace TicariSet.Win {
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
+        [DoNotObfuscate]
         static void Main() {
             DevExpress.ExpressApp.FrameworkSettings.DefaultSettingsCompatibilityMode = DevExpress.ExpressApp.FrameworkSettingsCompatibilityMode.v20_1;
 #if EASYTEST
@@ -49,7 +51,9 @@ namespace TicariSet.Win {
             }
 #endif
             try {
+                winApplication.SplashScreen.SetDisplayText("Yükleniyor...");
                 winApplication.Setup();
+                winApplication.SplashScreen.SetDisplayText("Başlatılıyor...");
                 winApplication.Start();
             }
             catch(Exception e) {

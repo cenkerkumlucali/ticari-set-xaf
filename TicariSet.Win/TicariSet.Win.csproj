@@ -274,6 +274,9 @@
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
+    <Reference Include="SmartAssembly.Attributes, Version=8.0.4.4860, Culture=neutral, PublicKeyToken=7f465a1c156d4d57, processorArchitecture=MSIL">
+      <HintPath>..\packages\RedGate.SmartAssembly.Attributes.8.0.4.4860\lib\net20\SmartAssembly.Attributes.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
@@ -324,6 +327,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ExpressApp.ico" />
+    <None Include="packages.config" />
     <None Include="UnusableNodes8.xml">
       <DependentUpon>Model.xafml</DependentUpon>
       <SubType>Designer</SubType>
