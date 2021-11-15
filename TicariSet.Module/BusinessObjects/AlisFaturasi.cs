@@ -2,11 +2,15 @@
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
+using SmartAssembly.Attributes;
 
 namespace TicariSet.Module.BusinessObjects
 {
     [DefaultClassOptions]
     [ImageName("BO_Invoice")]
+    [DoNotObfuscateControlFlow]
+    [DoNotPrune]
+    [StayPublic]
     public class AlisFaturasi : Fisler
     { 
         public AlisFaturasi(Session session)
