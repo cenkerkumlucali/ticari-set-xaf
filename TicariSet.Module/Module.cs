@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.ExpressApp.Updating;
 using DevExpress.ExpressApp.Xpo;
+using SmartAssembly.Attributes;
 
 namespace TicariSet.Module {
     // For more typical usage scenarios, be sure to check out https://docs.devexpress.com/eXpressAppFramework/DevExpress.ExpressApp.ModuleBase.
