@@ -28,10 +28,18 @@ namespace TicariSet.Module.BusinessObjects
     #endregion
 
     #region RuleIsReferenced
-    [RuleIsReferenced("RIR-Cariler.BankaHesapları", DefaultContexts.Delete, typeof(BankaHesaplari), "CariId", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
-    [RuleIsReferenced("RIR-Cariler.AdresBilgileri", DefaultContexts.Delete, typeof(BankaHesaplari), "CariId", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
-    [RuleIsReferenced("RIR-Cariler.CariIletisimBilgileri", DefaultContexts.Delete, typeof(CariIletisimBilgileri), "CariId", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
-    [RuleIsReferenced("RIR-Cariler.Fisler", DefaultContexts.Delete, typeof(Fisler), "CariID", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
+    [RuleIsReferenced("RIR-Cariler.BankaHesapları", DefaultContexts.Delete, typeof(BankaHesaplari),
+        "CariId", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction,
+        MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
+    [RuleIsReferenced("RIR-Cariler.AdresBilgileri", DefaultContexts.Delete, typeof(BankaHesaplari), 
+        "CariId", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction,
+        MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
+    [RuleIsReferenced("RIR-Cariler.CariIletisimBilgileri", DefaultContexts.Delete, typeof(CariIletisimBilgileri), 
+        "CariId", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction,
+        MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
+    [RuleIsReferenced("RIR-Cariler.Fisler", DefaultContexts.Delete, typeof(Fisler), 
+        "CariID", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction,
+        MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
     [RuleIsReferenced("RIR-Cariler.KasaHareket", DefaultContexts.Delete, typeof(KasaHareket), "CariID", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
     #endregion
 
