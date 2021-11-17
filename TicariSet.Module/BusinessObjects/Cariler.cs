@@ -40,7 +40,9 @@ namespace TicariSet.Module.BusinessObjects
     [RuleIsReferenced("RIR-Cariler.Fisler", DefaultContexts.Delete, typeof(Fisler), 
         "CariID", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction,
         MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
-    [RuleIsReferenced("RIR-Cariler.KasaHareket", DefaultContexts.Delete, typeof(KasaHareket), "CariID", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
+    [RuleIsReferenced("RIR-Cariler.KasaHareket", DefaultContexts.Delete, typeof(KasaHareket),
+        "CariID", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, 
+        MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
     #endregion
 
     //[RuleCriteria("", DefaultContexts.Save, "Durum != 1","Durum pasif olamaz", SkipNullOrEmptyValues = false)]
