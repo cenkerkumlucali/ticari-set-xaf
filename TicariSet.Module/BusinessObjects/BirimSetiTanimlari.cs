@@ -13,7 +13,7 @@ namespace TicariSet.Module.BusinessObjects
     public class BirimSetiTanimlari : BaseObject
     { 
         public BirimSetiTanimlari(Session session)
-            : base(session)
+            : base(session) 
         {
         }
         public override void AfterConstruction()
