@@ -11,7 +11,7 @@ namespace TicariSet.Module.BusinessObjects
     { 
         public BankaOdeme(Session session)
             : base(session)
-        {
+        { 
         }
         public override void AfterConstruction()
         {
