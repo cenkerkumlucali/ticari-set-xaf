@@ -15,7 +15,7 @@ namespace TicariSet.Module.BusinessObjects
         {
         }
         public override void AfterConstruction()
-        {
+        { 
             base.AfterConstruction();
             Tarih = DateTime.Now;
             Hareket = KasaHareketType.BankaTahsilat;
