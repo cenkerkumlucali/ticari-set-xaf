@@ -12,7 +12,7 @@ namespace TicariSet.Module.BusinessObjects
     public class Bankalar : XPObject
     { 
         public Bankalar(Session session)
-            : base(session)
+            : base(session) 
         {
         }
         public override void AfterConstruction()
