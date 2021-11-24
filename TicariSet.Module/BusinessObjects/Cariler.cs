@@ -146,24 +146,6 @@ namespace TicariSet.Module.BusinessObjects
             set => SetPropertyValue(nameof(Aciklama), ref aciklama, value);
         }
 
-        //[Size(SizeAttribute.DefaultStringMappingFieldSize)]
-        //[RuleRequiredField]
-        //public string Telefon
-        //{
-        //    get => telefon;
-        //    set => SetPropertyValue(nameof(Telefon), ref telefon, value);
-        //}
-        //[Size(SizeAttribute.DefaultStringMappingFieldSize)]
-        //[RuleRegularExpression("RRE-Email.01", DefaultContexts.Save,
-        //    @"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$",
-        //    messageTemplate:"Email formatınız yanlış lütfen kontrol edip tekrardan deneyin.")]
-        //[RuleUniqueValue("RUV-Email.01", DefaultContexts.Save,CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction)]
-        //public string Email
-        //{
-        //    get => email;
-        //    set => SetPropertyValue(nameof(Email), ref email, value);
-        //}
-
         public DurumType Durum
         {
             get => durum;
