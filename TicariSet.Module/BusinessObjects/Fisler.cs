@@ -103,7 +103,7 @@ namespace TicariSet.Module.BusinessObjects
             get
             {
                 if (!IsLoading && !IsSaving)
-                    HesaplaGenelToplam(false);
+                    HesaplaGenelToplam(false); 
                 return this.genelToplam;
             }
             set => SetPropertyValue(nameof(GenelToplam), ref genelToplam, value);
