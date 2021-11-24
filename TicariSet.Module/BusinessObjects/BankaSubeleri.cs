@@ -13,7 +13,7 @@ namespace TicariSet.Module.BusinessObjects
 
     public class BankaSubeleri : XPObject
     {
-        public BankaSubeleri(Session session)
+        public BankaSubeleri(Session session) 
             : base(session)
         {
         }
