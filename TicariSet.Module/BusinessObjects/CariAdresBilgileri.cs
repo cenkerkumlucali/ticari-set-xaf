@@ -17,7 +17,7 @@ namespace TicariSet.Module.BusinessObjects
         public CariAdresBilgileri(Session session)
             : base(session)
         {
-        }
+        } 
         public override void AfterConstruction()
         {
             base.AfterConstruction();
