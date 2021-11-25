@@ -259,6 +259,12 @@
     <Compile Include="Controllers\PivotController.Designer.cs">
       <DependentUpon>PivotController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\PopupSaveAndNewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\PopupSaveAndNewController.Designer.cs">
+      <DependentUpon>PopupSaveAndNewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\WinAlternatingRowsController.cs">
       <SubType>Component</SubType>
     </Compile>
