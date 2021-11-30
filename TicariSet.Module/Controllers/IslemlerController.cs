@@ -202,10 +202,9 @@ namespace TicariSet.Module.Controllers
             Type objectType = typeof(StokHareketler);
             IObjectSpace objectSpace = Application.CreateObjectSpace(objectType);
             object selectedStokID = ((Stoklar)View.SelectedObjects[0]).Oid;
-            CollectionSource cs = new CollectionSource(objectSpace, objectType);
+            CollectionSource collectionSource = new CollectionSource(objectSpace, objectType);
             CriteriaOperator criteria = CriteriaOperator.Parse("StokID = ? ", selectedStokID);
-            if (!(criteria is null))
-                cs.Criteria.Add("Criteria", criteria);
+            collectionSource.Criteria.Add("Criteria", criteria);
             int result = objectSpace.GetObjectsCount(objectType, criteria);
             
             if (result == 0)
@@ -272,7 +271,6 @@ namespace TicariSet.Module.Controllers
             }
             if (View.CurrentObject.GetType() == typeof(Stoklar))
             {
-                listViewId = ModelNodeIdHelper.GetListViewId(objectType);
                 object selectedStok = ((Stoklar)View.SelectedObjects[0]).Oid;
                 CriteriaOperator criteriaOperator = 
                     CriteriaOperator.Parse($"[{criteriaParameterName}] = ? {and} {criteriaParameterName2}{turu}", selectedStok);
