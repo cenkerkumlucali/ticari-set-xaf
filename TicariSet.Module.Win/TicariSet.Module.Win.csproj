@@ -271,6 +271,12 @@
     <Compile Include="Controllers\PopupSaveAndNewController.Designer.cs">
       <DependentUpon>PopupSaveAndNewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\ShowImageController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ShowImageController.Designer.cs">
+      <DependentUpon>ShowImageController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\WinAlternatingRowsController.cs">
       <SubType>Component</SubType>
     </Compile>
