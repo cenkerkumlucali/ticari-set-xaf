@@ -48,7 +48,7 @@ namespace TicariSet.Module.BusinessObjects
     //[RuleCriteria("", DefaultContexts.Save, "Durum != 1","Durum pasif olamaz", SkipNullOrEmptyValues = false)]
     public class Cariler : BaseObject
     {
-        string alternatifKod;
+        
         public Cariler(Session session)
             : base(session)
         {
@@ -60,6 +60,7 @@ namespace TicariSet.Module.BusinessObjects
 
         }
 
+        string alternatifKod;
         GenelTipTanimlari kartTipi;
         string kısaAd;
         string digerAd;
@@ -89,7 +90,7 @@ namespace TicariSet.Module.BusinessObjects
             }
         }
 
-        [DataSourceProperty("GetGnTipList")]
+        [DataSourceProperty(nameof(GetGnTipList))]
         public GenelTipTanimlari KartTipi
         {
             get => kartTipi;
@@ -222,7 +223,7 @@ namespace TicariSet.Module.BusinessObjects
             if (!(Session is NestedUnitOfWork
                   && (Session.DataLayer != null)
                   && Session.IsNewObject(this))
-                && string.IsNullOrEmpty(Kod))
+                  && string.IsNullOrEmpty(Kod))
             {
                 int deger = DistributedIdGeneratorHelper.Generate(Session.DataLayer, this.GetType().FullName, "CarilerServerPrefix");
                 Kod = string.Format("{0:D7}", deger);
