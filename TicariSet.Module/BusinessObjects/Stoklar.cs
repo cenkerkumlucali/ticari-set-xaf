@@ -25,13 +25,17 @@ namespace TicariSet.Module.BusinessObjects
     #endregion
 
     #region Appearance
-    [Appearance("RedPriceObject", AppearanceItemType = "ViewItem", TargetItems = "*", Criteria = "Kalan<1000", Context = "ListView", BackColor = "Yellow", FontColor = "Maroon", Priority = 2)]
+    [Appearance("RedPriceObject", AppearanceItemType = "ViewItem", TargetItems = "*", Criteria = "Kalan < 1000",
+        Context = "ListView", BackColor = "Yellow", FontColor = "Maroon", Priority = 2)]
     #endregion
 
     #region RuleIsReferenced
-    [RuleIsReferenced("RIR-Stoklar.StokHareketler", DefaultContexts.Delete, typeof(StokHareketler), "StokID", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
-    [RuleIsReferenced("RIR-Stoklar.StKartRenk", DefaultContexts.Delete, typeof(StKartRenk), "StokId", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
-    [RuleIsReferenced("RIR-Stoklar.StFiyat", DefaultContexts.Delete, typeof(StFiyat), "StokID", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
+    [RuleIsReferenced("RIR-Stoklar.StokHareketler", DefaultContexts.Delete, typeof(StokHareketler),
+        "StokID", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
+    [RuleIsReferenced("RIR-Stoklar.StKartRenk", DefaultContexts.Delete, typeof(StKartRenk), 
+        "StokId", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
+    [RuleIsReferenced("RIR-Stoklar.StFiyat", DefaultContexts.Delete, typeof(StFiyat),
+        "StokID", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
     #endregion
 
 
