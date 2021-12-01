@@ -22,13 +22,13 @@ namespace TicariSet.Module.BusinessObjects
             base.AfterConstruction();
         }
 
-        private string kod;
-        private string ad;
-        private string soyad;
-        private PrsYakınlık prsYakınlık;
-        private Cinsiyet cinsiyet;
-        private string meslegi;
-        private PersonelKart personelId;
+        string kod;
+        string ad;
+        string soyad;
+        PrsYakınlık prsYakınlık;
+        Cinsiyet cinsiyet;
+        string meslegi;
+        PersonelKart personelId;
 
         [Size(32)]
         public string Kod
