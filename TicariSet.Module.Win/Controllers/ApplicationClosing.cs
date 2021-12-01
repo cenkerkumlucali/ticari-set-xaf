@@ -1,19 +1,8 @@
-﻿using DevExpress.Data.Filtering;
-using DevExpress.ExpressApp;
+﻿using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Actions;
-using DevExpress.ExpressApp.Editors;
-using DevExpress.ExpressApp.Layout;
-using DevExpress.ExpressApp.Model.NodeGenerators;
-using DevExpress.ExpressApp.SystemModule;
-using DevExpress.ExpressApp.Templates;
 using DevExpress.ExpressApp.Utils;
-using DevExpress.Persistent.Base;
-using DevExpress.Persistent.Validation;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using DevExpress.ExpressApp.Win;
 using DevExpress.ExpressApp.Win.SystemModule;
@@ -57,16 +46,16 @@ namespace TicariSet.Module.Win.Controllers
                 e.Cancel = true;
             }
         }
-        private void OnWindowClosed(object sender, EventArgs e)
+        private void WindowClosed(object sender, EventArgs e)
         {
             ((WinWindow)sender).Closing -= this.WindowClosing;
-            ((WinWindow)sender).Closed -= this.OnWindowClosed;
+            ((WinWindow)sender).Closed -= this.WindowClosed;
         }
         private void OnWindowTemplateChanged(object sender, EventArgs e)
         {
-            this.Window.TemplateChanged -= new EventHandler(this.OnWindowTemplateChanged);
+            this.Window.TemplateChanged -= this.OnWindowTemplateChanged;
             ((WinWindow)this.Window).Closing += this.WindowClosing;
-            ((WinWindow)this.Window).Closed += this.OnWindowClosed;
+            ((WinWindow)this.Window).Closed += this.WindowClosed;
         }
         protected override void OnActivated()
         {
@@ -87,7 +76,7 @@ namespace TicariSet.Module.Win.Controllers
             }
             this.Window.TemplateChanged -= this.OnWindowTemplateChanged;
             ((WinWindow)this.Window).Closing -= this.WindowClosing;
-            ((WinWindow)this.Window).Closed -= this.OnWindowClosed;
+            ((WinWindow)this.Window).Closed -= this.WindowClosed;
             base.OnDeactivated();
         }
         public static string GetLocalized(string name)
