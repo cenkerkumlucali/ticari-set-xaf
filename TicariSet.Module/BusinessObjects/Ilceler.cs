@@ -22,14 +22,14 @@ namespace TicariSet.Module.BusinessObjects
         {
             base.AfterConstruction();
         }
-        private string ad;
-        private double lat;
-        private double lng;
-        private double northeastLat;
-        private double northeastLng;
-        private double southwestLat;
-        private double southwestLng;
-        private Sehirler sehirId;
+        string ad;
+        double lat;
+        double lng;
+        double northeastLat;
+        double northeastLng;
+        double southwestLat;
+        double southwestLng;
+        Sehirler sehirId;
 
         [Size(64)]
         [RuleRequiredField]
