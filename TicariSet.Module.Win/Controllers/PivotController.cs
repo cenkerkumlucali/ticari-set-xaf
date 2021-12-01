@@ -7,14 +7,12 @@ using DevExpress.XtraPivotGrid;
 
 namespace TicariSet.Module.Win.Controllers
 {
-    // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppViewControllertopic.aspx.
     public partial class PivotController : ViewController<ListView>
     {
         public PivotController()
         {
             InitializeComponent();
             RegisterActions(components);
-            // Target required Views (via the TargetXXX properties) and create their Actions.
         }
         protected override void OnActivated()
         {
@@ -32,10 +30,10 @@ namespace TicariSet.Module.Win.Controllers
 
         void View_ControlsCreated(object sender, EventArgs e)
         {
-            PivotGridListEditor editor = ((ListView)View).Editor as PivotGridListEditor;
+            PivotGridListEditor editor = View.Editor as PivotGridListEditor;
             if (editor != null)
             {
-                PivotGridControl pivot = (PivotGridControl)editor.PivotGridControl;
+                PivotGridControl pivot = editor.PivotGridControl;
                 _pivotGridControl = pivot;
 
             }
@@ -63,17 +61,17 @@ namespace TicariSet.Module.Win.Controllers
                 _pivotGridControl.OptionsView.ShowFilterHeaders = false;
                 _pivotGridControl.OptionsView.ShowColumnHeaders = false;
                 _pivotGridControl.OptionsBehavior.BestFitMode = PivotGridBestFitMode.FieldHeader;
-                _pivotGridControl.BestFitDataHeaders(false);
                 _pivotGridControl.OptionsView.ShowRowHeaders = false;
                 _pivotGridControl.OptionsView.ShowColumnGrandTotals = true;
                 _pivotGridControl.OptionsView.ShowRowGrandTotals = true;
                 _pivotGridControl.OptionsView.ShowDataHeaders = false;
+                _pivotGridControl.OptionsView.ShowFilterHeaders = false;
+                _pivotGridControl.OptionsView.ShowColumnHeaders = false;
+                _pivotGridControl.BestFitDataHeaders(false);
                 _pivotGridControl.Appearance.TotalCell.BackColor = Color.Azure;
                 _pivotGridControl.Appearance.TotalCell.ForeColor = Color.Red;
                 _pivotGridControl.Appearance.GrandTotalCell.BackColor = Color.Azure;
                 _pivotGridControl.Appearance.GrandTotalCell.ForeColor = Color.Red;
-                _pivotGridControl.OptionsView.ShowFilterHeaders = false;
-                _pivotGridControl.OptionsView.ShowColumnHeaders = false;
                 PivotGridControl.DefaultDataProcessingEngine = PivotDataProcessingEngine.Legacy;
             }
         }
@@ -93,10 +91,10 @@ namespace TicariSet.Module.Win.Controllers
 
         private void _pivotGridControl_EditValueChanged(object sender, EditValueChangedEventArgs e)
         {
-            PivotDrillDownDataSource ds = e.CreateDrillDownDataSource();
-            for (int i = 0; i < ds.RowCount; i++)
+            PivotDrillDownDataSource dataSource = e.CreateDrillDownDataSource();
+            for (int i = 0; i < dataSource.RowCount; i++)
             {
-                ds.SetValue(i, e.DataField, Convert.ToInt32(e.Editor.EditValue));
+                dataSource.SetValue(i, e.DataField, Convert.ToInt32(e.Editor.EditValue));
             }
 
         }
