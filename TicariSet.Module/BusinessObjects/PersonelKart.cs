@@ -29,10 +29,18 @@ namespace TicariSet.Module.BusinessObjects
     #endregion
 
     #region RuleIsReferenced
-    [RuleIsReferenced("RIR-PersonelKart.PersonelAile", DefaultContexts.Delete, typeof(PersonelAile), "PersonelId", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
-    [RuleIsReferenced("RIR-PersonelKart.PersonelAdres", DefaultContexts.Delete, typeof(PersonelAdresBilgileri), "PersonelId", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
-    [RuleIsReferenced("RIR-PersonelKart.PersonelIletisim", DefaultContexts.Delete, typeof(PersonelIletisimBilgileri), "PersonelId", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
-    [RuleIsReferenced("RIR-PersonelKart.PersonelKimlik", DefaultContexts.Delete, typeof(PersonelKimlikBilgileri), "PersonelId", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
+    [RuleIsReferenced("RIR-PersonelKart.PersonelAile", DefaultContexts.Delete, typeof(PersonelAile), 
+        "PersonelId", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, 
+        MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
+    [RuleIsReferenced("RIR-PersonelKart.PersonelAdres", DefaultContexts.Delete, typeof(PersonelAdresBilgileri),
+        "PersonelId", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, 
+        MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
+    [RuleIsReferenced("RIR-PersonelKart.PersonelIletisim", DefaultContexts.Delete, typeof(PersonelIletisimBilgileri),
+        "PersonelId", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction, 
+        MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
+    [RuleIsReferenced("RIR-PersonelKart.PersonelKimlik", DefaultContexts.Delete, typeof(PersonelKimlikBilgileri),
+        "PersonelId", InvertResult = true, CriteriaEvaluationBehavior = CriteriaEvaluationBehavior.BeforeTransaction,
+        MessageTemplateMustBeReferenced = "{TargetObject} nesne referans alınmamalıdır.")]
     #endregion
 
     public class PersonelKart : BaseObject
@@ -52,18 +60,18 @@ namespace TicariSet.Module.BusinessObjects
         bool pasaport;
         PersonelPasaportBilgileri pPasaportBilgileri;
         bool surucuBelgesi;
-        private string kod;
-        private string ad;
-        private string ad2;
-        private string soyad;
-        private Cinsiyet cinsiyet;
-        private DateTime iseGirisTarihi;
-        private string kartNumarasi;
-        private DateTime sgkBaslamaTarihi;
-        private DurumType durum;
-        private byte[] fotograf;
-        private PersonelKimlikBilgileri personelKimlikBilgileri;
-        private PersonelSurucuBelgesi personelSurucuBelgesi;
+        string kod;
+        string ad;
+        string ad2;
+        string soyad;
+        Cinsiyet cinsiyet;
+        DateTime iseGirisTarihi;
+        string kartNumarasi;
+        DateTime sgkBaslamaTarihi;
+        DurumType durum;
+        byte[] fotograf;
+        PersonelKimlikBilgileri personelKimlikBilgileri;
+        PersonelSurucuBelgesi personelSurucuBelgesi;
 
         [Size(32)]
         [VisibleInDetailView(false)]
