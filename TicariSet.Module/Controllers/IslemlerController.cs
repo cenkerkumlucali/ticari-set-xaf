@@ -386,7 +386,7 @@ namespace TicariSet.Module.Controllers
             if (View.CurrentObject != null && View.CurrentObject.GetType() == typeof(Cariler))
                 CariAlisIslemlerView_SelectionChanged();
 
-            if (View.CurrentObject != null && View.CurrentObject.GetType() == typeof(Stoklar))
+            else if (View.CurrentObject != null && View.CurrentObject.GetType() == typeof(Stoklar))
                 GetStokHarekelerView_SelectionChanged();
         }
 
