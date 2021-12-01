@@ -31,7 +31,7 @@ namespace TicariSet.Module.Controllers
                     CriteriaOperator criteriaOperator = CriteriaOperator.Parse("EvrakSatirId = ?", selected);
                     collectionSource.Criteria.Add("Criteria", criteriaOperator);
                     ListView listView = Application.CreateListView(listViewId, collectionSource, false);
-                    ShowViewParameters svp = new ShowViewParameters(listView)
+                    ShowViewParameters showViewParameters = new ShowViewParameters(listView)
                     {
                         CreatedView = listView,
                         TargetWindow = TargetWindow.NewModalWindow,
@@ -42,9 +42,9 @@ namespace TicariSet.Module.Controllers
                     dialogController.Accepting += DialogController_Accepting;
                     dialogController.Cancelling += DialogController_Cancelling;
                     dialogController.SaveOnAccept = false;
-                    svp.Controllers.Add(dialogController);
-                    Application.ShowViewStrategy.ShowView(svp, new ShowViewSource(
-                        Application.CreateFrame(TemplateContext.PopupWindow),null));
+                    showViewParameters.Controllers.Add(dialogController);
+                    Application.ShowViewStrategy.ShowView(showViewParameters, 
+                        new ShowViewSource(Application.CreateFrame(TemplateContext.PopupWindow),null));
                 }
             }
         }
@@ -56,7 +56,7 @@ namespace TicariSet.Module.Controllers
             {
                 toplam += item.Miktar;
             }
-            EvrakSatir.HesaplaMiktar((EvrakSatir) View.CurrentObject, toplam);
+            EvrakSatir.HesaplaMiktar((EvrakSatir)View.CurrentObject, toplam);
         }
         private void DialogController_Cancelling(object sender, EventArgs e)
         {
