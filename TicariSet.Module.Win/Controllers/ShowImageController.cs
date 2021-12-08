@@ -22,7 +22,7 @@ using ListView = DevExpress.ExpressApp.ListView;
 
 namespace TicariSet.Module.Win.Controllers
 {
-    public partial class ShowImageController : ViewController
+    public partial class ShowImageController : ViewController<ListView>
     {
         private ListViewProcessCurrentObjectController _listViewProcessCurrentObjectController;
 
