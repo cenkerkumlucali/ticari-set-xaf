@@ -306,9 +306,6 @@
     <EmbeddedResource Include="Images\ExpressAppLogo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Controllers\ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Editors\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
