@@ -135,7 +135,7 @@
     <value>edtValuesConditionalFormatting</value>
   </data>
   <data name="&gt;&gt;edtValuesConditionalFormatting.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtValuesConditionalFormatting.Parent" xml:space="preserve">
     <value>$this</value>
@@ -165,7 +165,7 @@
     <value>lblFormatAll</value>
   </data>
   <data name="&gt;&gt;lblFormatAll.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblFormatAll.Parent" xml:space="preserve">
     <value>$this</value>
@@ -192,7 +192,7 @@
     <value>lblValuesSelectedRange</value>
   </data>
   <data name="&gt;&gt;lblValuesSelectedRange.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblValuesSelectedRange.Parent" xml:space="preserve">
     <value>$this</value>
@@ -213,6 +213,6 @@
     <value>ConditionalFormattingFormatUniqueDuplicateValuesControl</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
 </root>

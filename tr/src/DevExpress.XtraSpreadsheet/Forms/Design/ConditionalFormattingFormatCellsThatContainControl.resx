@@ -141,7 +141,7 @@
     <value>lblFormatOnlyCellsWith</value>
   </data>
   <data name="&gt;&gt;lblFormatOnlyCellsWith.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblFormatOnlyCellsWith.Parent" xml:space="preserve">
     <value>$this</value>
@@ -165,7 +165,7 @@
     <value>edtValuesConditionalFormatting</value>
   </data>
   <data name="&gt;&gt;edtValuesConditionalFormatting.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtValuesConditionalFormatting.Parent" xml:space="preserve">
     <value>$this</value>
@@ -186,7 +186,7 @@
     <value>edtSpecificText</value>
   </data>
   <data name="&gt;&gt;edtSpecificText.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtSpecificText.Parent" xml:space="preserve">
     <value>$this</value>
@@ -207,7 +207,7 @@
     <value>edtDatesOccurring</value>
   </data>
   <data name="&gt;&gt;edtDatesOccurring.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtDatesOccurring.Parent" xml:space="preserve">
     <value>$this</value>
@@ -231,7 +231,7 @@
     <value>edtSpecificTextValue</value>
   </data>
   <data name="&gt;&gt;edtSpecificTextValue.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.ReferenceEditControl, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.ReferenceEditControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtSpecificTextValue.Parent" xml:space="preserve">
     <value>$this</value>
@@ -252,7 +252,7 @@
     <value>edtCellValueOperations</value>
   </data>
   <data name="&gt;&gt;edtCellValueOperations.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtCellValueOperations.Parent" xml:space="preserve">
     <value>$this</value>
@@ -279,7 +279,7 @@
     <value>lblAnd</value>
   </data>
   <data name="&gt;&gt;lblAnd.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblAnd.Parent" xml:space="preserve">
     <value>$this</value>
@@ -303,7 +303,7 @@
     <value>edtFirstValueRangeOperators</value>
   </data>
   <data name="&gt;&gt;edtFirstValueRangeOperators.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.ReferenceEditControl, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.ReferenceEditControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtFirstValueRangeOperators.Parent" xml:space="preserve">
     <value>$this</value>
@@ -327,7 +327,7 @@
     <value>edtSecondValueRangeOperators</value>
   </data>
   <data name="&gt;&gt;edtSecondValueRangeOperators.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.ReferenceEditControl, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.ReferenceEditControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtSecondValueRangeOperators.Parent" xml:space="preserve">
     <value>$this</value>
@@ -351,7 +351,7 @@
     <value>edtValueCompareOperators</value>
   </data>
   <data name="&gt;&gt;edtValueCompareOperators.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.ReferenceEditControl, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.ReferenceEditControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtValueCompareOperators.Parent" xml:space="preserve">
     <value>$this</value>
@@ -372,6 +372,6 @@
     <value>ConditionalFormattingFormatCellsThatContainControl</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
 </root>

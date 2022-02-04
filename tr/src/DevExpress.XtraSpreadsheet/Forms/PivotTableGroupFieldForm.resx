@@ -138,7 +138,7 @@
     <value>lblAuto</value>
   </data>
   <data name="&gt;&gt;lblAuto.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblAuto.Parent" xml:space="preserve">
     <value>$this</value>
@@ -165,7 +165,7 @@
     <value>chkStartingAt</value>
   </data>
   <data name="&gt;&gt;chkStartingAt.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;chkStartingAt.Parent" xml:space="preserve">
     <value>$this</value>
@@ -189,7 +189,7 @@
     <value>edtStartingAt</value>
   </data>
   <data name="&gt;&gt;edtStartingAt.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtStartingAt.Parent" xml:space="preserve">
     <value>$this</value>
@@ -216,7 +216,7 @@
     <value>chkEndingAt</value>
   </data>
   <data name="&gt;&gt;chkEndingAt.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;chkEndingAt.Parent" xml:space="preserve">
     <value>$this</value>
@@ -240,7 +240,7 @@
     <value>edtEndingAt</value>
   </data>
   <data name="&gt;&gt;edtEndingAt.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtEndingAt.Parent" xml:space="preserve">
     <value>$this</value>
@@ -264,7 +264,7 @@
     <value>edtByNumber</value>
   </data>
   <data name="&gt;&gt;edtByNumber.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtByNumber.Parent" xml:space="preserve">
     <value>$this</value>
@@ -291,7 +291,7 @@
     <value>lblByNumber</value>
   </data>
   <data name="&gt;&gt;lblByNumber.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblByNumber.Parent" xml:space="preserve">
     <value>$this</value>
@@ -322,7 +322,7 @@
     <value>btnOk</value>
   </data>
   <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
     <value>$this</value>
@@ -352,7 +352,7 @@
     <value>btnCancel</value>
   </data>
   <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -379,7 +379,7 @@
     <value>lblByDate</value>
   </data>
   <data name="&gt;&gt;lblByDate.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblByDate.Parent" xml:space="preserve">
     <value>$this</value>
@@ -403,7 +403,7 @@
     <value>lbTimeType</value>
   </data>
   <data name="&gt;&gt;lbTimeType.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ListBoxControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.ListBoxControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lbTimeType.Parent" xml:space="preserve">
     <value>$this</value>
@@ -433,7 +433,7 @@
     <value>edtNumberOfDays</value>
   </data>
   <data name="&gt;&gt;edtNumberOfDays.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtNumberOfDays.Parent" xml:space="preserve">
     <value>$this</value>
@@ -460,7 +460,7 @@
     <value>lblNumberOfDays</value>
   </data>
   <data name="&gt;&gt;lblNumberOfDays.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblNumberOfDays.Parent" xml:space="preserve">
     <value>$this</value>
@@ -487,6 +487,6 @@
     <value>PivotTableGroupFieldForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
 </root>

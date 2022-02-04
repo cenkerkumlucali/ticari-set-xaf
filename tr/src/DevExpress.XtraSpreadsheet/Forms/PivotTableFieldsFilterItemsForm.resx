@@ -138,7 +138,7 @@
     <value>chkSelectMultipleItems</value>
   </data>
   <data name="&gt;&gt;chkSelectMultipleItems.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;chkSelectMultipleItems.Parent" xml:space="preserve">
     <value>$this</value>
@@ -169,7 +169,7 @@
     <value>btnOk</value>
   </data>
   <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
     <value>$this</value>
@@ -199,7 +199,7 @@
     <value>btnCancel</value>
   </data>
   <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -220,7 +220,7 @@
     <value>chklbFieldItems</value>
   </data>
   <data name="&gt;&gt;chklbFieldItems.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckedListBoxControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.CheckedListBoxControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;chklbFieldItems.Parent" xml:space="preserve">
     <value>$this</value>
@@ -247,7 +247,7 @@
     <value>btnUncheckAll</value>
   </data>
   <data name="&gt;&gt;btnUncheckAll.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnUncheckAll.Parent" xml:space="preserve">
     <value>$this</value>
@@ -274,7 +274,7 @@
     <value>btnCheckAll</value>
   </data>
   <data name="&gt;&gt;btnCheckAll.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnCheckAll.Parent" xml:space="preserve">
     <value>$this</value>
@@ -325,7 +325,7 @@
     <value>edtSearch</value>
   </data>
   <data name="&gt;&gt;edtSearch.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ButtonEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.ButtonEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtSearch.Parent" xml:space="preserve">
     <value>$this</value>
@@ -352,7 +352,7 @@
     <value>chkAddSelectionToFilter</value>
   </data>
   <data name="&gt;&gt;chkAddSelectionToFilter.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;chkAddSelectionToFilter.Parent" xml:space="preserve">
     <value>$this</value>
@@ -379,6 +379,6 @@
     <value>PivotTableFieldsFilterItemsForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
 </root>

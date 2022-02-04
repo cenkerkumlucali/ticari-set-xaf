@@ -126,8 +126,8 @@
   <data name="cbAdd.Text" xml:space="preserve">
     <value>Ekle</value>
   </data>
-  <assembly alias="DevExpress.Utils.v21.1" name="DevExpress.Utils.v21.1, Culture=neutral"></assembly>
-  <assembly alias="DevExpress.XtraEditors.v21.1" name="DevExpress.XtraEditors.v21.1, Culture=neutral"></assembly>
+  <assembly alias="DevExpress.Utils.v21.2" name="DevExpress.Utils.v21.2, Culture=neutral"></assembly>
+  <assembly alias="DevExpress.XtraEditors.v21.2" name="DevExpress.XtraEditors.v21.2, Culture=neutral"></assembly>
   <data name="labelControl1.Text" xml:space="preserve">
     <value>liste</value>
   </data>

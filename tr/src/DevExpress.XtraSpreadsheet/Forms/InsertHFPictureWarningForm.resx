@@ -138,7 +138,7 @@
     <value>btnKeep</value>
   </data>
   <data name="&gt;&gt;btnKeep.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnKeep.Parent" xml:space="preserve">
     <value>$this</value>
@@ -165,7 +165,7 @@
     <value>btnReplace</value>
   </data>
   <data name="&gt;&gt;btnReplace.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnReplace.Parent" xml:space="preserve">
     <value>$this</value>
@@ -224,7 +224,7 @@
     <value>iconWarning</value>
   </data>
   <data name="&gt;&gt;iconWarning.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PictureEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.PictureEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;iconWarning.Parent" xml:space="preserve">
     <value>$this</value>
@@ -251,7 +251,7 @@
     <value>lblText1Header</value>
   </data>
   <data name="&gt;&gt;lblText1Header.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblText1Header.Parent" xml:space="preserve">
     <value>$this</value>
@@ -278,7 +278,7 @@
     <value>lblText2</value>
   </data>
   <data name="&gt;&gt;lblText2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblText2.Parent" xml:space="preserve">
     <value>$this</value>
@@ -305,7 +305,7 @@
     <value>lblText3</value>
   </data>
   <data name="&gt;&gt;lblText3.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblText3.Parent" xml:space="preserve">
     <value>$this</value>
@@ -332,7 +332,7 @@
     <value>lblText1Footer</value>
   </data>
   <data name="&gt;&gt;lblText1Footer.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblText1Footer.Parent" xml:space="preserve">
     <value>$this</value>
@@ -363,6 +363,6 @@
     <value>InsertHFPictureWarningForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
 </root>

@@ -148,7 +148,7 @@
     <value>ceSelectAll</value>
   </data>
   <data name="&gt;&gt;ceSelectAll.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;ceSelectAll.Parent" xml:space="preserve">
     <value>tablePanel1</value>
@@ -184,7 +184,7 @@
     <value>parameterEditorDynamicListSettingsControl</value>
   </data>
   <data name="&gt;&gt;parameterEditorDynamicListSettingsControl.Type" xml:space="preserve">
-    <value>DevExpress.XtraReports.Design.ParameterEditor.ParameterEditorDynamicListSettingsControl, DevExpress.XtraReports.v21.1.Extensions, Culture=neutral</value>
+    <value>DevExpress.XtraReports.Design.ParameterEditor.ParameterEditorDynamicListSettingsControl, DevExpress.XtraReports.v21.2.Extensions, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;parameterEditorDynamicListSettingsControl.Parent" xml:space="preserve">
     <value>dynamicListSettingsPage</value>
@@ -199,7 +199,7 @@
     <value>dynamicListSettingsPage</value>
   </data>
   <data name="&gt;&gt;dynamicListSettingsPage.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Navigation.NavigationPage, DevExpress.XtraBars.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraBars.Navigation.NavigationPage, DevExpress.XtraBars.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;dynamicListSettingsPage.Parent" xml:space="preserve">
     <value>navigationFrame1</value>
@@ -232,7 +232,7 @@
     <value>parameterEditorStaticListSettingsControl</value>
   </data>
   <data name="&gt;&gt;parameterEditorStaticListSettingsControl.Type" xml:space="preserve">
-    <value>DevExpress.XtraReports.Design.ParameterEditor.ParameterEditorStaticListSettingsControl, DevExpress.XtraReports.v21.1.Extensions, Culture=neutral</value>
+    <value>DevExpress.XtraReports.Design.ParameterEditor.ParameterEditorStaticListSettingsControl, DevExpress.XtraReports.v21.2.Extensions, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;parameterEditorStaticListSettingsControl.Parent" xml:space="preserve">
     <value>staticListSettingsPage</value>
@@ -247,7 +247,7 @@
     <value>staticListSettingsPage</value>
   </data>
   <data name="&gt;&gt;staticListSettingsPage.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Navigation.NavigationPage, DevExpress.XtraBars.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraBars.Navigation.NavigationPage, DevExpress.XtraBars.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;staticListSettingsPage.Parent" xml:space="preserve">
     <value>navigationFrame1</value>
@@ -286,7 +286,7 @@
     <value>parameterEditorRangeSettingsControl</value>
   </data>
   <data name="&gt;&gt;parameterEditorRangeSettingsControl.Type" xml:space="preserve">
-    <value>DevExpress.XtraReports.Design.ParameterEditor.ParameterEditorRangeSettingsControl, DevExpress.XtraReports.v21.1.Extensions, Culture=neutral</value>
+    <value>DevExpress.XtraReports.Design.ParameterEditor.ParameterEditorRangeSettingsControl, DevExpress.XtraReports.v21.2.Extensions, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;parameterEditorRangeSettingsControl.Parent" xml:space="preserve">
     <value>rangeSettingsPage</value>
@@ -301,7 +301,7 @@
     <value>rangeSettingsPage</value>
   </data>
   <data name="&gt;&gt;rangeSettingsPage.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Navigation.NavigationPage, DevExpress.XtraBars.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraBars.Navigation.NavigationPage, DevExpress.XtraBars.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;rangeSettingsPage.Parent" xml:space="preserve">
     <value>navigationFrame1</value>
@@ -331,7 +331,7 @@
     <value>navigationFrame1</value>
   </data>
   <data name="&gt;&gt;navigationFrame1.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Navigation.NavigationFrame, DevExpress.XtraBars.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraBars.Navigation.NavigationFrame, DevExpress.XtraBars.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;navigationFrame1.Parent" xml:space="preserve">
     <value>tablePanel1</value>
@@ -355,7 +355,7 @@
     <value>defaultValueExpressionEditor</value>
   </data>
   <data name="&gt;&gt;defaultValueExpressionEditor.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ButtonEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.ButtonEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;defaultValueExpressionEditor.Parent" xml:space="preserve">
     <value>tablePanel1</value>
@@ -379,7 +379,7 @@
     <value>cbeValueSource</value>
   </data>
   <data name="&gt;&gt;cbeValueSource.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;cbeValueSource.Parent" xml:space="preserve">
     <value>tablePanel1</value>
@@ -406,7 +406,7 @@
     <value>defaultValueEditor</value>
   </data>
   <data name="&gt;&gt;defaultValueEditor.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.BaseEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.BaseEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;defaultValueEditor.Parent" xml:space="preserve">
     <value>tablePanel1</value>
@@ -430,7 +430,7 @@
     <value>cbeType</value>
   </data>
   <data name="&gt;&gt;cbeType.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;cbeType.Parent" xml:space="preserve">
     <value>tablePanel1</value>
@@ -457,7 +457,7 @@
     <value>ceAllowNull</value>
   </data>
   <data name="&gt;&gt;ceAllowNull.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;ceAllowNull.Parent" xml:space="preserve">
     <value>tablePanel1</value>
@@ -484,7 +484,7 @@
     <value>ceAllowMultiple</value>
   </data>
   <data name="&gt;&gt;ceAllowMultiple.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;ceAllowMultiple.Parent" xml:space="preserve">
     <value>tablePanel1</value>
@@ -514,7 +514,7 @@
     <value>ceVisible</value>
   </data>
   <data name="&gt;&gt;ceVisible.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;ceVisible.Parent" xml:space="preserve">
     <value>tablePanel1</value>
@@ -538,7 +538,7 @@
     <value>teDescription</value>
   </data>
   <data name="&gt;&gt;teDescription.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;teDescription.Parent" xml:space="preserve">
     <value>tablePanel1</value>
@@ -562,7 +562,7 @@
     <value>teName</value>
   </data>
   <data name="&gt;&gt;teName.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;teName.Parent" xml:space="preserve">
     <value>tablePanel1</value>
@@ -589,7 +589,7 @@
     <value>labelControl6</value>
   </data>
   <data name="&gt;&gt;labelControl6.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;labelControl6.Parent" xml:space="preserve">
     <value>tablePanel1</value>
@@ -616,7 +616,7 @@
     <value>labelControl5</value>
   </data>
   <data name="&gt;&gt;labelControl5.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;labelControl5.Parent" xml:space="preserve">
     <value>tablePanel1</value>
@@ -643,7 +643,7 @@
     <value>labelControl4</value>
   </data>
   <data name="&gt;&gt;labelControl4.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;labelControl4.Parent" xml:space="preserve">
     <value>tablePanel1</value>
@@ -670,7 +670,7 @@
     <value>labelControl3</value>
   </data>
   <data name="&gt;&gt;labelControl3.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;labelControl3.Parent" xml:space="preserve">
     <value>tablePanel1</value>
@@ -697,7 +697,7 @@
     <value>labelControl2</value>
   </data>
   <data name="&gt;&gt;labelControl2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;labelControl2.Parent" xml:space="preserve">
     <value>tablePanel1</value>
@@ -721,7 +721,7 @@
     <value>tablePanel1</value>
   </data>
   <data name="&gt;&gt;tablePanel1.Type" xml:space="preserve">
-    <value>DevExpress.Utils.Layout.TablePanel, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.Utils.Layout.TablePanel, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;tablePanel1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -748,7 +748,7 @@
     <value>labelControl1</value>
   </data>
   <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
     <value>tablePanel1</value>
@@ -775,6 +775,6 @@
     <value>ParameterEditorContentControl</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
 </root>

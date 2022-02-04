@@ -138,7 +138,7 @@
     <value>edtLeft</value>
   </data>
   <data name="&gt;&gt;edtLeft.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtLeft.Parent" xml:space="preserve">
     <value>$this</value>
@@ -165,7 +165,7 @@
     <value>lblLeft</value>
   </data>
   <data name="&gt;&gt;lblLeft.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblLeft.Parent" xml:space="preserve">
     <value>$this</value>
@@ -192,7 +192,7 @@
     <value>edtBottom</value>
   </data>
   <data name="&gt;&gt;edtBottom.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtBottom.Parent" xml:space="preserve">
     <value>$this</value>
@@ -219,7 +219,7 @@
     <value>lblBottom</value>
   </data>
   <data name="&gt;&gt;lblBottom.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblBottom.Parent" xml:space="preserve">
     <value>$this</value>
@@ -246,7 +246,7 @@
     <value>edtFooter</value>
   </data>
   <data name="&gt;&gt;edtFooter.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtFooter.Parent" xml:space="preserve">
     <value>$this</value>
@@ -273,7 +273,7 @@
     <value>lblFooterMargins</value>
   </data>
   <data name="&gt;&gt;lblFooterMargins.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblFooterMargins.Parent" xml:space="preserve">
     <value>$this</value>
@@ -300,7 +300,7 @@
     <value>edtRight</value>
   </data>
   <data name="&gt;&gt;edtRight.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtRight.Parent" xml:space="preserve">
     <value>$this</value>
@@ -327,7 +327,7 @@
     <value>lblRight</value>
   </data>
   <data name="&gt;&gt;lblRight.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblRight.Parent" xml:space="preserve">
     <value>$this</value>
@@ -354,7 +354,7 @@
     <value>edtHeader</value>
   </data>
   <data name="&gt;&gt;edtHeader.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtHeader.Parent" xml:space="preserve">
     <value>$this</value>
@@ -381,7 +381,7 @@
     <value>lblHeaderMargins</value>
   </data>
   <data name="&gt;&gt;lblHeaderMargins.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblHeaderMargins.Parent" xml:space="preserve">
     <value>$this</value>
@@ -408,7 +408,7 @@
     <value>edtTop</value>
   </data>
   <data name="&gt;&gt;edtTop.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtTop.Parent" xml:space="preserve">
     <value>$this</value>
@@ -435,7 +435,7 @@
     <value>lblTop</value>
   </data>
   <data name="&gt;&gt;lblTop.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblTop.Parent" xml:space="preserve">
     <value>$this</value>
@@ -462,7 +462,7 @@
     <value>drawPanelPortraitOrientation</value>
   </data>
   <data name="&gt;&gt;drawPanelPortraitOrientation.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;drawPanelPortraitOrientation.Parent" xml:space="preserve">
     <value>$this</value>
@@ -489,7 +489,7 @@
     <value>chkVertically</value>
   </data>
   <data name="&gt;&gt;chkVertically.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;chkVertically.Parent" xml:space="preserve">
     <value>$this</value>
@@ -516,7 +516,7 @@
     <value>chkHorizontally</value>
   </data>
   <data name="&gt;&gt;chkHorizontally.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;chkHorizontally.Parent" xml:space="preserve">
     <value>$this</value>
@@ -547,7 +547,7 @@
     <value>lblCenterOnPage</value>
   </data>
   <data name="&gt;&gt;lblCenterOnPage.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblCenterOnPage.Parent" xml:space="preserve">
     <value>$this</value>
@@ -571,7 +571,7 @@
     <value>drawPanelLandscapeOrientation</value>
   </data>
   <data name="&gt;&gt;drawPanelLandscapeOrientation.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;drawPanelLandscapeOrientation.Parent" xml:space="preserve">
     <value>$this</value>
@@ -592,6 +592,6 @@
     <value>PageMarginsPreviewControl</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
 </root>

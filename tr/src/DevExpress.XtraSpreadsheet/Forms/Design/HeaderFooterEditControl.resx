@@ -149,7 +149,7 @@
     <value>btnSheetName</value>
   </data>
   <data name="&gt;&gt;btnSheetName.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnSheetName.Parent" xml:space="preserve">
     <value>$this</value>
@@ -173,7 +173,7 @@
     <value>edtLeftFooter</value>
   </data>
   <data name="&gt;&gt;edtLeftFooter.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtLeftFooter.Parent" xml:space="preserve">
     <value>$this</value>
@@ -197,7 +197,7 @@
     <value>edtCenterFooter</value>
   </data>
   <data name="&gt;&gt;edtCenterFooter.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtCenterFooter.Parent" xml:space="preserve">
     <value>$this</value>
@@ -221,7 +221,7 @@
     <value>edtRightFooter</value>
   </data>
   <data name="&gt;&gt;edtRightFooter.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtRightFooter.Parent" xml:space="preserve">
     <value>$this</value>
@@ -245,7 +245,7 @@
     <value>edtRightHeader</value>
   </data>
   <data name="&gt;&gt;edtRightHeader.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtRightHeader.Parent" xml:space="preserve">
     <value>$this</value>
@@ -269,7 +269,7 @@
     <value>edtCenterHeader</value>
   </data>
   <data name="&gt;&gt;edtCenterHeader.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtCenterHeader.Parent" xml:space="preserve">
     <value>$this</value>
@@ -293,7 +293,7 @@
     <value>edtLeftHeader</value>
   </data>
   <data name="&gt;&gt;edtLeftHeader.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtLeftHeader.Parent" xml:space="preserve">
     <value>$this</value>
@@ -320,7 +320,7 @@
     <value>lblRightFooter</value>
   </data>
   <data name="&gt;&gt;lblRightFooter.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblRightFooter.Parent" xml:space="preserve">
     <value>$this</value>
@@ -347,7 +347,7 @@
     <value>lblCenterFooter</value>
   </data>
   <data name="&gt;&gt;lblCenterFooter.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblCenterFooter.Parent" xml:space="preserve">
     <value>$this</value>
@@ -374,7 +374,7 @@
     <value>lblLeftFooter</value>
   </data>
   <data name="&gt;&gt;lblLeftFooter.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblLeftFooter.Parent" xml:space="preserve">
     <value>$this</value>
@@ -401,7 +401,7 @@
     <value>lblRightHeader</value>
   </data>
   <data name="&gt;&gt;lblRightHeader.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblRightHeader.Parent" xml:space="preserve">
     <value>$this</value>
@@ -428,7 +428,7 @@
     <value>lblCenterHeader</value>
   </data>
   <data name="&gt;&gt;lblCenterHeader.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblCenterHeader.Parent" xml:space="preserve">
     <value>$this</value>
@@ -455,7 +455,7 @@
     <value>lblLeftHeader</value>
   </data>
   <data name="&gt;&gt;lblLeftHeader.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblLeftHeader.Parent" xml:space="preserve">
     <value>$this</value>
@@ -487,7 +487,7 @@
     <value>btnFileName</value>
   </data>
   <data name="&gt;&gt;btnFileName.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnFileName.Parent" xml:space="preserve">
     <value>$this</value>
@@ -520,7 +520,7 @@
     <value>btnFilePath</value>
   </data>
   <data name="&gt;&gt;btnFilePath.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnFilePath.Parent" xml:space="preserve">
     <value>$this</value>
@@ -565,7 +565,7 @@
     <value>btnTime</value>
   </data>
   <data name="&gt;&gt;btnTime.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnTime.Parent" xml:space="preserve">
     <value>$this</value>
@@ -606,7 +606,7 @@
     <value>btnDate</value>
   </data>
   <data name="&gt;&gt;btnDate.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnDate.Parent" xml:space="preserve">
     <value>$this</value>
@@ -635,7 +635,7 @@
     <value>lblHeaderFooter</value>
   </data>
   <data name="&gt;&gt;lblHeaderFooter.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblHeaderFooter.Parent" xml:space="preserve">
     <value>$this</value>
@@ -675,7 +675,7 @@
     <value>btnPages</value>
   </data>
   <data name="&gt;&gt;btnPages.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnPages.Parent" xml:space="preserve">
     <value>$this</value>
@@ -716,7 +716,7 @@
     <value>btnPage</value>
   </data>
   <data name="&gt;&gt;btnPage.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnPage.Parent" xml:space="preserve">
     <value>$this</value>
@@ -758,7 +758,7 @@
     <value>btnFormatPicture</value>
   </data>
   <data name="&gt;&gt;btnFormatPicture.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnFormatPicture.Parent" xml:space="preserve">
     <value>$this</value>
@@ -801,7 +801,7 @@
     <value>btnInsertPicture</value>
   </data>
   <data name="&gt;&gt;btnInsertPicture.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnInsertPicture.Parent" xml:space="preserve">
     <value>$this</value>
@@ -822,6 +822,6 @@
     <value>HeaderFooterEditControl</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
 </root>

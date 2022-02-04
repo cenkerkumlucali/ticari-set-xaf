@@ -154,7 +154,7 @@
     <value>edtWidthPercent</value>
   </data>
   <data name="&gt;&gt;edtWidthPercent.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtWidthPercent.Parent" xml:space="preserve">
     <value>sizePage</value>
@@ -187,7 +187,7 @@
     <value>edtHeightPercent</value>
   </data>
   <data name="&gt;&gt;edtHeightPercent.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtHeightPercent.Parent" xml:space="preserve">
     <value>sizePage</value>
@@ -208,7 +208,7 @@
     <value>edtHeight</value>
   </data>
   <data name="&gt;&gt;edtHeight.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtHeight.Parent" xml:space="preserve">
     <value>sizePage</value>
@@ -232,7 +232,7 @@
     <value>edtWidth</value>
   </data>
   <data name="&gt;&gt;edtWidth.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtWidth.Parent" xml:space="preserve">
     <value>sizePage</value>
@@ -256,7 +256,7 @@
     <value>lblOriginalWidthValue</value>
   </data>
   <data name="&gt;&gt;lblOriginalWidthValue.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblOriginalWidthValue.Parent" xml:space="preserve">
     <value>sizePage</value>
@@ -280,7 +280,7 @@
     <value>lblOriginalHeightValue</value>
   </data>
   <data name="&gt;&gt;lblOriginalHeightValue.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblOriginalHeightValue.Parent" xml:space="preserve">
     <value>sizePage</value>
@@ -310,7 +310,7 @@
     <value>btnReset</value>
   </data>
   <data name="&gt;&gt;btnReset.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnReset.Parent" xml:space="preserve">
     <value>sizePage</value>
@@ -337,7 +337,7 @@
     <value>lblOriginalWidth</value>
   </data>
   <data name="&gt;&gt;lblOriginalWidth.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblOriginalWidth.Parent" xml:space="preserve">
     <value>sizePage</value>
@@ -364,7 +364,7 @@
     <value>lblOriginalHeight</value>
   </data>
   <data name="&gt;&gt;lblOriginalHeight.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblOriginalHeight.Parent" xml:space="preserve">
     <value>sizePage</value>
@@ -391,7 +391,7 @@
     <value>lblOriginalSize</value>
   </data>
   <data name="&gt;&gt;lblOriginalSize.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblOriginalSize.Parent" xml:space="preserve">
     <value>sizePage</value>
@@ -418,7 +418,7 @@
     <value>chkRelativeSize</value>
   </data>
   <data name="&gt;&gt;chkRelativeSize.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;chkRelativeSize.Parent" xml:space="preserve">
     <value>sizePage</value>
@@ -445,7 +445,7 @@
     <value>chkLockAspectRatio</value>
   </data>
   <data name="&gt;&gt;chkLockAspectRatio.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;chkLockAspectRatio.Parent" xml:space="preserve">
     <value>sizePage</value>
@@ -472,7 +472,7 @@
     <value>lblScaleWidth</value>
   </data>
   <data name="&gt;&gt;lblScaleWidth.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblScaleWidth.Parent" xml:space="preserve">
     <value>sizePage</value>
@@ -499,7 +499,7 @@
     <value>lblScaleHeight</value>
   </data>
   <data name="&gt;&gt;lblScaleHeight.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblScaleHeight.Parent" xml:space="preserve">
     <value>sizePage</value>
@@ -526,7 +526,7 @@
     <value>lblScale</value>
   </data>
   <data name="&gt;&gt;lblScale.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblScale.Parent" xml:space="preserve">
     <value>sizePage</value>
@@ -556,7 +556,7 @@
     <value>edtRotation</value>
   </data>
   <data name="&gt;&gt;edtRotation.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtRotation.Parent" xml:space="preserve">
     <value>sizePage</value>
@@ -583,7 +583,7 @@
     <value>lblRotation</value>
   </data>
   <data name="&gt;&gt;lblRotation.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblRotation.Parent" xml:space="preserve">
     <value>sizePage</value>
@@ -610,7 +610,7 @@
     <value>lblWidth</value>
   </data>
   <data name="&gt;&gt;lblWidth.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblWidth.Parent" xml:space="preserve">
     <value>sizePage</value>
@@ -637,7 +637,7 @@
     <value>lblHeight</value>
   </data>
   <data name="&gt;&gt;lblHeight.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblHeight.Parent" xml:space="preserve">
     <value>sizePage</value>
@@ -664,7 +664,7 @@
     <value>lblSizeAndRotate</value>
   </data>
   <data name="&gt;&gt;lblSizeAndRotate.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblSizeAndRotate.Parent" xml:space="preserve">
     <value>sizePage</value>
@@ -682,7 +682,7 @@
     <value>sizePage</value>
   </data>
   <data name="&gt;&gt;sizePage.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;sizePage.Parent" xml:space="preserve">
     <value>xtraTabControl</value>
@@ -715,7 +715,7 @@
     <value>zoomTrackBarContrast</value>
   </data>
   <data name="&gt;&gt;zoomTrackBarContrast.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ZoomTrackBarControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.ZoomTrackBarControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;zoomTrackBarContrast.Parent" xml:space="preserve">
     <value>picturePage</value>
@@ -742,7 +742,7 @@
     <value>zoomTrackBarBrigthness</value>
   </data>
   <data name="&gt;&gt;zoomTrackBarBrigthness.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ZoomTrackBarControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.ZoomTrackBarControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;zoomTrackBarBrigthness.Parent" xml:space="preserve">
     <value>picturePage</value>
@@ -766,7 +766,7 @@
     <value>edtCropBottom</value>
   </data>
   <data name="&gt;&gt;edtCropBottom.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtCropBottom.Parent" xml:space="preserve">
     <value>picturePage</value>
@@ -787,7 +787,7 @@
     <value>edtCropRight</value>
   </data>
   <data name="&gt;&gt;edtCropRight.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtCropRight.Parent" xml:space="preserve">
     <value>picturePage</value>
@@ -811,7 +811,7 @@
     <value>edtCropTop</value>
   </data>
   <data name="&gt;&gt;edtCropTop.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtCropTop.Parent" xml:space="preserve">
     <value>picturePage</value>
@@ -832,7 +832,7 @@
     <value>edtCropLeft</value>
   </data>
   <data name="&gt;&gt;edtCropLeft.Type" xml:space="preserve">
-    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraRichEdit.Design.RichTextIndentEdit, DevExpress.XtraRichEdit.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtCropLeft.Parent" xml:space="preserve">
     <value>picturePage</value>
@@ -865,7 +865,7 @@
     <value>edtContrast</value>
   </data>
   <data name="&gt;&gt;edtContrast.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtContrast.Parent" xml:space="preserve">
     <value>picturePage</value>
@@ -892,7 +892,7 @@
     <value>lblContrast</value>
   </data>
   <data name="&gt;&gt;lblContrast.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblContrast.Parent" xml:space="preserve">
     <value>picturePage</value>
@@ -925,7 +925,7 @@
     <value>edtBrightness</value>
   </data>
   <data name="&gt;&gt;edtBrightness.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SpinEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtBrightness.Parent" xml:space="preserve">
     <value>picturePage</value>
@@ -949,7 +949,7 @@
     <value>edtColorType</value>
   </data>
   <data name="&gt;&gt;edtColorType.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtColorType.Parent" xml:space="preserve">
     <value>picturePage</value>
@@ -976,7 +976,7 @@
     <value>lblBrightness</value>
   </data>
   <data name="&gt;&gt;lblBrightness.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblBrightness.Parent" xml:space="preserve">
     <value>picturePage</value>
@@ -1003,7 +1003,7 @@
     <value>lblColor</value>
   </data>
   <data name="&gt;&gt;lblColor.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblColor.Parent" xml:space="preserve">
     <value>picturePage</value>
@@ -1030,7 +1030,7 @@
     <value>lblImageControl</value>
   </data>
   <data name="&gt;&gt;lblImageControl.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblImageControl.Parent" xml:space="preserve">
     <value>picturePage</value>
@@ -1057,7 +1057,7 @@
     <value>lblCropBottom</value>
   </data>
   <data name="&gt;&gt;lblCropBottom.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblCropBottom.Parent" xml:space="preserve">
     <value>picturePage</value>
@@ -1084,7 +1084,7 @@
     <value>lblCropRight</value>
   </data>
   <data name="&gt;&gt;lblCropRight.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblCropRight.Parent" xml:space="preserve">
     <value>picturePage</value>
@@ -1111,7 +1111,7 @@
     <value>lblCropTop</value>
   </data>
   <data name="&gt;&gt;lblCropTop.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblCropTop.Parent" xml:space="preserve">
     <value>picturePage</value>
@@ -1138,7 +1138,7 @@
     <value>lblCropLeft</value>
   </data>
   <data name="&gt;&gt;lblCropLeft.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblCropLeft.Parent" xml:space="preserve">
     <value>picturePage</value>
@@ -1165,7 +1165,7 @@
     <value>lblCropFrom</value>
   </data>
   <data name="&gt;&gt;lblCropFrom.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblCropFrom.Parent" xml:space="preserve">
     <value>picturePage</value>
@@ -1195,7 +1195,7 @@
     <value>btnReset2</value>
   </data>
   <data name="&gt;&gt;btnReset2.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnReset2.Parent" xml:space="preserve">
     <value>picturePage</value>
@@ -1213,7 +1213,7 @@
     <value>picturePage</value>
   </data>
   <data name="&gt;&gt;picturePage.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;picturePage.Parent" xml:space="preserve">
     <value>xtraTabControl</value>
@@ -1225,7 +1225,7 @@
     <value>xtraTabControl</value>
   </data>
   <data name="&gt;&gt;xtraTabControl.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;xtraTabControl.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1255,7 +1255,7 @@
     <value>btnOk</value>
   </data>
   <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1285,7 +1285,7 @@
     <value>btnCancel</value>
   </data>
   <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1315,6 +1315,6 @@
     <value>FormatPictureForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
 </root>

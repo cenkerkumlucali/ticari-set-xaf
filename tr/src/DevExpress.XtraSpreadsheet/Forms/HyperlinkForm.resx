@@ -136,7 +136,7 @@
     <value>teDisplayText</value>
   </data>
   <data name="&gt;&gt;teDisplayText.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;teDisplayText.Parent" xml:space="preserve">
     <value>$this</value>
@@ -160,7 +160,7 @@
     <value>teTooltip</value>
   </data>
   <data name="&gt;&gt;teTooltip.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;teTooltip.Parent" xml:space="preserve">
     <value>$this</value>
@@ -184,7 +184,7 @@
     <value>lblText</value>
   </data>
   <data name="&gt;&gt;lblText.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblText.Parent" xml:space="preserve">
     <value>$this</value>
@@ -208,7 +208,7 @@
     <value>lblTooltip</value>
   </data>
   <data name="&gt;&gt;lblTooltip.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblTooltip.Parent" xml:space="preserve">
     <value>$this</value>
@@ -235,7 +235,7 @@
     <value>btnOk</value>
   </data>
   <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
     <value>$this</value>
@@ -262,7 +262,7 @@
     <value>btnCancel</value>
   </data>
   <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -286,7 +286,7 @@
     <value>labelControl1</value>
   </data>
   <data name="&gt;&gt;labelControl1.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;labelControl1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -489,7 +489,7 @@
     <value>nbLinkTo</value>
   </data>
   <data name="&gt;&gt;nbLinkTo.Type" xml:space="preserve">
-    <value>DevExpress.XtraNavBar.NavBarControl, DevExpress.XtraNavBar.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraNavBar.NavBarControl, DevExpress.XtraNavBar.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;nbLinkTo.Parent" xml:space="preserve">
     <value>$this</value>
@@ -516,7 +516,7 @@
     <value>externalAddress</value>
   </data>
   <data name="&gt;&gt;externalAddress.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.ExternalAddressControl, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.ExternalAddressControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;externalAddress.Parent" xml:space="preserve">
     <value>$this</value>
@@ -540,7 +540,7 @@
     <value>cellReferenceAddress</value>
   </data>
   <data name="&gt;&gt;cellReferenceAddress.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.CellReferenceAddressControl, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.CellReferenceAddressControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;cellReferenceAddress.Parent" xml:space="preserve">
     <value>$this</value>
@@ -567,7 +567,7 @@
     <value>emailAddress</value>
   </data>
   <data name="&gt;&gt;emailAddress.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.EmailAddressControl, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.EmailAddressControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;emailAddress.Parent" xml:space="preserve">
     <value>$this</value>
@@ -597,30 +597,30 @@
     <value>nbgLinkTo</value>
   </data>
   <data name="&gt;&gt;nbgLinkTo.Type" xml:space="preserve">
-    <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraNavBar.NavBarGroup, DevExpress.XtraNavBar.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;nbiFileOrWebPage.Name" xml:space="preserve">
     <value>nbiFileOrWebPage</value>
   </data>
   <data name="&gt;&gt;nbiFileOrWebPage.Type" xml:space="preserve">
-    <value>DevExpress.XtraNavBar.NavBarItem, DevExpress.XtraNavBar.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraNavBar.NavBarItem, DevExpress.XtraNavBar.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;nbiThisDocument.Name" xml:space="preserve">
     <value>nbiThisDocument</value>
   </data>
   <data name="&gt;&gt;nbiThisDocument.Type" xml:space="preserve">
-    <value>DevExpress.XtraNavBar.NavBarItem, DevExpress.XtraNavBar.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraNavBar.NavBarItem, DevExpress.XtraNavBar.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;nbiEmail.Name" xml:space="preserve">
     <value>nbiEmail</value>
   </data>
   <data name="&gt;&gt;nbiEmail.Type" xml:space="preserve">
-    <value>DevExpress.XtraNavBar.NavBarItem, DevExpress.XtraNavBar.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraNavBar.NavBarItem, DevExpress.XtraNavBar.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>HyperlinkForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
 </root>

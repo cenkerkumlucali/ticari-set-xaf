@@ -135,7 +135,7 @@
     <value>headerFooterControl</value>
   </data>
   <data name="&gt;&gt;headerFooterControl.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.HeaderFooterEditControl, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.HeaderFooterEditControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;headerFooterControl.Parent" xml:space="preserve">
     <value>xtraTabHeaderFooter</value>
@@ -153,7 +153,7 @@
     <value>xtraTabHeaderFooter</value>
   </data>
   <data name="&gt;&gt;xtraTabHeaderFooter.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;xtraTabHeaderFooter.Parent" xml:space="preserve">
     <value>tabControl</value>
@@ -180,7 +180,7 @@
     <value>firstHeaderFooterControl</value>
   </data>
   <data name="&gt;&gt;firstHeaderFooterControl.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.HeaderFooterEditControl, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.HeaderFooterEditControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;firstHeaderFooterControl.Parent" xml:space="preserve">
     <value>xtraTabFirstHeaderFooter</value>
@@ -198,7 +198,7 @@
     <value>xtraTabFirstHeaderFooter</value>
   </data>
   <data name="&gt;&gt;xtraTabFirstHeaderFooter.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;xtraTabFirstHeaderFooter.Parent" xml:space="preserve">
     <value>tabControl</value>
@@ -219,7 +219,7 @@
     <value>oddHeaderFooterControl</value>
   </data>
   <data name="&gt;&gt;oddHeaderFooterControl.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.HeaderFooterEditControl, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.HeaderFooterEditControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;oddHeaderFooterControl.Parent" xml:space="preserve">
     <value>xtraTabOddHeaderFooter</value>
@@ -237,7 +237,7 @@
     <value>xtraTabOddHeaderFooter</value>
   </data>
   <data name="&gt;&gt;xtraTabOddHeaderFooter.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;xtraTabOddHeaderFooter.Parent" xml:space="preserve">
     <value>tabControl</value>
@@ -258,7 +258,7 @@
     <value>evenHeaderFooterControl</value>
   </data>
   <data name="&gt;&gt;evenHeaderFooterControl.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.HeaderFooterEditControl, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.HeaderFooterEditControl, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;evenHeaderFooterControl.Parent" xml:space="preserve">
     <value>xtraTabEvenHeaderFooter</value>
@@ -276,7 +276,7 @@
     <value>xtraTabEvenHeaderFooter</value>
   </data>
   <data name="&gt;&gt;xtraTabEvenHeaderFooter.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraTab.XtraTabPage, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;xtraTabEvenHeaderFooter.Parent" xml:space="preserve">
     <value>tabControl</value>
@@ -288,7 +288,7 @@
     <value>tabControl</value>
   </data>
   <data name="&gt;&gt;tabControl.Type" xml:space="preserve">
-    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraTab.XtraTabControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;tabControl.Parent" xml:space="preserve">
     <value>$this</value>
@@ -315,7 +315,7 @@
     <value>btnCancel</value>
   </data>
   <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -342,7 +342,7 @@
     <value>btnOk</value>
   </data>
   <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
     <value>$this</value>
@@ -370,6 +370,6 @@
     <value>HeaderFooterForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
 </root>

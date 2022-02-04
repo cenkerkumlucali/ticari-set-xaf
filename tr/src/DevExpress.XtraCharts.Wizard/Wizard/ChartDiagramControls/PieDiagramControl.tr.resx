@@ -123,14 +123,14 @@
   <data name="groupMargin.Text" xml:space="preserve">
     <value>Kenar boşlukları</value>
   </data>
-  <assembly alias="DevExpress.Utils.v21.1" name="DevExpress.Utils.v21.1, Culture=neutral"></assembly>
+  <assembly alias="DevExpress.Utils.v21.2" name="DevExpress.Utils.v21.2, Culture=neutral"></assembly>
   <data name="cbDirection.Properties.Items" xml:space="preserve">
     <value>Yatay</value>
   </data>
   <data name="cbDirection.Properties.Items1" xml:space="preserve">
     <value>Dikey</value>
   </data>
-  <assembly alias="DevExpress.XtraEditors.v21.1" name="DevExpress.XtraEditors.v21.1, Culture=neutral"></assembly>
+  <assembly alias="DevExpress.XtraEditors.v21.2" name="DevExpress.XtraEditors.v21.2, Culture=neutral"></assembly>
   <data name="chartLabelControl1.Text" xml:space="preserve">
     <value>Yön:</value>
   </data>

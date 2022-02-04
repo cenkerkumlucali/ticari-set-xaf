@@ -135,7 +135,7 @@
     <value>edtFormatStyle</value>
   </data>
   <data name="&gt;&gt;edtFormatStyle.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtFormatStyle.Parent" xml:space="preserve">
     <value>$this</value>
@@ -162,7 +162,7 @@
     <value>lblFormatStyle</value>
   </data>
   <data name="&gt;&gt;lblFormatStyle.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblFormatStyle.Parent" xml:space="preserve">
     <value>$this</value>
@@ -192,7 +192,7 @@
     <value>lblFormatAllCellsBasedOnValues</value>
   </data>
   <data name="&gt;&gt;lblFormatAllCellsBasedOnValues.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblFormatAllCellsBasedOnValues.Parent" xml:space="preserve">
     <value>$this</value>
@@ -219,7 +219,7 @@
     <value>btnReverseIconOrder</value>
   </data>
   <data name="&gt;&gt;btnReverseIconOrder.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnReverseIconOrder.Parent" xml:space="preserve">
     <value>$this</value>
@@ -246,7 +246,7 @@
     <value>lblIconStyle</value>
   </data>
   <data name="&gt;&gt;lblIconStyle.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblIconStyle.Parent" xml:space="preserve">
     <value>$this</value>
@@ -273,7 +273,7 @@
     <value>chkShowIconOnly</value>
   </data>
   <data name="&gt;&gt;chkShowIconOnly.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;chkShowIconOnly.Parent" xml:space="preserve">
     <value>$this</value>
@@ -300,7 +300,7 @@
     <value>lblDisplayEachIcon</value>
   </data>
   <data name="&gt;&gt;lblDisplayEachIcon.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblDisplayEachIcon.Parent" xml:space="preserve">
     <value>$this</value>
@@ -330,7 +330,7 @@
     <value>lblIcon</value>
   </data>
   <data name="&gt;&gt;lblIcon.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblIcon.Parent" xml:space="preserve">
     <value>$this</value>
@@ -360,7 +360,7 @@
     <value>lblValue</value>
   </data>
   <data name="&gt;&gt;lblValue.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblValue.Parent" xml:space="preserve">
     <value>$this</value>
@@ -390,7 +390,7 @@
     <value>lblType</value>
   </data>
   <data name="&gt;&gt;lblType.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblType.Parent" xml:space="preserve">
     <value>$this</value>
@@ -414,7 +414,7 @@
     <value>lblFifth</value>
   </data>
   <data name="&gt;&gt;lblFifth.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblFifth.Parent" xml:space="preserve">
     <value>$this</value>
@@ -438,7 +438,7 @@
     <value>lblForth</value>
   </data>
   <data name="&gt;&gt;lblForth.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblForth.Parent" xml:space="preserve">
     <value>$this</value>
@@ -462,7 +462,7 @@
     <value>lblThird</value>
   </data>
   <data name="&gt;&gt;lblThird.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblThird.Parent" xml:space="preserve">
     <value>$this</value>
@@ -486,7 +486,7 @@
     <value>lblSecond</value>
   </data>
   <data name="&gt;&gt;lblSecond.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblSecond.Parent" xml:space="preserve">
     <value>$this</value>
@@ -510,7 +510,7 @@
     <value>lblFirst</value>
   </data>
   <data name="&gt;&gt;lblFirst.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblFirst.Parent" xml:space="preserve">
     <value>$this</value>
@@ -531,7 +531,7 @@
     <value>edtValueFifth</value>
   </data>
   <data name="&gt;&gt;edtValueFifth.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtValueFifth.Parent" xml:space="preserve">
     <value>$this</value>
@@ -552,7 +552,7 @@
     <value>edtValueForth</value>
   </data>
   <data name="&gt;&gt;edtValueForth.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtValueForth.Parent" xml:space="preserve">
     <value>$this</value>
@@ -573,7 +573,7 @@
     <value>edtValueThird</value>
   </data>
   <data name="&gt;&gt;edtValueThird.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtValueThird.Parent" xml:space="preserve">
     <value>$this</value>
@@ -594,7 +594,7 @@
     <value>edtValueSecond</value>
   </data>
   <data name="&gt;&gt;edtValueSecond.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtValueSecond.Parent" xml:space="preserve">
     <value>$this</value>
@@ -615,7 +615,7 @@
     <value>edtValueTypeFifth</value>
   </data>
   <data name="&gt;&gt;edtValueTypeFifth.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtValueTypeFifth.Parent" xml:space="preserve">
     <value>$this</value>
@@ -636,7 +636,7 @@
     <value>edtValueTypeForth</value>
   </data>
   <data name="&gt;&gt;edtValueTypeForth.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtValueTypeForth.Parent" xml:space="preserve">
     <value>$this</value>
@@ -657,7 +657,7 @@
     <value>edtValueTypeThird</value>
   </data>
   <data name="&gt;&gt;edtValueTypeThird.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtValueTypeThird.Parent" xml:space="preserve">
     <value>$this</value>
@@ -678,7 +678,7 @@
     <value>edtValueTypeSecond</value>
   </data>
   <data name="&gt;&gt;edtValueTypeSecond.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtValueTypeSecond.Parent" xml:space="preserve">
     <value>$this</value>
@@ -702,7 +702,7 @@
     <value>edtIconSetsComboBox</value>
   </data>
   <data name="&gt;&gt;edtIconSetsComboBox.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.IconSetTypeImageComboBoxEdit, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.IconSetTypeImageComboBoxEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtIconSetsComboBox.Parent" xml:space="preserve">
     <value>$this</value>
@@ -723,7 +723,7 @@
     <value>edtIconFifth</value>
   </data>
   <data name="&gt;&gt;edtIconFifth.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.ConditionalFormattingIconSetsDropDownButton, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.ConditionalFormattingIconSetsDropDownButton, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtIconFifth.Parent" xml:space="preserve">
     <value>$this</value>
@@ -744,7 +744,7 @@
     <value>edtIconForth</value>
   </data>
   <data name="&gt;&gt;edtIconForth.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.ConditionalFormattingIconSetsDropDownButton, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.ConditionalFormattingIconSetsDropDownButton, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtIconForth.Parent" xml:space="preserve">
     <value>$this</value>
@@ -765,7 +765,7 @@
     <value>edtIconThird</value>
   </data>
   <data name="&gt;&gt;edtIconThird.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.ConditionalFormattingIconSetsDropDownButton, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.ConditionalFormattingIconSetsDropDownButton, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtIconThird.Parent" xml:space="preserve">
     <value>$this</value>
@@ -786,7 +786,7 @@
     <value>edtIconSecond</value>
   </data>
   <data name="&gt;&gt;edtIconSecond.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.ConditionalFormattingIconSetsDropDownButton, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.ConditionalFormattingIconSetsDropDownButton, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtIconSecond.Parent" xml:space="preserve">
     <value>$this</value>
@@ -807,7 +807,7 @@
     <value>edtIconFirst</value>
   </data>
   <data name="&gt;&gt;edtIconFirst.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.ConditionalFormattingIconSetsDropDownButton, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.ConditionalFormattingIconSetsDropDownButton, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtIconFirst.Parent" xml:space="preserve">
     <value>$this</value>
@@ -831,7 +831,7 @@
     <value>edtValueFifthIsGreaterOrEqual</value>
   </data>
   <data name="&gt;&gt;edtValueFifthIsGreaterOrEqual.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtValueFifthIsGreaterOrEqual.Parent" xml:space="preserve">
     <value>$this</value>
@@ -855,7 +855,7 @@
     <value>edtValueForthIsGreaterOrEqual</value>
   </data>
   <data name="&gt;&gt;edtValueForthIsGreaterOrEqual.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtValueForthIsGreaterOrEqual.Parent" xml:space="preserve">
     <value>$this</value>
@@ -879,7 +879,7 @@
     <value>edtValueThirdIsGreaterOrEqual</value>
   </data>
   <data name="&gt;&gt;edtValueThirdIsGreaterOrEqual.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtValueThirdIsGreaterOrEqual.Parent" xml:space="preserve">
     <value>$this</value>
@@ -903,7 +903,7 @@
     <value>edtValueSecondIsGreaterOrEqual</value>
   </data>
   <data name="&gt;&gt;edtValueSecondIsGreaterOrEqual.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtValueSecondIsGreaterOrEqual.Parent" xml:space="preserve">
     <value>$this</value>
@@ -924,6 +924,6 @@
     <value>ConditionalFormattingIconSetsControl</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
 </root>

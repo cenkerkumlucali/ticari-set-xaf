@@ -132,7 +132,7 @@
   <data name="btnAddParameter.Text" xml:space="preserve">
     <value>Ekle</value>
   </data>
-  <assembly alias="DevExpress.Utils.v21.1" name="DevExpress.Utils.v21.1, Culture=neutral"></assembly>
+  <assembly alias="DevExpress.Utils.v21.2" name="DevExpress.Utils.v21.2, Culture=neutral"></assembly>
   <data name="label1.Text" xml:space="preserve">
     <value>Özel bir özet işlevi oluşturmak için arama Editörün alanına adını yazın ve Özet fonksiyon bağımsız değişkenleri belirtin.</value>
   </data>

@@ -141,7 +141,7 @@
     <value>edtSecondColor</value>
   </data>
   <data name="&gt;&gt;edtSecondColor.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ColorPickEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.ColorPickEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtSecondColor.Parent" xml:space="preserve">
     <value>grpColors</value>
@@ -168,7 +168,7 @@
     <value>edtFirstColor</value>
   </data>
   <data name="&gt;&gt;edtFirstColor.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ColorPickEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.ColorPickEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtFirstColor.Parent" xml:space="preserve">
     <value>grpColors</value>
@@ -195,7 +195,7 @@
     <value>lblSecondColor</value>
   </data>
   <data name="&gt;&gt;lblSecondColor.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblSecondColor.Parent" xml:space="preserve">
     <value>grpColors</value>
@@ -222,7 +222,7 @@
     <value>lblFirstColor</value>
   </data>
   <data name="&gt;&gt;lblFirstColor.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblFirstColor.Parent" xml:space="preserve">
     <value>grpColors</value>
@@ -246,7 +246,7 @@
     <value>grpColors</value>
   </data>
   <data name="&gt;&gt;grpColors.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;grpColors.Parent" xml:space="preserve">
     <value>$this</value>
@@ -309,7 +309,7 @@
     <value>rgrpShadingStyles</value>
   </data>
   <data name="&gt;&gt;rgrpShadingStyles.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.RadioGroup, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;rgrpShadingStyles.Parent" xml:space="preserve">
     <value>grpShadingStyles</value>
@@ -333,7 +333,7 @@
     <value>grpShadingStyles</value>
   </data>
   <data name="&gt;&gt;grpShadingStyles.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;grpShadingStyles.Parent" xml:space="preserve">
     <value>$this</value>
@@ -360,7 +360,7 @@
     <value>btnFourthGradientVariant</value>
   </data>
   <data name="&gt;&gt;btnFourthGradientVariant.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnFourthGradientVariant.Parent" xml:space="preserve">
     <value>grpVariants</value>
@@ -384,7 +384,7 @@
     <value>btnThirdGradientVariant</value>
   </data>
   <data name="&gt;&gt;btnThirdGradientVariant.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnThirdGradientVariant.Parent" xml:space="preserve">
     <value>grpVariants</value>
@@ -408,7 +408,7 @@
     <value>btnSecondGradientVariant</value>
   </data>
   <data name="&gt;&gt;btnSecondGradientVariant.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnSecondGradientVariant.Parent" xml:space="preserve">
     <value>grpVariants</value>
@@ -432,7 +432,7 @@
     <value>btnFirstGradientVariant</value>
   </data>
   <data name="&gt;&gt;btnFirstGradientVariant.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnFirstGradientVariant.Parent" xml:space="preserve">
     <value>grpVariants</value>
@@ -456,7 +456,7 @@
     <value>grpVariants</value>
   </data>
   <data name="&gt;&gt;grpVariants.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;grpVariants.Parent" xml:space="preserve">
     <value>$this</value>
@@ -483,7 +483,7 @@
     <value>previewPanel</value>
   </data>
   <data name="&gt;&gt;previewPanel.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;previewPanel.Parent" xml:space="preserve">
     <value>grpSample</value>
@@ -507,7 +507,7 @@
     <value>grpSample</value>
   </data>
   <data name="&gt;&gt;grpSample.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.GroupControl, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;grpSample.Parent" xml:space="preserve">
     <value>$this</value>
@@ -535,7 +535,7 @@
     <value>btnCancel</value>
   </data>
   <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -562,7 +562,7 @@
     <value>btnOk</value>
   </data>
   <data name="&gt;&gt;btnOk.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;btnOk.Parent" xml:space="preserve">
     <value>$this</value>
@@ -589,6 +589,6 @@
     <value>FillEffectsFormatCellsForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
 </root>

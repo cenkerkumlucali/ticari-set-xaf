@@ -138,7 +138,7 @@
     <value>lblType</value>
   </data>
   <data name="&gt;&gt;lblType.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblType.Parent" xml:space="preserve">
     <value>$this</value>
@@ -165,7 +165,7 @@
     <value>lblValue</value>
   </data>
   <data name="&gt;&gt;lblValue.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblValue.Parent" xml:space="preserve">
     <value>$this</value>
@@ -192,7 +192,7 @@
     <value>lblColor</value>
   </data>
   <data name="&gt;&gt;lblColor.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblColor.Parent" xml:space="preserve">
     <value>$this</value>
@@ -222,7 +222,7 @@
     <value>lblPreview</value>
   </data>
   <data name="&gt;&gt;lblPreview.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblPreview.Parent" xml:space="preserve">
     <value>$this</value>
@@ -249,7 +249,7 @@
     <value>lblMinimum</value>
   </data>
   <data name="&gt;&gt;lblMinimum.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblMinimum.Parent" xml:space="preserve">
     <value>$this</value>
@@ -279,7 +279,7 @@
     <value>lblMidpoint</value>
   </data>
   <data name="&gt;&gt;lblMidpoint.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblMidpoint.Parent" xml:space="preserve">
     <value>$this</value>
@@ -306,7 +306,7 @@
     <value>lblMaximum</value>
   </data>
   <data name="&gt;&gt;lblMaximum.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblMaximum.Parent" xml:space="preserve">
     <value>$this</value>
@@ -330,7 +330,7 @@
     <value>edtLowPointValueType</value>
   </data>
   <data name="&gt;&gt;edtLowPointValueType.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtLowPointValueType.Parent" xml:space="preserve">
     <value>$this</value>
@@ -357,7 +357,7 @@
     <value>edtMiddlePointValueType</value>
   </data>
   <data name="&gt;&gt;edtMiddlePointValueType.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtMiddlePointValueType.Parent" xml:space="preserve">
     <value>$this</value>
@@ -381,7 +381,7 @@
     <value>edtHighPointValueType</value>
   </data>
   <data name="&gt;&gt;edtHighPointValueType.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtHighPointValueType.Parent" xml:space="preserve">
     <value>$this</value>
@@ -405,7 +405,7 @@
     <value>edtLowPointValue</value>
   </data>
   <data name="&gt;&gt;edtLowPointValue.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtLowPointValue.Parent" xml:space="preserve">
     <value>$this</value>
@@ -432,7 +432,7 @@
     <value>edtMiddlePointValue</value>
   </data>
   <data name="&gt;&gt;edtMiddlePointValue.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtMiddlePointValue.Parent" xml:space="preserve">
     <value>$this</value>
@@ -456,7 +456,7 @@
     <value>edtHighPointValue</value>
   </data>
   <data name="&gt;&gt;edtHighPointValue.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtHighPointValue.Parent" xml:space="preserve">
     <value>$this</value>
@@ -483,7 +483,7 @@
     <value>edtLowPointColor</value>
   </data>
   <data name="&gt;&gt;edtLowPointColor.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ColorPickEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.ColorPickEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtLowPointColor.Parent" xml:space="preserve">
     <value>$this</value>
@@ -513,7 +513,7 @@
     <value>edtMiddlePointColor</value>
   </data>
   <data name="&gt;&gt;edtMiddlePointColor.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ColorPickEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.ColorPickEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtMiddlePointColor.Parent" xml:space="preserve">
     <value>$this</value>
@@ -540,7 +540,7 @@
     <value>edtHighPointColor</value>
   </data>
   <data name="&gt;&gt;edtHighPointColor.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.ColorPickEdit, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.ColorPickEdit, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtHighPointColor.Parent" xml:space="preserve">
     <value>$this</value>
@@ -564,7 +564,7 @@
     <value>drawPanel</value>
   </data>
   <data name="&gt;&gt;drawPanel.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;drawPanel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -588,7 +588,7 @@
     <value>edtFormatStyle</value>
   </data>
   <data name="&gt;&gt;edtFormatStyle.Type" xml:space="preserve">
-    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraSpreadsheet.Forms.Design.SpreadsheetLookUpEdit, DevExpress.XtraSpreadsheet.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;edtFormatStyle.Parent" xml:space="preserve">
     <value>$this</value>
@@ -615,7 +615,7 @@
     <value>lblFormatStyle</value>
   </data>
   <data name="&gt;&gt;lblFormatStyle.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblFormatStyle.Parent" xml:space="preserve">
     <value>$this</value>
@@ -645,7 +645,7 @@
     <value>lblFormatAllCellsBasedOnValues</value>
   </data>
   <data name="&gt;&gt;lblFormatAllCellsBasedOnValues.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v21.2, Culture=neutral</value>
   </data>
   <data name="&gt;&gt;lblFormatAllCellsBasedOnValues.Parent" xml:space="preserve">
     <value>$this</value>
@@ -666,6 +666,6 @@
     <value>ConditionalFormattingColorScaleControl</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.1, Culture=neutral</value>
+    <value>DevExpress.XtraEditors.XtraUserControl, DevExpress.Utils.v21.2, Culture=neutral</value>
   </data>
 </root>
