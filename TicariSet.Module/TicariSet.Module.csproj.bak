@@ -38,79 +38,99 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v19.1">
+    <Reference Include="DevExpress.Data.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.AuditTrail.v19.1">
+    <Reference Include="DevExpress.ExpressApp.AuditTrail.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.CloneObject.v19.1">
+    <Reference Include="DevExpress.ExpressApp.CloneObject.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v19.1">
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Notifications.v19.1">
+    <Reference Include="DevExpress.ExpressApp.Notifications.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Objects.v19.1">
+    <Reference Include="DevExpress.ExpressApp.Objects.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Office.v19.1">
+    <Reference Include="DevExpress.ExpressApp.Office.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.ReportsV2.v19.1">
+    <Reference Include="DevExpress.ExpressApp.PivotGrid.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Scheduler.v19.1">
+    <Reference Include="DevExpress.ExpressApp.Scheduler.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Security.v19.1">
+    <Reference Include="DevExpress.ExpressApp.Security.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Security.Xpo.v19.1">
+    <Reference Include="DevExpress.ExpressApp.Security.Xpo.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.TreeListEditors.v19.1">
+    <Reference Include="DevExpress.ExpressApp.TreeListEditors.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.v19.1">
+    <Reference Include="DevExpress.ExpressApp.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Validation.v19.1">
+    <Reference Include="DevExpress.ExpressApp.Validation.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v19.1">
+    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Xpo.v19.1">
+    <Reference Include="DevExpress.ExpressApp.Win.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Xpo.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Office.v19.1.Core">
+    <Reference Include="DevExpress.Office.v20.2.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Persistent.Base.v19.1">
+    <Reference Include="DevExpress.Persistent.Base.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Persistent.BaseImpl.v19.1">
+    <Reference Include="DevExpress.Persistent.BaseImpl.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Printing.v19.1.Core">
+    <Reference Include="DevExpress.PivotGrid.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.2.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.RichEdit.v19.1.Core">
+    <Reference Include="DevExpress.RichEdit.v20.2.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Utils.v19.1">
+    <Reference Include="DevExpress.Data.Desktop.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Xpo.v19.1">
+    <Reference Include="DevExpress.Utils.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraReports.v19.1">
+    <Reference Include="DevExpress.Xpo.v20.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraScheduler.v19.1.Core">
+    <Reference Include="DevExpress.Charts.v20.2.Core">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Core.Desktop">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v20.2.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="mscorlib">
@@ -125,6 +145,7 @@
     <Reference Include="System.Drawing">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -147,10 +168,72 @@
     <Compile Include="BusinessObjects\BankaOdeme.cs" />
     <Compile Include="BusinessObjects\BankaSubeleri.cs" />
     <Compile Include="BusinessObjects\BankaTahsilat.cs" />
+    <Compile Include="BusinessObjects\EkDosyalar.cs" />
+    <Compile Include="BusinessObjects\Evrak.cs" />
+    <Compile Include="BusinessObjects\EvrakBeden.cs" />
+    <Compile Include="BusinessObjects\EvrakSatir.cs" />
+    <Compile Include="BusinessObjects\GenelTipTanimlari.cs" />
+    <Compile Include="BusinessObjects\PersonelPasaportBilgileri.cs" />
     <Compile Include="BusinessObjects\Birimler.cs" />
+    <Compile Include="BusinessObjects\CariAdresBilgileri.cs" />
+    <Compile Include="BusinessObjects\CariIletisimBilgileri.cs" />
     <Compile Include="BusinessObjects\CariOdeme.cs" />
     <Compile Include="BusinessObjects\CariTahsilat.cs" />
     <Compile Include="BusinessObjects\Cariler.cs" />
+    <Compile Include="BusinessObjects\BirimSetiTanimlari.cs" />
+    <Compile Include="Controllers\BedenController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\BedenController.Designer.cs">
+      <DependentUpon>BedenController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CariAlisSatisIslemleriController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\CariAlisSatisIslemleriController.Designer.cs">
+      <DependentUpon>CariAlisSatisIslemleriController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DeactivateDeleteController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\DeactivateDeleteController.Designer.cs">
+      <DependentUpon>DeactivateDeleteController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DeactivateNewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\DeactivateNewController.Designer.cs">
+      <DependentUpon>DeactivateNewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\IslemlerController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\IslemlerController.Designer.cs">
+      <DependentUpon>IslemlerController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\PersonelEmailController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\PersonelEmailController.Designer.cs">
+      <DependentUpon>PersonelEmailController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\StokHareketleriIslemlerController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\StokHareketleriIslemlerController.Designer.cs">
+      <DependentUpon>StokHareketleriIslemlerController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\TypeStringConverter.cs" />
+    <Compile Include="EnumObjects\PasaportTipleri.cs" />
+    <Compile Include="Converters\ColorConverter.cs" />
+    <Compile Include="BusinessObjects\Ilceler.cs" />
+    <Compile Include="BusinessObjects\PersonelAdresBilgileri.cs" />
+    <Compile Include="BusinessObjects\PersonelAile.cs" />
+    <Compile Include="BusinessObjects\PersonelIletisimBilgileri.cs" />
+    <Compile Include="BusinessObjects\PersonelKart.cs" />
+    <Compile Include="BusinessObjects\PersonelKimlikBilgileri.cs" />
+    <Compile Include="BusinessObjects\PersonelSurucuBelgesi.cs" />
+    <Compile Include="BusinessObjects\RenkTanimlari.cs" />
     <Compile Include="BusinessObjects\Doviz.cs" />
     <Compile Include="BusinessObjects\Fisler.cs" />
     <Compile Include="BusinessObjects\KasaHareket.cs" />
@@ -159,9 +242,12 @@
     <Compile Include="BusinessObjects\MasrafGrubu.cs" />
     <Compile Include="BusinessObjects\Masraflar.cs" />
     <Compile Include="BusinessObjects\SatisFaturasi.cs" />
+    <Compile Include="BusinessObjects\Sehirler.cs" />
     <Compile Include="BusinessObjects\StFiyat.cs" />
+    <Compile Include="BusinessObjects\StKartRenk.cs" />
     <Compile Include="BusinessObjects\StokHareketler.cs" />
     <Compile Include="BusinessObjects\Stoklar.cs" />
+    <Compile Include="BusinessObjects\Ulkeler.cs" />
     <Compile Include="Controllers\FislerViewController.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -175,9 +261,17 @@
       <DependentUpon>KasaHareketViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseUpdate\Updater.cs" />
+    <Compile Include="EnumObjects\AdresTipi.cs" />
+    <Compile Include="EnumObjects\Cinsiyet.cs" />
+    <Compile Include="EnumObjects\Din.cs" />
     <Compile Include="EnumObjects\DurumType.cs" />
+    <Compile Include="EnumObjects\EhliyetSınıfı.cs" />
     <Compile Include="EnumObjects\FisHareketTuru.cs" />
+    <Compile Include="EnumObjects\IletisimTipleri.cs" />
     <Compile Include="EnumObjects\KasaHareketType.cs" />
+    <Compile Include="EnumObjects\MedeniDurum.cs" />
+    <Compile Include="EnumObjects\PersonelKimlikVerilisNedeni.cs" />
+    <Compile Include="EnumObjects\PrsYakınlık.cs" />
     <Compile Include="EnumObjects\StokHareketType.cs" />
     <Compile Include="Module.cs">
       <SubType>Component</SubType>
@@ -188,32 +282,35 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="UnusableNodes5.xml">
-      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="UnusableNodes4.xml">
-      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
-      <SubType>Designer</SubType>
-    </None>
+    <EmbeddedResource Include="Controllers\BedenController.resx">
+      <DependentUpon>BedenController.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controllers\FislerViewController.resx">
       <DependentUpon>FislerViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\IslemlerController.resx">
+      <DependentUpon>IslemlerController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\StokHareketleriIslemlerController.resx">
+      <DependentUpon>StokHareketleriIslemlerController.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controllers\KasaHareketViewController.resx">
       <DependentUpon>KasaHareketViewController.cs</DependentUpon>
     </EmbeddedResource>
-    <Content Include="Model.DesignedDiffs.xafml" />
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Module.resx">
       <DependentUpon>Module.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Controllers\ReadMe.txt" />
     <None Include="DatabaseUpdate\ReadMe.txt" />
     <None Include="Images\ReadMe.txt" />
     <EmbeddedResource Include="Model.DesignedDiffs.Localization.tr.xafml">
       <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="ReadMe.txt" />
@@ -227,28 +324,18 @@
     <None Include="Welcome.html" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="OtherClasses\" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="UnusableNodes.xml">
       <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="UnusableNodes1.xml">
-      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="UnusableNodes2.xml">
-      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="UnusableNodes3.xml">
-      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
-      <SubType>Designer</SubType>
-    </None>
+    <PackageReference Include="RedGate.SmartAssembly.Attributes">
+      <Version>8.0.4.4860</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
