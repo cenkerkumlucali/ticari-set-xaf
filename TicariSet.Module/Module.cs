@@ -10,7 +10,6 @@ using SmartAssembly.Attributes;
 using TicariSet.Module.Interfaces;
 
 namespace TicariSet.Module {
-    // For more typical usage scenarios, be sure to check out https://docs.devexpress.com/eXpressAppFramework/DevExpress.ExpressApp.ModuleBase.
     public sealed partial class TicariSetModule : ModuleBase {
         public TicariSetModule() {
             InitializeComponent();
@@ -20,6 +19,7 @@ namespace TicariSet.Module {
         public override void ExtendModelInterfaces(ModelInterfaceExtenders extenders)
         {
             base.ExtendModelInterfaces(extenders);
+            extenders.Add<IModelDetailView,IModelMemberRange>();
             extenders.Add<IModelListView, IModelListViewEx>();
             extenders.Add<IModelColumn, IModelColumnEx>();
             extenders.Add<IModelOptions, IModelOptionsEx>();
@@ -30,7 +30,6 @@ namespace TicariSet.Module {
         }
         public override void Setup(XafApplication application) {
             base.Setup(application);
-            // Manage various aspects of the application UI and behavior at the module level.
         }
         public override void CustomizeTypesInfo(ITypesInfo typesInfo) {
             base.CustomizeTypesInfo(typesInfo);
