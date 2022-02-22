@@ -361,11 +361,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TicariSet.Module.Web\TicariSet.Module.Web.csproj">
-      <Project>{0C729AAD-7626-4668-A7F1-35F7D240489D}</Project>
-      <Name>TicariSet.Module.Web</Name>
-      <Private>True</Private>
-    </ProjectReference>
     <ProjectReference Include="..\TicariSet.Module\TicariSet.Module.csproj">
       <Project>{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}</Project>
       <Name>TicariSet.Module</Name>
