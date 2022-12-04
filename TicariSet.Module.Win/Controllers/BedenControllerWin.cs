@@ -23,7 +23,7 @@ namespace TicariSet.Module.Win.Controllers
 
         private void Subscribe(bool isSubscribe = true)
         {
-            if (View is DetailView)
+            if (View is DetailView) 
             {
                 ViewItem viewItem = ((DetailView)View).FindItem("Miktar");
                 if (viewItem != null && viewItem.Control != null)
